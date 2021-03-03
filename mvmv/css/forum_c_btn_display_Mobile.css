@@ -1,0 +1,21 @@
+/*
+===================
+version 2.5
+2015 / 11 / 20
+===================
+*/
+#mmwHeader .functionBox .wShereBox{display:none;}
+@media screen and (max-width:660px){/*<<_待達人上線後改修*/
+	.articleNew{display:none;}/*<<_待達人上線後改修*/
+	#mmwHeader .functionBox .wShereBox{display:block;}
+		#mmwHeader .functionBox .wShereBox .wLine{display:block;}
+		#mmwHeader .functionBox .wShereBox .wFB{display:block;}
+	#mmwHeader .functionBox .wLine{display:none;}
+	#mmwHeader .functionBox .wFB{display:none;}
+}
+@media screen and (max-width:400px){
+	#mmwHeader .functionBox .wTop{display:none;}
+}
+#mmwHeader .moviemovieLogo{width:150px;margin-right:0;}
+@media screen and (max-width:1000px){#mmwHeader .moviemovieLogo{width:36px;}}
+#mmwHeader h2{display:none;}

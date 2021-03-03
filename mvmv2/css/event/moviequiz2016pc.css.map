@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS,CACR,SAAS,CAAC,KAAK,CACf,UAAU,CAAC,IAAI",
+"sources": ["../../scss/event/moviequiz2016pc.scss"],
+"names": [],
+"file": "moviequiz2016pc.css"
+}

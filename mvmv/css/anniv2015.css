@@ -1,0 +1,285 @@
+/*
+====================
+version 1
+2015 / 6 / 17
+====================
+*/
+#mmBody{background:#01c3e0;padding-top:44px;}
+#mmBody .wrapper{max-width:960px;}
+/* ========== HEADER str ========== */
+#mmEventHeader{
+	background:url(../img/event/anniv/2015/ticketBg.png) 50% -57px no-repeat;background-size:auto 722px;
+	overflow:hidden;
+	position:relative;
+}
+#mmEventHeader img{display:block;}
+#mmEventHeader .picTitle{
+	display:block;width:74%;height:auto;
+	margin:20px auto 5px;
+	position:relative;z-index:5;
+}
+#mmEventHeader .picMainMobi{
+	width:90%;height:auto;
+	margin:0 5%;
+}
+#mmEventHeader .picMainPC{display:none;}
+#mmEventHeader img,#mmEventHeader div,#mmEventHeader p{position:relative;z-index:1;}
+#mmEventHeader div{
+	background-color:rgba(1,195,224,.9);border-radius:9px;
+	padding:3px;
+	position:fixed;right:5px;top:47px;z-index:6;
+}
+#mmEventHeader div a{
+	color:#fff;font-size:12px;text-align:center;padding-top:28px;border-radius:6px;
+	background:url(../img/event/anniv/2015/icon.png) -40px -100px no-repeat;background-size:162px 144px;
+	display:block;width: 41px;height: 50px;
+	border:solid 3px rgba(255,255,255,.7);
+	float:left;position:relative;
+}
+#mmEventHeader div a:after{
+	content:'';display:block;
+	width:100%;height:100%;
+	position:absolute;top: 0;left: 0;
+}
+#mmEventHeader div a:hover:after{background-color:rgba(255,255,255,.1);}
+#mmEventHeader div a:hover{text-decoration:none;}
+#mmEventHeader div a.fb{
+	margin-left:3px;
+	background-position:0 -100px;
+}
+#mmEventHeader p{
+	color:#fff;font-size:14px;
+	padding:10px 3%;
+}
+#mmEventHeader p span{
+	color:#eee;font-size:12px
+}
+#mmEventHeader:before{
+	content:'';
+	background-image:-webkit-linear-gradient(-90deg,rgba(1,195,224,0) 0%,rgba(1,195,224,1) 100%);
+	background-image:-moz-linear-gradient(-90deg,rgba(1,195,224,0) 0%,rgba(1,195,224,1) 100%);
+	background-image:-ms-linear-gradient(-90deg,rgba(1,195,224,0) 0%,rgba(1,195,224,1) 100%);
+	background-image:-o-linear-gradient(-90deg,rgba(1,195,224,0) 0%,rgba(1,195,224,1) 100%);
+	background-image:linear-gradient(180deg,rgba(1,195,224,0) 0%,rgba(1,195,224,1) 100%);
+	display:block;width: 100%;height: 100px;
+	position:absolute;left: 0;bottom: 0;
+}
+/* ========== HEADER end ========== */
+/* ========== ARTICLE str ========== */
+#mmEventArticle{margin-top:12px;}
+#mmEventArticle > div{
+	background-color:#ffc74a;border-radius:10px;
+	width:100%;
+	margin-bottom:20px;
+	float:left;
+}
+	#mmEventArticle .giftTitle{
+		border-radius:10px 10px 0 0;overflow:hidden;position:relative;
+		height:65px;
+		padding:8px 0 0 88px;
+		position:relative;z-index:2;
+	}
+	#mmEventArticle .giftTitle:after{
+		content:'';background-color:#ff9000;
+		display:block;width:150%;height:75px;
+		-webkit-transform-origin:100% 100%;-webkit-transform:rotate(1deg);
+		-moz-transform-origin:100% 100%;-moz-transform:rotate(1deg);
+		-ms-transform-origin:100% 100%;-ms-transform:rotate(1deg);
+		-o-transform-origin:100% 100%;-o-transform:rotate(1deg);
+		transform-origin:100% 100%;transform:rotate(1deg);
+		position:absolute;bottom:0;right:0;
+	}
+	#mmEventArticle .giftTitle h4,#mmEventArticle .giftTitle span,#mmEventArticle .giftTitle p{
+		color:#fff;
+		display:inline-block;
+		float:left;position:relative;z-index:1;
+	}
+	#mmEventArticle .giftTitle h4{font-size:18px;font-weight:bold;}
+	#mmEventArticle .giftTitle span{
+		font-size:12px;color:#ff9000;vertical-align:baseline;
+		background-color:#fff;
+		line-height:16px;
+		padding:0 2px;margin:4px 0 0 5px;
+	}
+	#mmEventArticle .giftTitle p{
+		font-size:20px;font-weight:bold;
+		line-height:1;
+		clear:both;
+	}
+	/********/
+	#mmEventArticle .giftCont{
+		background-color:#fff;color:#843317;font-size:15px;
+		width:95%;
+		padding:25px 10px 10px;margin:-15px auto 0;
+		position:relative;
+	}
+	#mmEventArticle .giftCont span{
+		background-color:#ff9000;color:#fff;
+		display:inline;
+		padding:0 4px;margin-left:3px;
+	}
+	#mmEventArticle .giftCont:before{
+		content:'';background:url(../img/event/anniv/2015/icon.png) 0 0 no-repeat;
+		background-size:145px 129px;
+		width: 82px;height: 85px;
+		position:absolute;top:-64px;left:-6px;z-index:2;
+	}
+	/********/
+	#mmEventArticle .giftDate{
+		width:95%;
+		margin:0 auto;
+	}
+	#mmEventArticle .giftDate .wBg{
+		background-color:#fff;
+	}
+	#mmEventArticle .giftDate .wBg img{
+		display:inline-block;height:12px;width:auto;
+		margin-left:8px;
+	}
+	#mmEventArticle .giftDate h4,#mmEventArticle .giftDate p{
+		font-size:15px;display:inline-block;
+	}
+	#mmEventArticle .giftDate h4{
+		background-color:#ff9000;color:#fff;
+		line-height:21px;padding:0 0 0 5px;
+	}
+	#mmEventArticle .giftDate p{
+		text-indent:5px;
+		background-color:#fff;color:#843317;
+	}
+	#mmEventArticle .giftDate > div,#mmEventArticle .giftDate .wBg+.wBg{
+		margin-top:8px;
+	}
+	/******/
+	#mmEventArticle .giftLink{
+		font-size:0;
+		margin-top:15px;
+		position:relative;
+	}
+	#mmEventArticle .giftLink:before{
+		content:'';
+		display:block;width:100%;height:9px;
+		background:url(../img/event/anniv/2015/point.png) 3px 0 repeat-x;
+		position:absolute;top:-3px;left:0;z-index:2;
+	}
+	#mmEventArticle .giftLink a{
+		text-align:center;font-size:23px;font-weight:bold;color:#fff;
+		display:inline-block;line-height:70px;
+		position:relative;float:left;
+	}
+	#mmEventArticle .giftLink a:hover{text-decoration:none;}
+	#mmEventArticle .giftLink a:before{
+		content:'';
+		display:block;width:100%;height:100%;
+		position:absolute;
+	}
+	#mmEventArticle .giftLink a:hover:before{
+		background-color:rgba(255,255,255,.1);
+	}
+	/**/
+	#mmEventArticle .giftLink a.left{
+		border-radius:0 0 0 10px;background-image:url(../img/event/anniv/2015/btnBg.png);
+		width:60%;
+	}
+	#mmEventArticle .giftLink a.left:after{
+		content:'';
+		display:block;width:9px;height:100%;
+		background:url(../img/event/anniv/2015/point.png) 0 6px repeat-y;
+		position:absolute;right:-6px;top:0;z-index:3;
+	}
+	/**/
+	#mmEventArticle .giftLink a.right{
+		border-radius:0 0 10px 0;background-color:#084456;
+		width:40%;
+	}
+	#mmEventArticle .giftLink a.notYet{
+		background-color:#ddd;
+		cursor:default;
+	}
+	/**/
+	#mmEventArticle .giftLink a.un{
+		border-radius:0 0 10px 10px;background:#ddd;cursor:default;
+		width:100%;
+	}
+	/****/
+	#mmEventArticle > div:last-child{background-color:#addd2a;}
+	#mmEventArticle div:last-child .giftCont:before{
+		background-position:-82px 0;left:2px;
+	}
+	#mmEventArticle div:last-child .giftTitle:after,
+	#mmEventArticle div:last-child .giftCont span,
+	#mmEventArticle div:last-child .giftDate h4{background-color:#032247;}
+	#mmEventArticle div:last-child .giftTitle span,
+	#mmEventArticle div:last-child .giftCont,
+	#mmEventArticle div:last-child .giftDate p{color:#032247;}
+	#mmEventArticle div:last-child .giftLink a.left{background-position:0 -150px;}
+	#mmEventArticle div:last-child .giftTitle{padding-left:83px;}
+/* ========== ARTICLE end ========== */
+/* ========== FB str ==========*/
+#mmEventFB{
+	overflow:hidden;border-radius: 10px;
+	display:table;width:100%;border:dotted 3px #fff;margin-bottom:30px;
+	clear:both;
+}
+#mmEventFB > div,#mmEventFB > a{display:table-cell;vertical-align:middle}
+#mmEventFB > div{
+	background:url(../img/event/anniv/2015/icon.png) -114px -99px no-repeat;background-size:145px 129px;
+	padding:10px;
+}
+#mmEventFB h4,#mmEventFB span{color:#fff;display:inline-block;}
+#mmEventFB h4{
+	font-size:23px;font-weight:bold;text-indent:25px;
+	width:145px;line-height:1;margin-right:8px;
+}
+#mmEventFB span{
+	font-size: 15px;vertical-align:top;
+}
+/**/
+#mmEventFB > a{
+	text-align:center;color:#fff;font-size:23px;font-weight:bold;
+	background-color:#1783e5;width:110px;
+}
+#mmEventFB > a:hover{background-color:#0A6ECA;text-decoration:none;}
+/* ========== FB end ==========*/
+@media screen and (min-width:470px){
+	#mmEventHeader{background-size:auto 872px;background-position:50% -65px;}
+}
+@media screen and (min-width:540px) and (max-width:659px){
+	#mmEventArticle .giftDate > div{display:table;width:100%;}
+	#mmEventArticle .giftDate > div .wBg{display:table-cell;}
+	#mmEventArticle .giftDate > div .wBg:first-child{width:290px;}
+}
+@media screen and (min-width:660px){
+	/* ========== HEADER str ========== */
+	#mmEventHeader{
+		background-size:100% auto;background-position:0 -28px;
+	}
+	#mmEventHeader .picTitle,#mmEventHeader .picMainMobi{display:none;}
+	#mmEventHeader .picMainPC{
+		width:80%;max-width:790px;
+		display:block;
+		margin:20px auto 56px;
+	}
+	#mmEventHeader p{
+		text-indent:40px;width:41%;padding:0;
+		position:absolute;right:0;bottom:10px;
+	}
+	/* ========== HEADER end ========== */
+	/* ========== ARTICLE str ========== */
+	#mmEventArticle > div{width:49%;margin-right:1%;}
+	#mmEventArticle > div:last-child{margin:0 0 0 1%;}
+	#mmEventArticle .giftCont{height:95px;}
+	#mmEventArticle > div:last-child .giftLink{margin-top:44px;}
+	/* ========== ARTICLE end ========== */
+}
+@media screen and (min-width:810px){
+	#mmEventHeader .picMainPC{margin-bottom:26px;}
+}
+@media screen and (min-width:950px){
+	#mmEventHeader div{position:absolute;right:10px;top:10px;}
+	#mmEventArticle > div:last-child .giftLink{margin-top:15px;}
+	#mmEventArticle .giftCont{height:auto;}
+	#mmEventArticle .giftDate > div{display:table;width:100%;}
+	#mmEventArticle .giftDate > div .wBg{display:table-cell;}
+	#mmEventArticle .giftDate > div .wBg:first-child{width:256px;}
+}

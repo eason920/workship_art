@@ -1,0 +1,26 @@
+[17-May-2018 10:57:44 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[20-May-2018 21:25:30 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[13-Jun-2018 03:50:35 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[20-Jun-2018 00:03:27 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[02-Jul-2018 08:35:41 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[04-Jul-2018 04:43:20 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[04-Jul-2018 16:54:23 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[05-Jul-2018 20:21:46 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[31-Jul-2018 06:20:39 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[03-Aug-2018 02:42:05 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[06-Aug-2018 21:51:19 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[09-Aug-2018 05:38:26 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[14-Aug-2018 01:43:17 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[19-Sep-2018 17:34:20 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[12-Oct-2018 07:30:29 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[31-Oct-2018 14:16:56 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[10-Nov-2018 08:30:39 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[14-Nov-2018 11:18:52 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[30-Nov-2018 09:04:48 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[04-Dec-2018 01:51:17 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[05-Dec-2018 04:19:12 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[07-Dec-2018 14:21:11 UTC] PHP Warning:  fileperms(): stat failed for /home3/nintwoz3/public_html/index.php in /home3/nintwoz3/public_html/wp-admin/includes/file.php on line 1423
+[12-Feb-2019 01:54:40 UTC] PHP Warning:  urldecode() expects parameter 1 to be string, array given in /home3/nintwoz3/public_html/wp-includes/class-wp-query.php on line 2053
+[12-Feb-2019 01:54:40 UTC] PHP Warning:  preg_match() expects parameter 2 to be string, array given in /home3/nintwoz3/public_html/wp-includes/canonical.php on line 206
+[01-Mar-2019 13:34:54 UTC] PHP Warning:  urldecode() expects parameter 1 to be string, array given in /home3/nintwoz3/public_html/wp-includes/class-wp-query.php on line 2181
+[01-Mar-2019 13:34:55 UTC] PHP Warning:  preg_match() expects parameter 2 to be string, array given in /home3/nintwoz3/public_html/wp-includes/canonical.php on line 217

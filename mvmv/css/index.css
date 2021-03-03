@@ -1,0 +1,483 @@
+/*
+===================
+version 2.6
+2015 / 12 / 24 fix MQ in 2016 / 5 / 10
+===================
+*/
+#mmBody h3{
+	background-color:#01c3e0;border-radius:3px 3px 0px 0px;
+	font-size:15px;color:#ffffff;font-weight:bold;
+	line-height:30px;
+	margin-bottom:2px;padding:0 4px 0 10px;
+}
+/* ========== ALL LAYOUT str ========== */
+#mmBody .wrapper{/*position:relative;*//*overflow:hidden;*/}
+#mmForum,#mmFunctions{position:absolute;overflow:hidden;}
+/*NEWS*/
+#mmNews{width:658px;float:left;}
+#mmNews .mmPCnPad{display:none;}
+#mmNews .mmMobi{display:none;margin-bottom:15px;}
+/*FORUM*/
+#mmForum{width:315px;}
+/*FUNCTIONS*/
+#mmFunctions{width:336px;}
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:1424px){
+	#mmNews{width:317px;}
+	/**/
+	#mmForum{width:305px;}
+	/**/
+	#mmNews .mmPCw{display:none;}
+	#mmNews .mmPCnPad{display:block;}
+}
+@media screen and (max-width:1023px){
+	#mmNews,#mmForum{width:48%;}
+	/**/
+	#mmFunctions{visibility:hidden;}
+	
+}
+@media screen and (max-width:479px){
+	#mmNews,#mmForum,#mmFunctions{position:static;}
+	#mmBody{padding-bottom:0;}
+	#mmNews{width:100%;margin-bottom:0px;}
+	#mmForum{width:100%;margin-bottom:0px;}
+	#mmFunctions{width:100%;margin-bottom:0px;}
+	/**/
+	#mmNews .mmPCnPad{display:none;}
+	#mmNews .mmMobi{display:block;}
+}
+/* ========== ALL LAYOUT end ========== */
+
+/* ========== MM NEWS str ========== */
+		/*write in layout.css*/
+#mmNews .mmMobi h2{color:#515151;font-weight:normal;}
+#mmNews a.mmNewsBox{margin:0 7px 7px 0;width:318px;border-bottom-color:#bbbbbb;}
+#mmNews a.mmNewsBox h2{margin-bottom:3px;}
+#mmNews a.mmNewsBox span{color:#888888;}
+.mmNewsBox .mmNewsBoxCont{padding:0 10px;}
+#mmNews a.mmNewsBox:hover h2{color:#3092ca;}
+#mmNews a.mmNewsBox:hover span{color:#3092ca;}
+/* FOR MASORY NEW LOADING NEWS */
+@-webkit-keyframes fadeIn {0%{opacity: 0;}50%{opacity: 0;}100%{opacity: 1;}}
+@-moz-keyframes fadeIn {0% {opacity: 0;}50% {opacity: 0;}100% {opacity: 1;}}
+@-ms-keyframes fadeIn {0% {opacity: 0;}50% {opacity: 0;}100% {opacity: 1;}}
+@-o-keyframes fadeIn {0% {opacity: 0;}50% {opacity: 0;}100% {opacity: 1;}}
+.mmNewsBox {
+	-webkit-animation:fadeIn 1.5s 0s 1;
+	-moz-animation:fadeIn 1.5s 0s 1;
+	-ms-animation:fadeIn 1.5s 0s 1;
+	-o-animation:fadeIn 1.5s 0s 1;
+}
+/* ********** MEDIA QURIES ********** */
+@media screen and (max-width:1424px){
+	#mmNews a.mmNewsBox{width:305px;}
+}
+@media screen and (max-width:1023px){
+	#mmNews a.mmNewsBox{width:100%;margin-right:0;margin-bottom:15px;}
+	#mmNews a.mmNewsBox p{font-size:16px;}
+}
+@media screen and (max-width:479px){
+	#mmNews a.mmNewsBox p{display:none;}
+	#mmNews a.mmNewsBox img{box-shadow:0 2px 5px #999999;}
+	#mmNews a.mmNewsBox:last-child{margin:0;}
+	.mmNewsBox{background-color:transparent;border:none;padding-bottom:0;}
+	#mmNews .mmNewsBoxCont{
+		background-color:#ffffff;
+		width:94%;overflow:hidden;
+		margin:-7px 3% 15px;padding:10px 8px;border-bottom:solid 2px #bbbbbb;
+	}
+	/*#mmNews a:nth-last-child(2) .mmNewsBoxCont{margin-bottom:0px;}*/
+}
+/* ========== MM NEWS end ========== */
+
+/* ========== MM FORUM str ========== */
+/**/
+.hotBox,.goodBox,.clickBox{width:100%;margin-bottom:10px;}
+.mmSubBox{overflow:hidden;background-color:#ffffff;padding:10px;border-bottom:2px solid #bbbbbb;}
+.num{margin-top:2px;float:left;font-size:12px;width:16px;line-height:16px;background-color:rgba(1,195,224,0.7);color:#ffffff;text-align:center;}
+	/* v voteBox v */
+	.voteBox{margin-bottom:7px;}
+	.voteBox span{
+		background-color:#fff;border-radius:2px;
+		font-size:12px;color:#0084b3;
+		display:inline-block;line-height:16px;
+		margin:0 4px 1px 0;padding:0 3px;
+		-webkit-animation:voteAnimate 6s linear infinite;-moz-animation:voteAnimate 6s linear infinite;
+		-ms-animation:voteAnimate 6s linear infinite;-o-animation:voteAnimate 6s linear infinite;
+		animation:voteAnimate 6s linear infinite;
+	}
+	@-webkit-keyframes voteAnimate{0%{background-color:#fff;}80%{background-color:#fff;}81%{background-color:#fff000;}100%{background-color:#fff;}}
+	@-moz-keyframes voteAnimate{0%{background-color:#fff;}80%{background-color:#fff;}81%{background-color:#fff000;}100%{background-color:#fff;}}
+	@-ms-keyframes voteAnimate{0%{background-color:#fff;}80%{background-color:#fff;}81%{background-color:#fff000;}100%{background-color:#fff;}}
+	@-o-keyframes voteAnimate{0%{background-color:#fff;}80%{background-color:#fff;}81%{background-color:#fff000;}100%{background-color:#fff;}}
+	@keyframes voteAnimate{0%{background-color:#fff;}80%{background-color:#fff;}81%{background-color:#fff000;}100%{background-color:#fff;}}
+	.voteBox a{
+		font-size:14px;color:#515151;
+		border-bottom:solid 1px #eee;
+		display:block;
+		padding-bottom:8px;margin-bottom:8px;
+	}
+	.voteBox a:last-child{margin-bottom:0;border:none;}
+	.voteBox a:hover{text-decoration:none;color:#3092ca;}
+	/* ^ voteBox ^v HOT BOX v */
+	.hotBox a{display:block;width:100%;overflow:hidden;margin-bottom:8px;border-bottom:1px solid #eeeeee;padding-bottom:8px;}
+	.hotBox a:last-child{margin:0;border:none;}
+	.hotBox a:hover{text-decoration:none;}
+	.hotBox a:hover h4,.hotBox a:hover span{color:#3092ca;}
+	.hotBox a .num,.hotBox a h4,.hotBox a span{float:left;}
+	.hotBox a .num{margin-right:5px;}
+	.hotBox a h4{font-size:14px;font-weight:normal;color:#515151;line-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+	.hotBox a span{max-width:92px;margin-top:2px;text-align:right;float:right;padding:0 5px;color:#888888;font-size:12px;line-height:16px;background-color:#f6f6f6;border:solid 1px #ededed;border-radius:3px;}
+	/* ^ HOT BOX ^v GOOD BOX & CLICK BOX v */
+#mmForum h3,#mmForum .num{background-color:#0084b3;}
+#mmForum .mmSubBox table{width:100%;margin-bottom:7px;border-bottom:1px solid #eeeeee;}
+#mmForum .mmSubBox table:last-child{border-bottom:none;margin-bottom:0;padding-bottom:3px;}
+	/**/
+	.left{vertical-align:top;width:23px;}
+	/**/
+	.right{padding-bottom:7px;}
+	.right a{display:block;font-size:14px;line-height:1.5;color:#515151;}
+	.right a font.board{color:#d1d1d1;border-left:solid 1px #d1d1d1;margin-left:0px;padding-left:5px;}
+	.right a span{margin-top:2px;float:right;padding:0 5px;color:#888888;font-size:12px;line-height:16px;background-color:#f6f6f6;border:solid 1px #ededed;border-radius:3px;}
+	.right a:hover,.right a:hover font,.right a:hover span{color:#3092ca;text-decoration:none;}
+	.right a:hover font{border-color:#3092ca;}
+	/* v presentBox v */
+	.presentBox a{
+		font-size:14px;color:#515151;text-indent:-5px;
+		border-bottom:solid 1px #eee;
+		display:block;
+		padding-bottom:8px;margin-bottom:8px;
+	}
+	.presentBox a:last-child{margin-bottom:0;border:none;}
+	.presentBox a:hover{text-decoration:none;color:#3092ca;}
+	/* v PCHidden v */
+	/*.PCHidden{margin-bottom:-1097px;}*//* MUST WRITTEN TO JS */
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:1424px){
+	.newsMsg span{padding:5px 7px 5px 10px;}
+}
+@media screen and (max-width:1023px){
+	.num{margin-right:8px;width:22px;line-height:22px;font-size:17px;}
+	.hotBox,.goodBox,.clickBox{margin-bottom:15px;}
+	.hotBox a h4,.right a{font-size:19px;line-height:27px;}
+	.right a span{margin-top:5px;}
+	/**/
+	.newsMsg{margin-bottom:12px;}
+	.newsMsg span{font-size:17px;text-indent:-5px;padding:8px 5px 7px 5px;line-height:1.3;}
+	/* v voteBox v */
+	.voteBox{margin-bottom:15px;}
+	.voteBox a,.presentBox a{font-size:19px;}
+	/* v PCHidden v */
+	.PCHidden{margin-bottom:0;}
+}
+@media screen and (max-width:479px){
+	#mmForum{padding:0 3%;padding-bottom:20px;}
+	.newsMsg span{font-size:17px;text-indent:-5px;padding:5px 5px 5px 15px;line-height:1.5;}
+}
+/* ========== MM FORUM end ========== */
+
+/* ========== MM FUNCTIONS str ========== */
+.mmBox{background-color:#ffffff;display:block;margin-bottom:7px;border-bottom:solid 2px #bbbbbb;padding:10px;}
+/* FB BOX */
+.fbBox .mmBox{
+	overflow:hidden;
+}
+.fbBox a{
+	display:block;width: 68px;height: 68px;
+	float:left;
+}
+.fbBox a img{
+	width: 100%;height: 100%;
+}
+.fbBox iframe{
+	width:239px;height:68px;
+	float:right;
+}
+#mmForum .fbBox{margin:15px 0 0;}
+#mmForum .fbBox .mmBox{margin:0;}
+/* fbBox visibility site str */
+	#mmForum .fbBox{/*margin-bottom:-145px;*/margin-bottom:15px;}
+	@media screen and (max-width:1023px){
+		#mmFunctions .fbBox{visibility:hidden;}
+	}
+/* fbBox visibility site end */
+/* Q & A */
+#mmFunctions .mmQuestion,#mmFunctions .mmAnswer{position:relative;}
+#mmFunctions .mmQuestion span,#mmFunctions .mmAnswer span{position:absolute;top:3px;display:block;width:18px;line-height:17px;background-color:#01c3e0;border-radius:5px;color:#ffffff;text-align:center;font-weight:bold;font-size:13px;font-family:Arial}
+#mmFunctions .mmQuestion p font,#mmFunctions .mmAnswer p font{font-size:15px;line-height:1.7;padding-left:23px;word-wrap:break-word;}
+#mmFunctions .send{float:right;font-size:15px;line-height:23px;}
+/* Q */
+#mmFunctions .mmQuestion{overflow:hidden;}
+#mmFunctions .mmQuestion a{background-color:#3092ca;}
+/* A */
+#mmFunctions .mmAnswer{margin-top:15px;padding:10px;background-color:#f5f5f5;overflow:hidden;}
+#mmFunctions .mmAnswer span{top:13px;}
+.mmAnswer a{background-color:#3092ca;}
+.mmAnswer a:hover{background-color:#3576ad;}
+/**/
+#mmFunctions .presentBox{margin-bottom:10px;}
+/* GOOGLE	 */
+.mmGoogle336{width:336px;margin-bottom:7px;}
+#mmFunctions > div:last-child{margin-bottom:-5px;}
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:479px){
+	#mmFunctions{padding:0 3%;}
+	.QABox,.mmGoogle336{display:none;}
+}
+/* ========== MM FUNCTIONS end ========== */
+
+/* ========== CALENDAR APP STR ========== */
+/* -----for all str -----*/
+@charset "utf-8";
+	/* calendar.css必需放在indxe.css前，以達到覆蓋以下效果 */
+	/* 每周(列)高由htm的" contentHeight " 控制 */
+	/*字型*/
+	/*框架邊&背景顏色*/
+	.fc-unthemed th,.fc-unthemed td,.fc-unthemed thead{border:solid 2px #01c3e0;}
+	.fc-unthemed thead{border-bottom-width:0;}
+	.fc-day{background-color:#ffffff;}
+	/* 今天背景顏色( 同時上色兩區 ) */
+		/* 底區 */
+		.fc-today{background:rgba(255,247,210,1)!important;}
+		/* 數字區 */
+		.fc-content-skeleton .fc-today{background:transparent!important;font-weight:bold}
+	/* click 背景顏色 */
+	.fc-highlight {background-color:#01c3e0;opacity:.2;color:#ff0000;}
+/* -----for all end ----- */
+/* -----content str ----- */
+	/*周一~周五顏色*/
+	.fc-day-header{color:#ffffff;background-color:#01c3e0;font-size:12px;font-weight:normal;line-height:14px;}
+	/*日期數字*/
+	.fc-day-number{background:!important;text-align:left!important;line-height:10px;color:#00ACC2;padding:1px!important;font-size:10px;-webkit-transform:scale(0.83);}
+	/*每事件色塊*/
+	a.fc-day-grid-event{margin:1px 1px 0;/* 控制與邊框間的間距 */letter-spacing:-1px;border-radius:3px;line-height:16px;font-size:12px;padding:0;border-width:0;}
+	a.fc-day-grid-event div span{color:#ffffff;}
+	/*被收納的+1*/
+	.fc-more-cell div{margin:1px}/* 與活動的上距 */
+	.fc-more-cell div a{text-align:right;font-size:12px;line-height:17px;font-weight:bold;float:right;margin:0px;padding:0 5px;background-color:#01c3e0;color:#ffffff;border-radius:3px;cursor:default;}
+	.fc-more-cell div a:hover{text-decoration:none;}
+/* -----content end ----- */
+/* ========== CALENDAR APP END ========== */
+
+/* ========== CALENDAR BODY STR ========== */
+#mmForum .mmCalendar h3{background-color:#01c3e0;}
+.cBox{background-color:#ffffff;padding:7px;border-bottom:solid 2px #bbbbbb;}
+@media screen and (max-width:479px){
+	.cBox{padding:1px 1px 4px;}
+}
+/* -----<<>>----- */
+.cMonth{margin-bottom:1px;}
+/*position*/
+.cMonth p{float:left;}
+.cMonth a{float:right;}
+/*width*/
+.cMonth p{width:63%;}
+.cMonth a{width:18%;}
+.cMonth a.pre{margin-right:1px;}
+/*height*/
+.cMonth{overflow:hidden;}
+.cMonth p{display:block;line-height:28px;}
+.cMonth a{height:28px;}
+/*special*/
+.cMonth a span{margin:10px auto 0;display:block;width: 0;height: 0;border-style: solid;border-width: 4.5px 11px 4.5px 0;border-color: transparent #3092ca transparent transparent;}
+.cMonth a:hover span{border-right-color:#ffffff;}
+.cMonth a.nex span{border-width: 4.5px 0 4.5px 11px;border-color: transparent transparent transparent #3092ca;}
+.cMonth a.nex:hover span{border-left-color:#ffffff;}
+/*font*/
+.cMonth p,.cMonth a{text-align:center;}
+.cMonth p{font-size:18px;font-weight:bold;color:#ffffff;}
+/*BGcolor*/
+.cMonth{background-color:#3092ca;}
+.cMonth a{background-color:#c1dfef;}
+.cMonth a:hover{background-color:#6cb6e0;}
+/* -----<<>>----- */
+.cSort{overflow:hidden;}
+/*width & height*/
+.cSort{width:100%;}
+.cSort div{width:25%;line-height:30px;cursor:pointer;float:left;}
+.cSort .csNow{width:100%;height:5px;cursor:default;}
+.cSort .csAll{cursor:default;}
+/*font*/
+.cSort div{font-size:15px;text-align:center;color:#ffffff;}
+/*BGcolor*/
+.csNow{background-color:#01c3e0;}
+.csAll{background-color:#01c3e0;}
+.csEven{background-color:#4d8061;}
+.csMv{background-color:#ff9000;}
+.csTV{background-color:#d22b27;}
+/* -----<<>>----- */
+.calendar{border:solid 10px #01c3e0;border-top-width:3px;margin-bottom:1px;background-color:#01c3e0;}
+@media screen and (max-width:479px){
+	.calendar{border-width:2px;}
+}
+
+/* -----<<>>----- */
+#mmForum .mmCalendar{/*margin-bottom:-566px;*/}/*<<<<<<<<<<<<<<<<<<<<<<*/
+@media screen and (max-width:1023px){
+	#mmForum .mmCalendar h3{background-color:#3092ca;}
+	#mmForum .mmCalendar{margin-bottom:0;}
+}
+@media screen and (max-width:479px){
+	#mmFunctions .mmCalendar{margin-bottom:-566px;}	
+}
+/* ========== CALENDAR BODY END ========== */
+
+/* for calendar & fb change place */
+#mmFunctions .mmCalendar{margin-bottom:7px;}
+#mmFunctions div:nth-child(7){margin-bottom:0;}
+
+/* ========== AD ==========*/
+/*recruit*/
+.mmAD{display:block;}
+.mmAD img{width:100%;}
+.mmMobi .mmAD{padding:0 0 5px;margin-top:-5px;}
+#mmForum .mmAD{margin-bottom:5px;font-size:0;}
+@media screen and (max-width:1023px){
+	#mmForum .mmAD{margin-bottom:13px;}
+}
+@media screen and (max-width:479px){
+	#mmForum .mmAD{display:none;}
+}
+@media screen and (max-width:479px){
+	.mmMobi .mmAD{margin:-5px 3% 0;}
+}
+/*newsMsg*/
+.newsMsg,.newsMsg span{display:block;border-radius:5px;padding:4px;}
+.newsMsg{background-color:#ff6000;margin-bottom:7px;}
+.newsMsg span{background-color:#ff9000;color:#ffffff;font-weight:bold;text-indent:-5px;font-size:14px;padding:5px 7px 5px 15px;line-height:1.5;}
+.newsMsg:hover,.newsMsg:hover span{text-decoration:none;}
+.newsMsg:hover span{background-color:#ff6000;}
+/* ========== MM POPULAR str ==========*/
+#mmPopuBox{
+	width: 100%;
+	margin:0 auto 7px;
+}
+#mmPopuBox > h3{
+	font-size:15px;font-weight:normal;color:#fff;font-weight:bold;border-radius:3px 3px 0 0;background:#fc6a79 url(../img/mainIcon.png) 7px -196px no-repeat;background-size:50px 250px;
+	line-height:30px;
+	margin-bottom:2px;
+	padding:0 4px 0 27px;
+}
+#mmPopuBox > ul{
+	border-bottom: 2px solid #bbbbbb;
+	background-color:#fff;
+	padding:3px 10px 10px;
+}
+#mmPopuBox li{
+	border-bottom:solid 1px #ebebeb;
+	width: 100%;height: 65px;
+	padding:5px 0;
+	position:relative;
+}
+#mmPopuBox li:last-child{border:none;}
+#mmPopuBox span{
+	background-color:#fc6a79;
+	color:#fff;font-size:12px;text-align:center;text-align:center;
+	display:block;width: 16px;line-height:16px;
+	position:absolute;top: 5px;left: 0;
+}
+#mmPopuBox img{
+	width: 39px;height: 55px;
+	position:absolute;left: 21px;top: 5px;
+}
+#mmPopuBox h4{
+	overflow:hidden;text-overflow:clip;white-space:nowrap;
+	font-size:17px;color:#000;
+	margin:4px 0 2px 65px;
+}
+#mmPopuBox p{
+	color:#aaa;font-size:12px;
+	margin-left:65px;
+	float:left;
+}
+#mmPopuBox a{
+	border-radius:3px;
+	background-color:#fc6a79;
+	font-size:12px;color:#fff;
+	display:block;line-height:1;
+	padding:3px 5px;margin-left:3px;
+	float:right;
+}
+#mmPopuBox a:hover{background-color:#d62336;text-decoration: none;}
+@media screen and (max-width:1023px){
+	#mmPopuBox span{
+		font-size:17px;
+		width: 22px;line-height: 22px;
+	}
+	#mmPopuBox img{left:27px;}
+	#mmPopuBox h4{font-size:18px;margin:2px 0 3px 71px;}
+	#mmPopuBox p{margin-left:71px;}
+}
+@media screen and (max-width:1023px) and (min-width:480px){
+	#mmPopuBox p{display:none;}
+}
+/* ========== MM POPULAR end ==========*/
+
+/* ========== MM EXPAND str ==========*/
+/*IN MOBI str*/
+.mmExpand{
+	clear:both;
+	padding:0 3%;
+}
+.mmExpand a{
+	text-align:center;background-color: #ff9000;border-radius:5px;
+	display:block;width: 100%;
+	margin-bottom:12px;
+}
+.mmExpand a p{
+	color:#fff;text-indent:20px;vertical-align:middle;font-size:21px;
+	display:inline-block;line-height:55px;
+	position:relative;
+	-webkit-transition:.3s;
+	-moz-transition:.3s;-ms-transition:.3s;
+}
+.mmExpand a p:before,.mmExpand a p:after{
+	display:block;content:'';
+	width:0;height:0;
+	border-left:solid 7px transparent;
+	border-right:solid 7px transparent;
+	position:absolute;left:0;
+}
+.mmExpand a p:before{
+	border-bottom:solid 5px #fff;top:20px;
+}
+.mmExpand a p:after{
+	border-top:solid 5px #fff;top:29px;
+}
+/**/
+.mmExpand a:hover{text-decoration: none;background-color: #ff4e00;}
+.mmExpand a:hover p{
+	line-height:60px;
+}
+.mmExpand a:hover p:before{
+	opacity:0;
+	-webkit-animation:UPUP .5s infinite;
+	-moz-animation:UPUP .5s infinite;-ms-animation:UPUP .5s infinite;
+}
+.mmExpand a:hover p:after{
+	opacity:0;
+	-webkit-animation:DWDW .5s infinite;
+	-moz-animation:DWDW .5s infinite;-ms-animation:DWDW .5s infinite;
+}
+@-webkit-keyframes UPUP{0%{top:20px;}100%{top:15px;opacity:1;}}
+@-webkit-keyframes DWDW{0%{top:29px;}100%{top:35px;opacity:1;}}
+@-moz-keyframes UPUP{0%{top:20px;}100%{top:15px;opacity:1;}}@-moz-keyframes DWDW{0%{top:29px;}100%{top:35px;opacity:1;}}
+@-ms-keyframes UPUP{0%{top:20px;}100%{top:15px;opacity:1;}}@-ms-keyframes DWDW{0%{top:29px;}100%{top:35px;opacity:1;}}
+@-o-keyframes UPUP{0%{top:20px;}100%{top:15px;opacity:1;}}@-o-keyframes DWDW{0%{top:29px;}100%{top:35px;opacity:1;}}
+/*IN MOBI end*/
+/*IN PAD str*/
+.mmPCnPad .mmExpand{
+	width: 305px;
+	padding:0;margin-right:7px;
+}
+.mmPCnPad .mmExpand a:hover p{
+	line-height:55px;
+}
+@media screen and (max-width:1023px){
+	.mmPCnPad .mmExpand{
+		width:100%;
+		margin-right:0;
+	}
+}
+/*IN PAD end*/
+/* ========== MM EXPAND end ==========

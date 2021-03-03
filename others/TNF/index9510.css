@@ -1,0 +1,71 @@
+.d12 {
+	font-size: 12px;
+	color: #3D392C;
+	line-height: 20px;
+
+}
+.c14 {
+	font-size: 14px;
+	color: #75705F;
+}
+.d16 {
+	font-size: 16px;
+	color: #3D392C;
+	font-weight: bold;
+}
+.d18 {
+	font-size: 18px;
+	color: #3D392C;
+	font-weight: bold;
+}
+.e18 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+.e16 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+}
+.w14 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.d14 {
+	font-size: 14px;
+	color: #3D392C;
+	font-weight: bold;
+
+}
+a:link {
+	font-size: 12px;
+	color: #3D392C;
+	text-decoration: none;
+
+}
+a:visited {
+	font-size: 12px;
+	color: #3D392C;
+	text-decoration: none;
+
+}
+a:hover {
+	color: #FF3300;
+	font-size: 12px;
+	text-decoration: none;
+}
+a:active {
+	font-size: 12px;
+	color: #FF6600;
+	text-decoration: none;
+
+}
+.w12 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.c1 {
+	font-size: 12px;
+}

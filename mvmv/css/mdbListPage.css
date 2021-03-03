@@ -1,0 +1,181 @@
+/*
+====================
+version 1.0
+2015 / 12 / 14 fix MQ in 2016 / 5 / 13
+====================
+*/
+/*==========*/ /*分大區*/
+/**********/ /*大區內的小區*/
+#mmMain #mdbTitle{
+	border-radius:0;
+	padding:0;margin:0;
+	overflow:visible;
+}
+#mdbTitle .bread{
+	font-size:12px;color:#515151;
+	line-height:16px;
+	padding:10px 20px 8px;
+	/*margin-left:-28px;*/
+}
+#mdbTitle .bread a{
+	color:#515151;
+}
+/****/
+#mdbTitle .name{
+	background-color:#f1f7f8;
+	padding:7px 10px 8px 48px;margin-left:2px;
+	float:left;
+}
+#mdbTitle .name h1{
+	font-size:17px;color:#1770a2;font-weight:normal;
+	padding:0;
+}
+#mdbTitle .name span{color:#888;}
+#mdbTitle .name h2{
+	overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+	font-size:12px;color:#888;
+	max-width:100%;
+	padding:2px 0 0;
+}
+/****/
+#mdbTitle .title{
+	border-top:solid 8px #fff;
+	background-color:#f1f7f8;
+	font-size:30px;font-weight: bold;color:#000;
+	padding:10px 15px;margin:0 20px;
+	position:relative;clear:both;
+}
+#mdbTitle .title a{
+	border-radius: 5px;border: solid 1px #989898;
+	background-color: #eaeaea;
+	font-size: 13px;color: #515151;
+	display: block;line-height: 20px;
+	padding: 0 20px;
+	position: absolute;right: 15px;top: 10px;
+}
+#mdbTitle .title a:hover{
+	background-color: #515151;
+	color: #fff;text-decoration: none;
+}
+#mdbTitle .title p{
+	font-size:15px;font-weight: bold;color:#000;
+	position:absolute;bottom: 7px;right: 15px;
+}
+/****/
+#mdbTitle a.bk{
+	background:#3092ca url(../img/fourm.png) -57px -4px no-repeat;background-size: 1000px 500px;
+	text-indent: 0;
+	text-decoration: none;font-size: 12px;color: #fff;font-weight: normal;
+	display: block;width: 50px;height: 40px;
+	padding: 22px 0 0 6px;
+	position: absolute;left: -8px;top: 41px;
+}
+#mdbTitle a.bk:hover{background-color:#2b6f99;}
+#mdbTitle:before{
+	content:"";
+	display:block;width: 0;height: 0;
+	border-color:#013751 transparent transparent;
+	border-style:solid;
+	border-width: 8px 0 0 8px;
+	position:absolute;	left:-8px;top:81px;
+}
+/*****/
+#mdbTitle + div{padding-top:8px;clear:both;}
+/* ^ usual ^ */
+/* v mv v */
+#mdbMovieList a{
+	display:block;width:32%;
+	margin:0 2% 18px 0;
+	position:relative;float:left;
+}
+#mdbMovieList a:nth-child(3n){margin-right:0;}
+#mdbMovieList a img{
+	display:block;width:100%;height:auto;
+}
+#mdbMovieList a p{
+	background-color:rgba(0,0,0,.7);
+	overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+	color:#fff;font-size:15px;
+	display:block;width: 100%;line-height:2;
+	padding:0 28px 0 10px;
+	position:absolute;bottom: 0;left: 0;
+}
+#mdbMovieList a:hover p{background-color:#000;}
+#mdbMovieList a.PV p{background-color:rgba(255,78,0,.8);}
+#mdbMovieList a.PV:hover p{background-color:rgba(255,78,0,1);}
+#mdbMovieList a span{
+	background:url(../img/mmImgMain.png) -406px -485px no-repeat;background-size:900px 500px;
+	display:block;width: 14px;height: 15px;
+	position:absolute;right:10px;bottom:7px;
+}
+/* ^ mv ^ */
+@media screen and (max-width:1424px) and (min-width:1024px){
+	#mdbTitle .bread{padding-left:12px;}
+	#mdbTitle .title{margin:0 12px;}
+	/* v mv v */
+	#mdbMovieList a,#mdbMovieList a:nth-child(3n){
+		display:block;width:49%;
+		margin:0 2% 12px 0;
+	}
+	#mdbMovieList a:nth-child(2n){margin-right:0;}
+	#mdbMovieList a p{
+		line-height:1.7;
+		padding:0 28px 0 10px;
+	}
+	#mdbMovieList a span{bottom:5px;}
+}
+@media screen and (max-width:767px) and (min-width:480px){
+	#mdbTitle .bread{padding-left:12px;}
+	#mdbTitle .title{margin:0 12px;}
+	/****/
+	#mdbMovieList a,#mdbMovieList a:nth-child(3n){
+		display:block;width:49%;
+		margin:0 2% 12px 0;
+	}
+	#mdbMovieList a:nth-child(2n){margin-right:0;}
+	#mdbMovieList a p{
+		line-height:1.7;
+		padding:0 28px 0 10px;
+	}
+	#mdbMovieList a span{bottom:5px;}
+}
+@media screen and (max-width:767px){
+	div#mdbTitle a.edit{top:28px;}
+	#mdbTitle p{right:10px;}
+}
+@media screen and (max-width:479px){
+	#mdbTitle .title{
+		font-size:27px;
+		margin:0 12px;
+	}
+	#mdbTitle a.bk{left:-3px;}
+	#mdbTitle:before{
+		border:none;background-color: #176EA0;
+		width: 8px;height: 37px;
+		left:-8px;top:49px;z-index:0;
+	}
+	#mdbTitle:after{width: 45px;}
+	#mdbTitle p{
+		font-size:13px;
+		line-height:10px;
+		padding-right:5px;
+		right:42px;bottom:1px;
+	}
+	#mdbTitle .title a{
+		padding:0 7px;
+		top:20px;
+	}
+	#mdbTitle .title p{
+		font-size:12px;
+		bottom:20px;right:60px;
+	}
+	#mdbTitle h2 {padding-right:92px;}
+	/* v movie v */
+	div#mdbMovieList a{
+		width:100%;
+		margin:0 0 10px;
+	}
+	#mdbMovieList a p{
+		padding:0 28px 0 10px;
+	}
+}

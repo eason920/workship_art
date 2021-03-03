@@ -1,0 +1,39 @@
+/*
+====================
+version 2.0 : 條列化縮排
+2016 / 2 / 23
+====================
+*/
+/* ========== PAGE str ========== */
+.page{
+	width:300px;height:27px;
+	margin:0 auto 10px;
+}
+.page a:hover{text-decoration:none;}
+.page .pre,.page .nex,.page .bn,.page .now{
+	border:solid 1px #3092ca;border-radius:2px;
+	background-color:#ffffff;
+	color:#3092ca;text-align:center;font-size:12px;
+	line-height:26px;height:28px;
+}
+.page .xx{color:#3092ca;font-size:12px;margin-top:4px;}
+	/*POSITION str*/
+	.page{position:relative;}
+	.page .pre,.page .nex,.page .pageBox{position:absolute;}
+	.page .pre{left:0;}
+	.page .nex{right:0;}
+	.page .pageBox a,.page .pageBox div{float:left;}
+	/*POSITION end*/
+	/*MARGIN-RIGHT str*/
+	.page .bn,.page .xx,.page .now{margin-right:5px;}
+	.page a:last-child{margin-right:0;}
+	/*MARGIN-RIGHT end*/
+	/*WIDTH str*/
+	.page .pre,.page .nex{width:45px;}
+	.page .bn,.page .now{width:27px;}
+	/*WIDTH end*/
+	/*STATE str*/
+	.page .now,.page .pre:hover,.page .nex:hover,.page .bn:hover{background-color:#3092ca;color:#ffffff;}
+	.page .unLink,.page .unLink:hover{border-color:#e5e5e5;color:#e5e5e5;cursor:default;background-color:#ffffff;}
+	/*STATE end*/
+/* ========== PAGE end ========== */

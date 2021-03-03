@@ -1,0 +1,218 @@
+/*
+====================
+version 1.0
+2015 / 9/ 1 fix MQ in 2016 / 5 / 13
+====================
+*/
+@charset "utf-8";
+/*FOR ALL*/
+	.MASKER{
+		background-color:rgba(0,0,0,.7);
+		width: 100%;height: 150%;
+		position:fixed;top: 0;left: 0;z-index: 1001;
+	}
+	.mmLoginLB{
+		border-radius:5px 5px 0 0;background-color:#fff;
+		width: 98%;max-width: 660px;min-width:300px;
+		max-height:98%;
+		overflow:hidden;
+		margin:0 auto;
+		position:fixed;z-index:1001;
+		left:0;right:0;
+	}
+	.mmLoginLB > .mmLoginLBTitle{
+		background-color:#01c3e0;
+		height:35px;
+	}
+	.mmLoginLB > .mmLoginLBTitle h3{
+		color:#fff;font-size:19px;font-weight:bold;text-indent:10px;
+		line-height:35px;
+		float:left;
+	}
+	.mmLoginLB > .mmLoginLBTitle a{
+		background-color:rgba(0,0,0,.4);border-radius:0 6px 0 0;color:#fff;
+		text-align:center;font-size:21px;
+		margin:2px;
+		display:block;line-height: 30px;width: 50px;
+		float:right;
+	}
+	.mmLoginLB > .mmLoginLBTitle a:hover{
+		text-decoration:none;background-color:rgba(0,0,0,.5);
+	}
+	.mmLoginLBArticle{margin:10px;/*max-height:400px;*/}
+	.mmLoginLBArticle .msgBox h4{
+		float:left;line-height:45px;
+	}
+	.mmLoginLBArticle .msgBox p{
+		color:#f00;
+		overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+		background-color:#f6f6f6;
+		line-height:45px;
+		padding:0 8px;
+	}
+	.mmLoginLBArticle input[type="text"]{
+		-webkit-appearance:none;border-radius:0;
+		border:solid 1px #bbb;
+	}
+/*FOR ALL*/
+/*LOGIN*/
+	#quickLogin{clear:both;margin-bottom:10px;}
+	/*v OR BLOCK v*/
+		#quickLogin,#MVMV{position:relative;}
+		#quickLogin:before,#MVMV:after{
+			content:"或";background-color:#fff;text-align:center;box-sizing:border-box;
+			display:block;
+			position:absolute;
+		}
+		#quickLogin:before{
+			width:30px;height:245px;
+			padding-top:115px;margin-left:-15px;
+			left:45%;top:0;
+		}
+		#MVMV:after{
+			display:none;
+			width:100%;line-height:30px;
+			left:0;top:-30px;
+		}
+	/*^ OR BLOCK ^*/
+	.mmLoginLBArticle .msgBox{padding-bottom:15px;}
+	#quickLogin h4{padding-bottom:5px;}
+	.msgBox + #quickLogin h4{padding-top:8px;}
+	#quickLogin > div{
+		background-color:#f6f6f6;
+		overflow:hidden;
+	}
+	/**/
+	#quickLogin > div div{float:left;}
+	#FG{width:45%;padding:20px 35px 8px 20px;}
+	#FG a{
+		background:#4e75c8 url(../img/mmImgMain.png) -417px -128px no-repeat;background-size:900px 500px;
+		color:#fff;text-indent:60px;font-size:18px;
+		border-radius:5px;
+		display:block;line-height:55px;
+	}
+	#FG a:hover{text-decoration: none;background-color:#496ebc;}
+	/* v google v*/
+	.mmLoginLB #gSignInWrapper{width:100%;margin-top:20px;}
+	.mmLoginLB #customBtn{
+		border-radius:5px;
+		background:#ff674f url(../img/mmImgMain.png) -417px -183px no-repeat;background-size:900px 500px;
+		width:100%;
+	}
+	.mmLoginLB #gSignInWrapper:hover #customBtn{background-color:#DD381D;}
+	.mmLoginLB #customBtn .buttonText{
+		color:#fff;text-indent:60px;font-size:18px;cursor:pointer;
+		display:block;width:100%;
+		line-height:55px;
+	}
+	/**/
+	#FG p{clear:both;font-size:14px;padding-top:5px;}
+	#FG p.upper{
+		font-size:13px;color:#000;
+		margin:-6px 0 8px;padding:0;
+	}
+	/**/
+	#MVMV{width:55%;padding:20px 20px 8px 35px;}
+	#MVMV input{
+		font-size:17px;
+		width:100%;height:35px;
+		border:solid 1px #bbb;margin-bottom:8px;padding-left:10px;
+	}
+	#MVMV > a{
+		color:#fff;text-align:center;font-size:19px;
+		background-color:#ff9000;border-radius:5px;
+		display:block;width:48%;line-height:50px;
+		float:left;
+	}
+	#MVMV > a.bb{background-color:#b3b3b3;margin-left:4%;}
+	#MVMV > a:hover{text-decoration:none;background-color:#ff4e00;}
+	#MVMV > a.bb{background-color:#777;}
+	#MVMV p{
+		font-size:14px;
+		margin-top:5px;
+		float:right;clear:both;
+	}
+	#MVMV p a{padding-left:10px;}
+	@media screen and (max-width:767px) and (min-width:480px){
+		#quickLogin:before{
+			font-size:15px;
+			width: 18px;
+			margin-left: -9px;
+			left:50%;
+		}
+		#FG a,.mmLoginLB #customBtn .buttonText{font-size:15px;text-indent:57px;}
+		#FG{width: 50%;padding:10px 15px 8px 5px;}
+		#MVMV{width: 50%;padding:10px 5px 8px 15px;}
+	}
+	@media screen and (max-width:479px){
+		.mmLoginLBArticle .msgBox h4{width: 100%;line-height:27px;}
+		.mmLoginLBArticle .msgBox p{width:100%;float:left;}
+		/**/
+		#quickLogin{margin:0;}
+		.msgBox + #quickLogin h4 {padding-bottom:3px;}
+		#quickLogin > div{border-bottom:none;background-color:transparent;}
+		#quickLogin:before{display:none;}
+		#MVMV:after{display:block;}
+		/**/
+		#FG,#MVMV{
+			background-color:#f6f6f6;
+			width: 100%;
+			padding:20px;
+		}
+		#MVMV{margin:35px 0 20px;}
+	}
+/*LOGIN*/
+/*NAMED NICKNAME*/
+#newAcount h4{color:#000;padding-bottom:3px;clear:both;}
+.msgBox + #newAcount{color:#000;clear:both;}
+/**/
+	#newAcount h5{font-size:17px;font-weight:normal;}
+	#newAcount > div > h5{margin-bottom:5px;}
+/**/
+#newAcount input[type="text"]{
+	font-size:17px;
+	width:100%;height:35px;
+	padding-left:10px;
+}
+#newAcount > div{
+	background-color:#f6f6f6;
+	padding:10px;
+}
+#newAcount > div > span{
+	font-size:15px;color:#777;background-color:#dedede;
+	display:block;width: 100%;
+	padding:5px 10px;
+}
+/**/
+#acountSex,#acountBirth{width:37%;float:left;margin-top:12px;}
+#acountBirth{width:63%;}
+/**/
+#acountSex{line-height:39px;}
+#acountSex h5,#acountSex input{display:inline-block;}
+#acountSex input{margin-right:3px;}
+#acountSex input:last-child{margin-left:15px;}
+/**/
+#acountBirth{display:table;}
+#acountBirth h5{display:table-cell;width:52px;}
+#acountBirth input{display:table-cell;}
+/**/
+#acountAgree{clear:both;font-size:15px;padding-top:12px;}
+/**/
+#newAcount + a{
+	color:#fff;font-size:19px;text-align:center;
+	background-color:#ff9000;border-radius:5px;
+	display:block;line-height: 50px;
+	padding:0 10px;margin-top:8px;
+}
+#newAcount + a:hover{text-decoration:none;background-color:#ff4e00;}
+@media screen and (max-width:479px){
+	#acountSex,#acountBirth{width: 100%;}
+	#acountSex{line-height:30px;padding-top:5px;}
+	#newAcount + a{width:100%;}
+	#newAcount + a + p{float:left;}
+}
+/*ALERT*/
+#MVMV input.loginAlert{border-color:#f00;outline:#ff9000;color:#515151;}
+#newAcount .loginAlert,#newAcount .loginAlert h5,#newAcount .loginAlert input,#newAcount .loginAlert a{color:#f00;border-color:#f00;outline:#ff9000;}
+#newAcount input.loginAlert,#newAcount .loginAlert input[type="text"]{color:#515151;}
+/*NAMED NICKNAME*/

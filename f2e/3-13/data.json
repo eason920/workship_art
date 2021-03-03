@@ -1,0 +1,14 @@
+[
+{"name":"A","id":1,"parent":0},
+{"name":"B","id":2,"parent":0},
+
+    {"name":"AA","id":3,"parent":1},
+    {"name":"AB","id":4,"parent":1},
+
+    {"name":"BA","id":5,"parent":2},
+
+        {"name":"ABA","id":6,"parent":4},
+        {"name":"ABB","id":7,"parent":4},
+
+            {"name":"ABBA","id":8,"parent":7}
+]

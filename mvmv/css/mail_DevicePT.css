@@ -1,0 +1,71 @@
+/*
+===================
+version 1.1
+2015 / 11 / 26 fix MQ in 2016 / 5 / 13
+===================
+*/
+#mmBody{padding-bottom:15px;}
+@media screen and (min-width:1024px){#mmBody .wrapper{max-width:970px;}}
+@media screen and (max-width:1023px){#mmBody .wrapper{width:100%;min-width:650px;}}
+@media screen and(max-width:767px){
+	html,body{overflow-y:scroll;}
+}
+/****/
+.mmmHeader{width:100%;}
+.lableBox{width:250px;}
+.lableBox div{line-height:53px;}
+#mmBody .lableBox .lableMail{width:137px;margin-right:1px;}
+.lableBox .lableSent{width:90px;}
+/**/
+.btnReset{background-position:-161px -356px;width:105px;text-indent:20px;}
+.btnWrite{background-position:-160px -396px;width:78px;text-indent:30px}
+.btnReset,.btnWrite{font-size:19px;padding:0 3px;line-height:45px;text-align:left;}
+/****/
+.mmmMiddle{background-color:#ffffff;padding:8px;overflow:hidden;}
+.deleteBox{float:left;width:177px;}
+.btnDelete,.deleteBox p{float:left;}
+.btnDelete{position:static;background-color:#ff9000;text-indent:24px;width:64px;background-size:1000px 500px;background-position:-162px -436px;height:45px;}
+.btnDelete:hover{background-color:#ff4e00;}
+.deleteBox p{font-size:19px;line-height:45px;margin-left:8px;}
+/**/
+.pageBox{float:right;}
+.pageBox a,.pageBox p,.pageBox div{float:right;}
+.pageBox a{line-height:45px;width:45px;display:block;background-color:#3092ca;color:#ffffff;border-radius:5px;text-align:center;margin-left:5px;}
+.pageBox a:hover{background-color:#2b6f99;text-decoration:none;}
+.pageBox a.OFF{background-color:#eeeeee;cursor:default;}
+.pageBox .num,.pageBox .num span{line-height:45px;font-size:19px;}
+.pageBox .pic{background:url(../img/fourm.png) -49px -225px no-repeat;background-size:1000px 500px;height:45px;width:1px;margin-right:10px;}
+.pageBoxBTM{padding:15px 0 8px;}
+/****/
+.mmmBody{background-color:#ffffff;padding:0 10px 10px;overflow:hidden;border-bottom:2px solid #bbbbbb;margin-bottom:30px;}
+.listHeader td,.listBodyPC td{padding:0 6px;}
+/**/
+.listHeader{background-color:#01c3e0;}
+.listHeader table{height:30px;width:100%;}
+.listHeader td{font-size:13px;color:#ffffff;vertical-align:middle;}
+/**/
+.listBodyPC table{width:100%;}
+.listBodyPC table .tTitle{max-width:630px;}
+.listBodyPC td{font-size:12px;padding:5px 6px;color:#005c6a;}
+.listBodyPC td a,.listBodyPC td a p{font-size:15px;}
+.listBodyPC td a{
+	overflow:hidden;word-wrap:break-word;
+	display:block;width:85px;
+}
+/**/
+.listBodyPC li{overflow:hidden;}
+.listBodyPC li:nth-child(odd){background-color:#e0f6f9;}
+.listBodyPC li:hover{background-color:#fff2bc;}
+#mmBody .listBodyPC li:hover td a,#mmBody .listBodyPC li:hover td span,#mmBody .listBodyPC li:hover td a font{color:#ff4e00!important;text-decoration:none;}
+
+.tCheck,.tMen,.tTitle{border-right:solid 1px #ffffff;}
+.tCheck{width:30px;text-align:center}
+.tMen{width:99px;}
+.tTitle a,.tTitle a span{float:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;color:#005c6a;}
+.tTitle a font{color:#6bb2bd;}
+.tTime{width:112px;text-align:right;padding-left:3px;}
+
+/*.listBodyPC .tTitle a span:visited,.listBodyPC .tTitle a span:visited font{color:#afb0b0;}*/
+/*.btnReset{display:block;opacity:1;}
+.resultBox{display:block;}
+.tMsg{display:block;}*/

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body, div, ul,  li,
+h1, h2, h3, h4, h5, h6, p, table {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, "新細明體";
+	}
+
+li{
+	list-style:none;
+	}
+	
+div#global_navi ul{/* htm的"id" = CSS的"#" */
+	padding:10px 0 0 20px;/*內距上右下左*/
+	font-size: 90%;
+	text-align:center;
+	font-weight: bold;
+	}
+/* 這的Padding細部設定可能與書本所設計背景圖有關連 */
+	
+div#global_navi ul li{/*包在第一層ul li以下(包括)的全部適用以下設定*/
+	line-height: 35px;/*要設定與自製圖同高for下拉選單正確自製圖高度*/
+	background-image: url(img/global_navi.gif);
+	float: left;/*讓第一層ul下的各個li同橫線排列並靠左*/
+	height: 35px;
+	width: 187px;/*寬與高同樣依著自製圖*/
+	position: relative;
+	border-right: 3px solid #FFF;
+	}
+	
+div#global_navi a{/*只要在global_navi下有a連結的全適用以下設定*/
+	display:block;/*用以使連結感應區塊擴及整個自製圖區,不再只於上a連結的文字而已!*/
+	background: url(img/global_navi.gif) no-repeat;
+	height: 35px;
+	text-decoration:none;/*連結文字無底線*/
+	color:#FFF;
+	}
+
+div#global_navi a:hover{
+	background-position:0 -35px;/*>>>>極重要!!<<<<自製圖out單圖高為35,over單圖高也是35,將out與over製作在一起成一張高70的圖;本行設定圖片x不變=0,高為-35正是自製圖的over顯示起點>>>>over效果就此形成!!*/
+	color:#000;
+	}
+
+div#global_navi ul li ul.pd{/* htm的"class" = htm的"類別" = css的"." */
+	display:none;/*使下拉選單預設於不顯示*/
+  /*font-size:100%;   >>CSS規則內建,子元素文字會是父元素的80% 故此設定可使視覺上父子字級相同*/
+	padding:0;/*#global_navi ul的設定>padding: 上10右0下0左20中的上20足以影響主標語副標群的距離,期望結果為貼齊,故此再次歸零之*/
+	font-weight: normal;
+	}
+
+div#global_navi ul li:hover ul.pd{/*滑鼠滑入第一層li區時的ul.pd(?!!!)*/
+	display:block;
+	position:absolute;
+	z-index:10;
+	}
+
+/*以下為下拉選單(第二層)的背景設計*/
+div#global_navi ul li ul.pd li a{
+	background: url(img/bg_pull_bar.gif) no-repeat;
+	color: #004760;
+	text-align: left;
+	display: block;
+	height: 35px;
+	width: 189px;
+	padding-left: 20px;
+	}
+
+div#global_navi ul li ul.pd li a:hover{
+	color: #caf1ff;
+	text-align: left;
+	display: block;
+	height: 35px;
+	width: 189px;
+	padding-left: 20px;
+	background: url(img/bg_pull_bar.gif) no-repeat;
+	background-position: 0px -35px;
+	}
+
+/*Total Nte:
+1.<ul>為單純標籤,可用於囊括許多<li>的總標籤用
+2.<li>可置入文字或img,也可紀載標籤
+3.htm的"id" = CSS的"#"
+4.htm的"class" = htm的"類別" = css的"." 
+5.冒號":"前的指定名稱只要相同者,以空格來隔開即可合併(*例外者:padding margin這類是有順序問題的)
+*/

@@ -1,0 +1,51 @@
+/*
+===================
+version 1
+2015 / 4 / 21
+===================
+*/
+#mmMain h3{background-color:#ffc000;line-height:50px;text-align:center;font-size:19px;font-weight:bold;color:#ffffff;position:relative;box-shadow:0 3px 0 0 rgba(203,198,186,.7);}
+#mmMain h3 span{display:block;position:absolute;width:7px;height:60px;top:0;background-position:0 -331px;background-image:url(../img/fourm.png);background-size:1000px 500px;}
+#mmMain h3 span.left{left:-7px;}
+#mmMain h3 span.right{background-position:-11px -331px;right:-7px;}
+#mmMain h3 p{display:inline;color:#fff;}
+/*box out/inside*/
+.outBtbBox{background-color:#ffffff;padding:15px;}
+.btbBox{background-color:#fff7e1;margin-bottom:7px;font-size:17px;padding:7px;}
+.btbBox:first-child{text-align:center;line-height:35px;background-color:#656565;color:#fff;}
+.btbBox.btbCouse,.btbBox.btbPunish,.btbBox.btbTime,.btbBox.btbNote{padding:0;}
+/*padding Inside*/
+.paddingInside{padding:7px;}
+/*alert*/
+.btbAlert{background-color:#f4f4f4;color:#7e7e7e;font-size:15px;padding:7px;}
+.ALERT{color:#ff0000;}
+.btbBox.btbCouse .btbAlert{display:none;}
+/*table*/
+.btbBox table{width:100%;}
+.btbBox.btbCouse td:first-child{width:100px;}
+.btbBox.btbPunish td:first-child{width:200px;}
+.btbBox.btbTime td:first-child{width:565px;}
+.btbBox.btbTime td:last-child{color:#ff0000;}
+/*time span*/
+.btbBox.btbTime span{display:inline-block;}
+/*select & textarea*/
+.btbBox.btbCouse td select,.btbBox.btbPunish td select,.btbBox textarea{outline:none;font-size:17px;padding-left:5px;border-radius:0;border-color:#dbd5c5;}
+.btbBox.btbCouse td select{width:100%;height:37px;}
+.btbBox.btbPunish td select{width:55px;height:35px;}
+.btbBox textarea{width:100%;max-width:100%;resize:none;padding:12px;margin-bottom:-5px;min-height:200px;border-color:#bbbbbb;}
+/*a tag*/
+.btbBtn{margin-top:13px;overflow:hidden;}
+.btbBtn a{display:block;float:right;line-height:45px;padding:0 7px;font-size:17px;background-color:#f9ff00;border:solid 3px #efed61;color:#000;border-radius:5px;margin-left:10px;}
+.btbBtn a:last-child{background-color:#fdffb2;}
+.btbBtn a:hover{background-color:#ffb800;border-color:#ffe4a0;text-decoration:none;}
+@media screen and (max-width:768px){
+	.btbBox.btbCouse td,.btbBox.btbPunish td,.btbBox.btbTime td,.btbBox.btbTime td:first-child{float:left;width:100%;}
+}
+@media screen and (max-width:460px){
+	.btbBox.btbCouse td select{font-size:12px;}
+}
+@media screen and (max-width:400px){
+	#mmMain h3{box-shadow:0 0 0 0 #ffffff;}
+	#mmMain h3 span{display:none;}
+	#mmBody .wrapper{border-style:solid;border-color:transparent;border-width:0 5px;}
+}

@@ -1,0 +1,12 @@
+/*FORUM CSS*/
+
+
+.forumReport{margin:13px 13px 0;}
+.forumReport select,.forumReport textarea{width:99%;font-size:15px;border:solid 1px #aaaaaa;}
+.forumReport select{height:45px;padding-left:10px;outline:none;margin:15px 0;}
+.forumReport textarea{max-width:99%;padding:10px;height:100px;line-height:1.5;outline:none;margin:0;margin-bottom:10px;}
+.forumReport a.orange{text-align:center;line-height:45px;font-size:15px;}
+
+
+
+

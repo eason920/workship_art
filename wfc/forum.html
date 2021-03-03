@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>World Family Club 全台唯一兒童專屬美語俱樂部</title>
+	<!-- Icons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--      [if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]
+    -->
+	<!-- CSS FOR ALL -->
+	<link href="assets/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- template -->
+	<link href="css/app.css" rel="stylesheet">
+	<link id="option_color" href="css/default.css" rel="stylesheet">
+	<!-- IT-->
+	<link href="css/layout.css" rel="stylesheet">
+	<!-- jq -->
+	<script src="assets/plugins/jquery/jquery-min.js"></script>
+	<!-- CSS FRO THIS PAGE ONLY-->
+	<link rel="stylesheet" href="css/forum.css">
+</head>
+
+<body class="body-wrapper">
+	<div class="main-wrapper">
+		<!--
+      ====================================
+      ——— HEADER
+      =====================================
+      -->
+		<header class="header-wrapper" id="pageTop">
+
+			<!-- COLOR BAR-->
+			<div class="container-fluid color-bar top-fixed clearfix">
+				<div class="row">
+					<div class="col-sm-1 col-xs-2 bg-color-1">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-2">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-3">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-4">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-5">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-6">fix bar</div>
+					<div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-4 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-5 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-6 hidden-xs">fix bar</div>
+				</div>
+			</div>
+			<!-- LOG BAR PC-->
+			<div class="top-info-bar hidden-xs">
+				<div class="container">
+					<div class="logbar-pc"><a class="logbar-pc-link" href="#loginModal" data-toggle="modal">約定轉帳</a>
+						<div class="logbar-spacer"></div>
+						<div class="logbar-pc-out"><a class="logbar-pc-link" href="#">登入</a><a class="logbar-pc-link"
+								href="https://q4u.worldfamily.com.tw/landing4/LandingP4r_0806.aspx?source=wf-wfc"
+								target="_blank">申請</a><a class="logbar-pc-link" href="#">忘記密碼</a></div>
+						<div class="logbar-pc-in" style="display: none;"><span class="logbar-pc-welcome">某某人 您好﹗</span><a
+								class="logbar-pc-link" href="#">登出</a></div>
+						<div class="logbar-spacer"></div><a class="logbar-pc-link" href="#">美語叔叔阿姨</a><a
+							class="logbar-pc-link" href="#">Zippy 家族</a>
+						<div class="logbar-spacer"></div>
+						<div class="logbar-pc-share"><a class="logbar-pc-link logbar-pc-share-fb" href="#"><i
+									class="fa fa-facebook" aria-hidden="true"></i></a><a
+								class="logbar-pc-link logbar-pc-share-ig" href="#"><i class="fa fa-instagram"
+									aria-hidden="true"></i></a></div>
+					</div>
+				</div>
+			</div> <!-- NAVBAR-->
+			<nav class="navbar navbar-default lightHeader" id="menuBar" role="navigation">
+				<div class="container">
+					<!-- NAVBAR LOGO-->
+					<div class="navbar-header">
+						<button class="navbar-toggle layout-navbar-arrow-mobi" type="button" data-toggle="collapse"
+							data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span><span
+								class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a
+							class="navbar-brand" href="index.html"><img src="img/logo-wfc.png" /></a>
+					</div>
+					<!-- NAVBAR COLLAPSE-->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<!-- LOG BAR MOBI-->
+							<li class="logbar-m-visibility">
+								<div class="logbar-m">
+									<div class="logbar-m-row1"><a class="logbar-m-link" href="#loginModal"
+											data-toggle="modal">約定轉帳</a>
+										<div class="logbar-spacer"></div>
+										<div class="logbar-m-out" style="display: ;"><a class="logbar-m-link" href="#">登入</a><a
+												class="logbar-m-link"
+												href="https://q4u.worldfamily.com.tw/landing4/LandingP4r_0806.aspx?source=wf-wfc"
+												target="_blank">申請</a><a class="logbar-m-link" href="#">忘記密碼</a></div>
+										<div class="logbar-m-in" style="display: none;"><span class="logbar-m-welcome">某某人
+												您好﹗</span><a class="logbar-m-link" href="#">登出</a></div>
+									</div>
+									<div class="logbar-m-row2"><a class="logbar-m-link" href="#">美語叔叔阿姨</a><a
+											class="logbar-m-link" href="#">Zippy 家族</a>
+										<div class="logbar-spacer"></div>
+										<div class="logbar-m-share"><a class="logbar-m-link logbar-m-share-fb" href="#"><i
+													class="fa fa-facebook" aria-hidden="true"></i></a><a
+												class="logbar-m-link logbar-m-share-ig" href="#"><i class="fa fa-instagram"
+													aria-hidden="true"></i></a></div>
+									</div>
+								</div>
+							</li>
+							<!-- 1-->
+							<li class="dropdown singleDrop layout-navbar-arrow-pc color-1">
+								<!-- open--><a class="dropdown-toggle navbar-menu-1" href="" data-toggle="dropdown"
+									role="button" aria-haspopup="true" aria-expanded="false"><span
+										class="navbar-title">美語活動</span></a>
+								<ul class="dropdown-menu dropdown-menu-left">
+									<!-- 1.1-->
+									<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+											data-toggle="dropdown">美語嘉年華</a></li>
+									<!-- 1.2-->
+									<li class="dropdown dropdown-submenu">
+										<!-- open--><a class="dropdown-toggle" href="" data-toggle="dropdown">週末活動<i
+												class="fa fa-chevron-right" aria-hidden="true"></i></a>
+										<ul class="dropdown-menu">
+											<!-- 1.2.1-->
+											<li><a href="">跟著玩活動</a></li>
+											<!-- 1.2.2-->
+											<li><a href="">Froggy和Bunny點點名</a></li>
+											<!-- 1.2.3	-->
+											<li><a href="">布偶劇場</a></li>
+											<!-- 1.2.4-->
+											<li><a href="">人偶秀</a></li>
+											<!-- 1.2.5-->
+											<li><a href="">CAP 童歡會</a></li>
+										</ul>
+									</li>
+									<!-- 1.3-->
+									<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+											data-toggle="dropdown">迷你活動<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+										<ul class="dropdown-menu">
+											<!-- 1.3.1-->
+											<li><a href="#">寶貝玩玩</a></li>
+											<!-- 1.3.2-->
+											<li><a href="#">來趣玩活動</a></li>
+											<!-- 1.3.3-->
+											<li><a href="#">翻轉小世界</a></li>
+										</ul>
+									</li>
+									<!-- 1.4-->
+									<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+											data-toggle="dropdown">營隊活動</a></li>
+								</ul>
+							</li>
+							<!-- 2-->
+							<li class="dropdown singleDrop layout-navbar-arrow-pc color-2">
+								<!-- open--><a class="dropdown-toggle" href="" data-toggle="dropdown" data-hover="dropdown"
+									data-delay="300" data-close-others="true" aria-expanded="false"><span
+										class="navbar-title">美語學習</span></a>
+								<ul class="dropdown-menu dropdown-menu-left">
+									<!-- 2.1-->
+									<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+											data-toggle="dropdown">Face Call</a></li>
+									<!-- 2.2-->
+									<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+											data-toggle="dropdown">電話美語</a></li>
+									<!-- 2.4-->
+									<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+											data-toggle="dropdown">WF Club Library</a></li>
+									<!-- 2.6-->
+									<li class="dropdown dropdown-submenu">
+										<!-- open--><a class="dropdown-toggle" href="" data-toggle="dropdown">CAP 親子學習計畫<i
+												class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-left"
+												aria-hidden="true"></i></a>
+										<ul class="dropdown-menu">
+											<!-- 2.6.1-->
+											<li><a href="#">記錄作業</a></li>
+											<!-- 2.6.2-->
+											<li><a href="#">錄音作業</a></li>
+										</ul>
+									</li>
+									<!-- 2.7-->
+									<li class="dropdown dropdown-submenu">
+										<!-- open--><a class="dropdown-toggle" href="" data-toggle="dropdown">DWE 畢業<i
+												class="fa fa-chevron-right" aria-hidden="true"></i></a>
+										<ul class="dropdown-menu">
+											<!-- 2.7.1-->
+											<li><a href="#">畢業榮譽榜</a>
+												<!-- 2.7.1.1 is 歷屆畢業生-->
+												<!-- 2.7.2-->
+											<li><a href="#">劍橋榮譽榜</a></li>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						</li>
+						<!-- 3-->
+						<li class="dropdown singleDrop layout-navbar-arrow-pc color-3"><a class="dropdown-toggle" href=""
+								data-toggle="dropdown" data-hover="dropdown" data-delay="300" data-close-others="true"
+								aria-expanded="false"><span class="navbar-title">多媒體學習</span></a>
+							<ul class="dropdown-menu dropdown-menu-left dropdown-submenu-left-mg-lg">
+								<!-- 3.1-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">Super Fun</a></li>
+								<!-- 3.2-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">歡樂TV</a></li>
+								<!-- 3.3-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">ABC Channel</a></li>
+								<!-- 3.4-->
+								<li class="dropdown dropdown-submenu nav-mobi-hidden"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">美語遊戲</a></li>
+								<!-- 3.5-->
+								<li class="dropdown dropdown-submenu nav-mobi-hidden"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">美語故事</a></li>
+							</ul>
+						</li>
+						<!-- 4-->
+						<li class="dropdown singleDrop layout-navbar-arrow-pc color-4"><a class="dropdown-toggle" href=""
+								data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span
+									class="navbar-title">會員服務</span></a>
+							<ul class="dropdown-menu dropdown-menu-right dropdown-submenu-left-mg-lg">
+								<!-- 4.1-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">會員交流園地</a></li>
+								<!-- 4.2-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">親子教育百科</a></li>
+								<!-- 4.3-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">會員經驗分享</a></li>
+								<!-- 4.4-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">世界育兒觀</a></li>
+								<!-- 4.5-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">寰宇家庭雜誌</a></li>
+								<!-- 4.6-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">家長工作坊</a></li>
+							</ul>
+						</li>
+						<!-- 5-->
+						<li class="dropdown singleDrop layout-navbar-arrow-pc color-5">
+							<!-- open--><a class="dropdown-toggle" href="" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false"><span class="navbar-title">我的專區</span></a>
+							<ul class="dropdown-menu dropdown-menu-right dropdown-submenu-left-mg-lg">
+								<!-- 5.1-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">新手上路</a></li>
+								<!-- 5.2-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">活動紀錄</a></li>
+								<!-- 5.3-->
+								<li class="dropdown dropdown-submenu">
+									<!-- open--><a class="dropdown-toggle" href="" data-toggle="dropdown">學習點數<i
+											class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-left"
+											aria-hidden="true"></i></a>
+									<ul class="dropdown-menu">
+										<!-- 5.3.1-->
+										<li><a href="#">學習點數</a></li>
+										<li><a href="#">兌換專區</a></li>
+									</ul>
+								</li>
+								<!-- 5.5-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">會員須知</a></li>
+								<!-- 5.6-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">常見問題</a></li>
+								<!-- 5.7-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">特別保證</a></li>
+								<!-- 5.9-->
+								<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href=""
+										data-toggle="dropdown">電子發票</a></li>
+							</ul>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<!--
+          ====================================
+          ——— BREAD CRUMB
+          =====================================
+          -->
+				<div class="layout-breadcrumb-box">
+					<div class="container">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb text-truncate">
+								<li class="breadcrumb-item"><a href="#">首頁</a></li>
+								<li class="breadcrumb-item">會員服務</li>
+								<li class="breadcrumb-item">會員交流園地</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container container-main container-col-2">
+			<div class="row">
+				<div class="col-md-4 col-lg-3 sticky-top forum-filsort-ui">
+					<div class="panel-heading bg-color-4 border-color-4">
+						<h3 class="panel-title">文章分類</h3>
+						<div class="forum-filsort-group"><a class="forum-filsort-reset" href="">取消篩選</a><a
+								class="forum-filsort-close" href="">X</a></div>
+					</div>
+					<aside class="layout-sub">
+						<div class="forum-filsort">
+							<h3 class="layout-title-level-3 mt-0 color-4">依「討論主題」</h3>
+							<ul class="forum-filsort-btnbox row-1">
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">教材使用方法</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link now" href="">電話美語</a>
+									<!--              
+        [^ 註 ^]
+        規則：tag .forum-filsort-link 加 class .now 
+        為「現在選中的分類」視覺
+        * 全部雖有三大類，但一次僅能篩一個，沒有二個以上的複條件篩選
+        
+        -->
+								</li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">如何使用DWE</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">美語活動</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">新手上路</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">多媒體學習</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">其他</a></li>
+							</ul>
+						</div>
+						<div class="forum-filsort">
+							<h3 class="layout-title-level-3 mt-0 color-4">依「地區」</h3>
+							<ul class="forum-filsort-btnbox row-2">
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">台北</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">桃園</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">新竹</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">台中</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">彰化</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">嘉義</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">台南</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">高雄</a></li>
+							</ul>
+						</div>
+						<div class="forum-filsort">
+							<h3 class="layout-title-level-3 mt-0 color-4">依「年齡」</h3>
+							<ul class="forum-filsort-btnbox row-2">
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">0 ~ 1歲</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">1 ~ 2歲</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">2 ~ 4歲</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">4 ~ 6歲</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">小學生</a></li>
+								<li class="forum-filsort-item"><a class="forum-filsort-link" href="">DWE Kids</a></li>
+							</ul>
+						</div>
+					</aside>
+					<div class="panel-heading bg-color-4 border-color-4">
+						<div class="panel-title">推薦活動</div>
+					</div>
+					<aside class="forum-ad"><a class="forum-ad-link" href=""><img src="img/forum/ad.jpg" /></a>
+						<!--        
+  優先排序條件：
+  1.	適合會員家庭孩子年齡+未有報名紀錄的活動
+  2.	若適合活動已有報名紀錄，則放尚未報名之活動訊息。
+  3.	若都已有報名紀錄，則隨機放
+  -->
+					</aside>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 scroll-main">
+					<div class="layout-main layout-main-intro">
+						<div class="sectionTitle text-center color-4 mt-0">
+							<h2>
+								<!-- h2 only--><span class="shape shape-left"></span><span>會員交流園地</span><span
+									class="shape shape-right"></span>
+							</h2>
+						</div>
+						<div class="layout-content">
+							「會員交流園地」是寰宇家庭俱樂部會員專屬的社群網站。<br>爸爸、媽媽可以透過發表或分享美語學習相關的各種訊息，如何使用寰宇家庭俱樂部的各種服務，使用DWE教材的經驗、煩惱、艱辛、快樂及美好的回憶，讓我們的美語學習的生活變得豐富有趣。<br>
+							<div class="mt-1">※ 未經許可，「會員交流園地」禁止發佈及轉發未經授權的複製、文字、圖像、影音等。</div>
+						</div>
+						<div class="forum-fil-day-hot">
+							<div class="forum-fil-day-hot-radio">
+								<div class="uikit-radio">
+									<input class="uikit-radio-input" type="radio" name="filter" checked="">
+									<label class="uikit-radio-label">日期排序</label>
+								</div>
+								<div class="uikit-radio">
+									<input class="uikit-radio-input" type="radio" name="filter">
+									<label class="uikit-radio-label">人氣排序</label>
+								</div>
+							</div>
+							<div class="forum-fil-day-hot-info">
+								<div class="forum-fil-day-hot-state">* 以下文章依<span
+										class="forum-fil-day-hot-text">「親子學習計畫」</span>主題作分類，並依<span
+										class="forum-fil-day-hot-text">「日期」</span>排序</div><a class="forum-filsort-open"
+									href="">重新設定文章分類條件 »</a>
+							</div>
+						</div>
+					</div>
+					<!-- FULL-->
+					<div class="layout-main layout-main-full layout-main-card">
+						<div class="layout-main-full-bg layout-main-full-right"></div>
+						<div class="layout-main-full-inbox">
+							<div class="forum-cardbox layout-sharewidth item-234">
+								<a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> <a class="forum-cardbox-item layout-sharewidth-item" href="">
+									<div class="forum-cardbox-img" style="background-image: url(img/forum/landscape.jpg);"></div>
+									<div class="forum-cardbox-main">
+										<h4 class="forum-cardbox-title">寶貝無法開口，也能透過CAP作業寶貝無法開口，也能透過CAP作業</h4>
+										<div class="forum-cardbox-text">俱樂部提供了豐富的學習支援服務，俱樂部提供了豐富的學習支援服務</div>
+										<!-- <div class="forum-cardbox-keyword"># 如何使用DWE</div> -->
+									</div>
+									<div class="forum-cardbox-info">
+										<div class="forum-cardbox-data">107-10-17 | 19:23</div>
+										<div class="forum-cardbox-good">5</div>
+										<div class="forum-cardbox-post">123</div>
+									</div>
+								</a> </div>
+							<div class="pagerArea text-center color-4">
+								<ul class="pager">
+									<li class="prev"><a href="#"><i class="fa fa-arrow-left"></i></a></li>
+									<li class="page"><a href="#">1</a></li>
+									<li class="page">...</li>
+									<li class="page"><a href="#">6</a></li>
+									<li class="page now"><a href="#">7</a></li>
+									<li class="page"><a href="#">8</a></li>
+									<li class="page">...</li>
+									<li class="page"><a href="#">15</a></li>
+									<li class="next"><a href="#"><i class="fa fa-arrow-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- FULL-->
+					<div class="layout-main layout-main-full layout-main-post mb-0" id="articleReport">
+						<div class="layout-main-full-bg layout-main-full-right"></div>
+						<div class="layout-main-full-inbox">
+							<div class="sectionTitle text-center color-4 mt-0">
+								<h2>
+									<!-- h2 only--><span class="shape shape-left"></span><span>發表新文章</span><span
+										class="shape shape-right"></span>
+								</h2>
+							</div>
+							<div class="forum-portrait">
+								<div class="forum-portrait-pic" style="background-image: url(img/no_picture.png);"></div>
+								<!--
+                  [^ 註 ^]
+                  會員沒大頭照，預設圖為 " no_picture "
+                  -->
+								<label class="forum-label">宜靜媽媽</label>
+								<select class="forum-control">
+									<option>選擇文章分類</option>
+									<option disabled="">-- 依「討論主題」--</option>
+									<option value="">如何使用DWE</option>
+									<option value="">電話美語</option>
+									<option value="">親子學習計畫</option>
+									<option value="">美語活動</option>
+									<option value="">新手上路</option>
+									<option value="">多媒體學習</option>
+									<option value="">其他</option>
+									<option disabled="">-- 依「地區」 --</option>
+									<option value="">台北</option>
+									<option value="">桃園</option>
+									<option value="">新竹</option>
+									<option value="">台中</option>
+									<option value="">彰化</option>
+									<option value="">嘉義</option>
+									<option value="">台南</option>
+									<option value="">高雄</option>
+									<option disabled="">-- 依「年齡」 --</option>
+									<option value="">0 ~ 1歲</option>
+									<option value="">1 ~ 2歲</option>
+									<option value="">2 ~ 4歲</option>
+									<option value="">4 ~ 6歲</option>
+									<option value="">小學生</option>
+									<option value="">DWE Kids</option>
+								</select>
+							</div>
+							<div class="forum-group">
+								<label class="forum-label" for="">文章標題</label>
+								<input class="forum-control" type="text" placeholder="新文章標題">
+							</div>
+							<div class="forum-group">
+								<label class="forum-label" for="">文章內容</label>
+								<textarea class="forum-control" placeholder="新文章內容"></textarea>
+							</div>
+							<div class="forum-group forum-filebox">
+								<div>
+									<p class="forum-alert-text">發表文章，須最少上傳一張圖片</p>
+									<input class="forum-file" type="file">
+									<input class="forum-file" type="file">
+									<input class="forum-file" type="file">
+								</div>
+							</div>
+							<div class="forum-submit"><a class="forum-submit-lightbox" href="#forum-modal"
+									data-toggle="modal">※ 請務必閱讀發表文章/留言之注意事項</a>
+								<button class="btn layout-btn layout-btn-md btn-block color-4" type="submit">發表新文章</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+      ====================================
+      ——— CTA & LIGHTBOX
+      =====================================
+      -->
+		<div class="scrolling"><a class="forum-cta" href="#articleReport"></a></div>
+		<!--   ====================================
+——— LIGHT BOX MODAL
+===================================== 
+-->
+		<div class="modal fade customModal" id="forum-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">發表文章 / 留言之注意事項</h3><a class="panel-close" href="">x</a>
+						</div>
+						<div class="panel-body">
+							<ul class="forum-qabox">
+								<li class="forum-qabox-item">
+									<div class="forum-qabox-q">成員們的聲音是什麼？</div>
+									<div class="forum-qabox-a">
+										會員之聲是WF俱樂部會員的社區網站。如何充分利用教材·WF俱樂部，英語學習技巧，麻煩，麻煩，歡樂，如存儲器的各種服務，發布和周圍學習英語的共享信息，請了很多的樂趣和獎勵的英語學習生活。
+									</div>
+								</li>
+								<li class="forum-qabox-item">
+									<div class="forum-qabox-q">成員們的聲音是什麼？</div>
+									<div class="forum-qabox-a">
+										會員之聲是WF俱樂部會員的社區網站。如何充分利用教材·WF俱樂部，英語學習技巧，麻煩，麻煩，歡樂，如存儲器的各種服務，發布和周圍學習英語的共享信息，請了很多的樂趣和獎勵的英語學習生活。<br />會員之聲是WF俱樂部會員的社區網站。如何充分利用教材·WF俱樂部，英語學習技巧，麻煩，麻煩，歡樂，如存儲器的各種服務，發布和周圍學習英語的共享信息，請了很多的樂趣和獎勵的英語學習生活。
+									</div>
+								</li>
+								<li class="forum-qabox-item">
+									<div class="forum-qabox-q">發布說明·舉止</div>
+									<div class="forum-qabox-a">會員之聲是WF俱樂會員之聲是WF俱樂會員之聲是WF俱樂會員之聲是WF俱樂會員之聲是WF俱樂會員之聲是WF俱樂
+										<div class="forum-qabox-block">警告</div>
+										<div class="forum-qabox-block">禮貌</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<!-- FOOTER INFO AREA -->
+			<div class="container-fluid color-bar clearfix">
+				<div class="row">
+					<div class="col-sm-1 col-xs-2 bg-color-1">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-2">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-3">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-4">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-5">fix bar</div>
+					<div class="col-sm-1 col-xs-2 bg-color-6">fix bar</div>
+					<div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-4 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-5 hidden-xs">fix bar</div>
+					<div class="col-sm-1 bg-color-6 hidden-xs">fix bar</div>
+				</div>
+			</div>
+			<!-- COPY RIGHT -->
+			<div class="copyRight clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="copyRightText">
+								<p>寰宇家庭股份有限公司(台灣)版權所有</p>
+								<p class="copyRightTextEng">© World Family(Taiwan) Ltd. All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 footer-link">
+							<ul>
+								<li><a href="">關於寰宇家庭俱樂部</a></li>
+								<li><a href="">關於寰宇家庭</a></li>
+								<li><a href="">隱私權與安全性</a></li>
+								<li><a href="">版權聲明</a></li>
+								<li><a href="">條款與政策</a></li>
+								<li> <a href="">網站地圖</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--   ====================================
+——— TAB MENU FOR TAIWAN
+===================================== 
+-->
+		<ul class="tabmenu">
+			<li class="tabmenu-li tabmenu-1"><a class="tabmenu-link" href=""><i class="fas fa-cog"></i>設定</a></li>
+			<li class="tabmenu-li tabmenu-2"><a class="tabmenu-link" href="">線上客服</a></li>
+			<li class="tabmenu-li tabmenu-3"><a class="tabmenu-link" href="">活動報名</a></li>
+			<li class="tabmenu-li tabmenu-4"><a class="tabmenu-link" href="">最新消息</a></li>
+			<li class="tabmenu-li tabmenu-5"><a class="tabmenu-link" href="">下載專區</a></li>
+		</ul>
+		<!--   ====================================
+——— BACK TO TOP
+===================================== 
+-->
+		<div class="scrolling"><a class="backToTop" id="backToTop" href="#pageTop"><i class="fa fa-arrow-up"
+					aria-hidden="true"></i></a></div>
+		<!--====================================
+——— LOGIN MODAL
+===================================== 
+-->
+		<div class="modal fade customModal lightbox-usual" id="loginModal" tabindex="-1" role="dialog">
+			<!--  
+  [^ 註 ^]
+  規則：tag .customModal + class .lightbox-usual
+  為全站共用燈箱所用
+  
+  -->
+			<div class="modal-dialog layout-lightbox-vertical-middle">
+				<!--   
+    [^ 註 ^]
+    規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
+    將 pop window 垂直置中
+    
+    -->
+				<div class="modal-content">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">會員登入</h3><a class="panel-close" href="">x</a>
+						</div>
+						<div class="panel-body">
+							<form action="#" method="POST" role="form">
+								<div class="form-group formField">
+									<input class="form-control" type="text" placeholder="請輸入會員編號" />
+								</div>
+								<div class="form-group formField">
+									<input class="form-control" type="password" placeholder="請輸入密碼" />
+								</div>
+								<div class="form-group ver-box"><img class="ver-img" src="img/verify.png" />
+									<input class="ver-reset" type="button" />
+									<input class="ver-input" type="text" placeholder="輸入驗證碼" />
+								</div>
+								<div class="form-group formField">
+									<input class="btn btn-block" type="submit" value="登入" />
+								</div>
+								<div class="form-group formField">
+									<p class="help-block"><a href="#forgetModal" data-toggle="modal">忘記密碼 ?</a>
+										<!--  href="#loginModal" data-toggle="modal" -->
+										<!--====================================
+                ——— FORGET PASSWORD MODAL
+                ===================================== 
+                -->
+										<div class="modal fade customModal lightbox-usual" id="forgetModal" tabindex="-1"
+											role="dialog">
+											<!--  
+                  [^ 註 ^]
+                  規則：tag .customModal + class .lightbox-usual
+                  為全站共用燈箱所用
+                  
+                  -->
+											<div class="modal-dialog layout-lightbox-vertical-middle">
+												<!--   
+                    [^ 註 ^]
+                    規則 : tag .modal-dialog + class .layout-lightbox-vertical-middle
+                    將 pop window 垂直置中
+                    
+                    -->
+												<div class="modal-content">
+													<div class="panel">
+														<div class="panel-heading">
+															<h3 class="panel-title">密碼查尋</h3><a class="panel-close" href="">x</a>
+														</div>
+														<div class="panel-body">
+															<form action="#" method="POST" role="form">
+																<div class="form-group formField">
+																	<input class="form-control" type="text" placeholder="請輸入會員編號或身份證" />
+																</div>
+																<div class="form-group formField">
+																	<input class="form-control" type="password" placeholder="請輸手機號碼" />
+																</div>
+																<div class="form-group formField">
+																	<input class="btn btn-block" type="submit" value="確定" />
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jq -->
+		<script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+		<!-- bootstrap -->
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- animate for back to top & fast link -->
+		<script src="assets/plugins/counter-up/jquery.counterup.min.js"></script>
+		<script src="assets/plugins/velocity/velocity.min.js"></script>
+		<!-- header dropdown controler -->
+		<script src="assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
+		<!-- UI controler from template js/app.js -->
+		<script src="js/layout.js"></script> <!-- JS FOR THIS PAGE ONLY-->
+		<script src="js/fullScreen.js"></script>
+		<script src="js/forum.js"></script>
+	</div>
+</body>
+
+</html>

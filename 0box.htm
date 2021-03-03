@@ -1,0 +1,82 @@
+<script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<style>
+	.box{
+		position:relative;
+		width:745px;
+		height:387px;
+		font-size:13px;
+	}
+	.box .menu{
+		padding:0;
+		margin:0;
+		list-style:none;
+		width:745px;
+		height:26px;
+		bottom:1px solid #e3e3e3;
+	}
+	.box .menu li{
+		display:block;
+		float:left;
+		width:123px;
+		height:23px;
+		text-align:center;
+		line-height:23px;
+		border-right:1px solid #e3e3e3;
+		border-bottom:3px solid #e3e3e3;
+		color:#999999;
+		cursor:default;
+	}
+	.box .menu .end{border-right:none;}
+	.box .menu span{
+		display:block;
+		width:124px;
+		line-height:23px;
+	}
+	.boxon{
+		display:block;
+		float:left;
+		text-align:center;
+		border-bottom:3px solid #FF6429;
+		color:#000000;
+		cursor:default;
+	}
+	.content{
+		width:300px;
+		line-height:300px;
+		text-align:center;
+		color:#ffffff;
+		background:#777777;
+		clear:both;
+		position:absolute;
+		top:40px;
+		display:none;
+	}
+</style>
+<div class="box">
+	<ul class="menu"  style="padding:0; margin:0;">
+		<li><span>品名不完整</span></li>
+		<li><span>品名不易辨識</span></li>
+		<li><span>品名範圍太廣</span></li>
+		<li><span>購物網址不完整</span></li>
+		<li class="end"><span>聯絡人資訊未填</span></li>
+	</ul>
+	<div class="content">1</div>
+	<div class="content">2</div>
+	<div class="content">3</div>
+	<div class="content">4</div>
+	<div class="content">5</div>
+	<div class="content">6</div>
+</div>
+<!-- srcript--------------------------------------------------------------STR -->
+<script style="text/javascript">
+	$(function(){
+		var boxnow=0;
+		$(".box .content").css({display:"none"}).eq(boxnow).css({display:"block"});
+		$(".box .menu li span").eq(boxnow).addClass("boxon");
+		$(".box .menu li span").mouseover(function(){
+			boxnow=$(this).parent().index();
+			$(".box .menu li span").removeClass("boxon").eq(boxnow).addClass("boxon");
+			$(".box .content").css({display:"none"}).eq(boxnow).css({display:"block"});
+		});
+	});
+</script>

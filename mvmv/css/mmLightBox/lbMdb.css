@@ -1,0 +1,177 @@
+/* MDB LightBox CSS*/
+
+textarea{
+	width:100%;max-width:100%;
+	height:200px;
+	resize:none;/*避免文字眶被拉動破版*/
+	border:solid 1px #aaa;outline:none;font-size:15px;
+	padding:10px;
+}
+
+.mdbLB{
+	width: 312px;height: 210px;
+	margin:auto;
+	left: 0;top: 0;right: 0;bottom: 0;
+}
+.mdbLB > div:first-child{
+	background-color:#01c3e0;
+	color:#fff;font-size:19px;text-indent:10px;
+	padding:5px;
+}
+.mdbLB > div:first-child a{
+	border-radius: 0 5px 0 0;cursor: pointer;
+	background-color: rgba(0,0,0,0.4);
+	color: #ffffff;font-size: 21px;text-align: center;text-indent:0;
+	line-height: 30px;width: 50px;
+	margin:-3px -2px;
+	float: right;
+}
+.mdbLB > div:first-child a:hover{text-decoration: none;background-color:rgba(0,0,0,.5);}
+.mdbBox{
+	height:173px;
+	padding:14px;
+	position:relative;
+}
+.mdbBox .rateArea{
+	background-color:#f5f5f5;
+	width: 100%;height:56px;overflow:hidden;
+	padding:7px 0 0 57px;margin-bottom:6px;
+}
+.mdbBox .rateArea select{
+	outline:none;border:none;
+	background-color:transparent;
+	color:transparent;
+	width:350px;height:55px;
+	position:absolute;left: 0;top: 0;z-index: 5;
+}
+.mdbBox .rateArea h6{font-size:12px;padding-top:3px;}
+.mdbBox .rateArea img{top:5px;left:5px;}
+.mdbBox input[type="text"]{
+	border:solid 1px #333;
+	font-family:arial,"微軟正黑體";font-size:14px;
+	width: 100%;height:30px;
+	padding:5px 10px;margin-bottom:8px;
+}
+.mdbBox > a{
+	font-size:12px;
+	display:block;line-height:1;
+	margin:13px 0;
+	float:left;
+}
+.mdbBox > a.send{
+	border-radius:5px;cursor:pointer;
+	color:#fff;font-size:15px;
+	background-color:#ff9000;
+	line-height:28px;
+	padding:0 10px;margin:0;
+	position:absolute;right: 12px;bottom: 8px;z-index: 1;
+}
+.mdbBox > a.send:hover{text-decoration:none;background-color:#ff4e00;}
+.mdbBox > div:last-child{font-size:12px;padding-top:4px;}
+.mdbBox input[type="checkbox"]{vertical-align:-1px;}
+/**/
+.mdbBox .rateBox{width: 170px;}
+.mdbBox .rateBox li{width:13px;}
+.mdbBox .rateBox li:nth-child(even),.mdbBox .rateBox div:nth-child(even) {width:23px;padding-right:10px;}
+.mdbBox .rateBox li:nth-last-child(3),.mdbBox .rateBox div:last-child {width: 13px;padding-right: 0;}
+.mdbBox .rateBox a{width: 13px;height: 24px;}
+.mdbBox .rateBox div{width: 13px;height: 24px;}
+.mdbBox .rateBox li:last-child,.mdbBox .rateBox li:nth-last-child(2){width: 100%;height: 24px;padding: 0;}
+.mdbBox .rateArea img{width: 170px;height: 24px;top: 7px;left: 57px;}
+.mdbBox .rateArea h6{
+	text-align:center;
+	clear:both;width:170px;
+	padding:3px 0 0;
+}
+.mdbBox .rateArea .rateBox.rate0 + h6{
+	position:static;left:0;
+	opacity:1;
+}
+.rateArea h6 a{
+	background-color:#222;
+	border-radius:5px;
+	font-size:12px;font-weight:normal;color:#fff;text-align:center;vertical-align:2px;
+	display:inline-block;width:10px;line-height:10px;height:10px;
+	margin-left:3px;
+}
+/* ^ mdb ^v mdbFix v */
+.mdbFixMasker{
+	background-color:rgba(0,0,0,0.83);
+	display:none;width:100%;height:300%;
+	position:fixed;left:0;top:0;z-index:990;	
+}
+/**/
+#mdbFix{
+	border-bottom:solid 5px #3092ca;border-radius:6px 6px 0 0;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+	background-color:#fff;
+	width: 350px;min-width:305px;height: 390px;max-height:96%;
+	margin:auto;
+	position:fixed;z-index:995;right:30px;bottom:0;
+}
+#mdbFix > div:nth-child(1) > p{
+	overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+	font-size:15px;
+	line-height:32px;
+	margin-right:55px;padding-top:0;
+	float:none;
+}
+#mdbFix > div:nth-child(2){
+	font-size:15px;
+	height:100%;	
+	margin:10px 10px 0;padding-bottom:93px;
+	position:relative;
+}
+#mdbFix > div:nth-child(2) p{
+	background-color:#fff;
+	width:100%;
+	padding-bottom:15px;
+	position:absolute;z-index:1;
+}
+#mdbFix select{
+	border-color:#aaa;
+	font-size:16px;
+	height:35px;line-height:35px;width: 100%;
+	position:absolute;top:30px;z-index:1;
+}
+#mdbFix textarea{
+	height:100%;
+	padding-top:86px;margin-bottom:4px;
+}
+#mdbFix > div:nth-child(2) p:after{
+	border-bottom:solid 1px #aaa;
+	content:"";background-color:#fff;
+	display:block;width: 100%;height:10px;
+	position: absolute;top:64px;
+}
+#mdbFix > div:nth-child(2) a{
+	border-radius:5px;
+	background-color:#ff9000;
+	font-size:15px;color:#fff;text-align:center;
+	display:block;line-height:35px;
+	padding:0 10px;
+	float:right;
+}
+#mdbFix > div:nth-child(2) a:hover{
+	background-color:#ff4e00;
+	text-decoration:none;
+}
+@media screen and (max-width:1000px){#mdbFix{right:2%;}}
+@media screen and (max-width:470px){
+	.mdbFixMasker{display:block;}
+	#mdbFix{
+		border:none;border-radius:5px;
+		height: 90%;width: 96%;
+		top: 0;right: 0;bottom: 20px;left: 0;
+	}
+	#mdbFix > div:nth-child(2) a{width: 100%;}
+}
+@media screen and (max-height:470px){/* ^^ !!!the same!!! vv*/
+	.mdbFixMasker{display:block;}
+	#mdbFix{
+		border:none;border-radius:5px;
+		height: 90%;width: 96%;
+		top: 0;right: 0;bottom: 20px;left: 0;
+	}
+	#mdbFix > div:nth-child(2) a{width: 100%;}
+}

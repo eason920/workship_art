@@ -1,0 +1,116 @@
+/*
+===================
+version 1.1
+2016 / 2 / 16 fix MQ in 2016 / 5 / 13
+===================
+*/
+/*.listBody li:nth-child(odd){background-color:#e0f6f9;}*/
+#mmMain h3{background-color:#3092ca;line-height:50px;text-align:center;font-size:21px;font-weight:bold;color:#ffffff;}
+/**/
+.btnDelete,.btnTop,.btnSearch,.btnReset,.btnWrite,.tMsgBtnBox a{display:block;line-height:45px;background-color:#aaaaaa;color:#ffffff;border-radius:5px;}
+.btnDelete:hover,.btnSearch:hover,.btnReset:hover,.btnWrite:hover,.tMsgBtnBox a:hover{text-decoration:none;}
+.btnDelete,.btnTop,.btnSearch,.btnReset,.btnWrite{background-image:url(../img/fourm.png);background-size:1000px 500px;}
+/**/
+.btnDelete,.btnTop{width:40px;height:40px;position:fixed;background-color:rgba(0,0,0,.4);right:2%;}
+.btnDelete{background-size:1500px 750px;bottom:60px;}
+.btnDelete:hover,.btnTop:hover{background-color:rgba(0,0,0,1);}
+/**/
+.btnTop{bottom:-100px;}
+/**/
+.btnTop{background-position:-4px -151px;}
+.btnDelete{background-position:-242px -667px;}
+.btnSearch{background-position:-153px -155px;}
+.btnReset{background-position:-147px -362px;}
+.btnWrite{background-position:-154px -401px;}
+
+.functionBox,.lableBox{background-color:#cfedff;padding:8px;overflow:hidden;}
+.functionBox input{float:left;height:45px;font-size:15px;padding:0 10px;outline:none;border-radius:0;border:solid 1px #bbbbbb;}
+.functionBox .mainBtnBox{float:right;}
+/**/
+.btnSearch,.btnReset,.btnWrite{float:right;margin-left:5px;}
+.btnSearch{width:45px;border-radius:0 5px 5px 0;text-indent:-9999px;margin-left:0;}
+.btnReset,.btnWrite{font-size:12px;padding:24px 3px 0;line-height:21px;min-width:45px;text-align:center}
+.btnReset{width:54px;}
+/*padd-top + line-heig=45px*/
+.btnSearch{background-color:#6dbfef;}
+.btnReset,.btnSearch:hover{background-color:#3092ca;}
+.btnReset:hover{background-color:#2b6f99}
+.btnWrite{background-color:#ff9000;}
+.btnWrite:hover{background-color:#ff4e00;}
+/****************************************/
+.lableBox{clear:both;padding:8px 8px 0;}
+.lableBox div{background-color:#6dbfef;}
+.lableBox div{float:left;width:49%;border-radius:10px 10px 0 0;line-height:50px;text-align:center;font-size:19px;font-weight:bold;color:#ffffff;cursor:pointer;}
+.lableBox div:first-child{width:50%;margin-right:1%;}
+.lableBox div:hover{background-color:#3092ca;}
+.lableBox div.on{background-color:#ffffff;color:#515151;cursor:default;}
+/****************************************/
+.mmmBody{padding:13px 8px;background-color:#ffffff;}
+/****************************************/
+.resultBox{line-height:35px;padding:0 10px;font-size:17px;color:#ffffff;background-color:#00b5d0;display:none;}
+.listBody li{overflow:hidden;}
+/**/
+.listBody table{width:100%;}
+.listBody td:nth-child(1){width:25px;border-right:1px solid #ffffff;text-align:center;}
+.listBody td:nth-child(1) input{border:solid 1px #01c3e0;}
+.listBody td{padding:5px;}
+/*.listBody td div,.listBody td a{margin:6px;}*/
+/**/
+.listBody .tMem{float:left;}
+.listBody .tTime{float:right;}
+.listBody .tTitle{clear:both;display:block;}
+/**/
+.listBody .tTitle{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.listBody .tMem,.listBody .tTime,.listBody .tTitle span,.listBody .tTitle font{font-size:15px;color:#005c6a;line-height:22px;}
+.listBody .tTime{font-size:12px;color:#78B5BF;}
+.listBody .tTitle span{color:#000000;}
+.listBody .tTitle:hover,.listBody .tTitle:hover span,.listBody .tTitle:hover font{color:#ff4e00;text-decoration:none;}
+/*.tTitle:visited,.tTitle:visited span,.tTitle:visited font{color:#afb0b0;}*/
+/**/
+.tMsg{background-color:#ffffff;border:solid 3px #347a85;border-radius:8px;width:97%;margin:8px auto 8px;padding:8px;display:none;}
+.tMsg span{display:block;background:url(../img/fourm.png) 0 -317px no-repeat;background-size:1000px 500px;width:18px;height:14px;margin:-22px 0 7px 10px;}
+.tMsgWrapper{overflow:hidden;}
+.tMsg p{color:#347a85;font-size:15px;word-wrap:break-word;overflow:hidden;}
+.tMsg img{max-width:100%;}
+.tMsgBtnBox{margin-top:15px;}
+.tMsgBtnBox a{display:block;float:left;background-color:#347a85;padding:0 5px;margin:0 5px 0 0;}
+.tMsgBtnBox a:hover{background-color:#215F68;}
+/*.tMsgBtnBox a:nth-child(-1-4){}*/
+.tMsgBtnBox a:nth-child(5),.tMsgBtnBox a:nth-child(3),.tMsgBtnBox a:nth-child(4){float:right;margin:0 0 0 5px;}
+/**/
+img.badgeGet{
+	display:block;
+	margin:15px auto 0;
+	width:230px;max-width:90%;height:auto;	
+}
+img.badgeRise{
+	display:block;
+	margin:15px auto 0;
+	width:533px;max-width:90%;height:auto;
+}
+/**/
+.btnReset{display:none;opacity:0;}
+/* HOVER FOR Q */
+#mmBody .Ved,#mmBody .Ved span,#mmBody .Ved font{color:#afb0b0!important;}
+/* SEND STR */
+.pmBox{max-width:970px;padding-bottom:4px;margin:0 auto 30px;border-bottom:solid 2px #d6d6d6;background-color:#ffffff;padding:10px;}
+#mmMain h4{background-color:#3092ca;color:#ffffff;max-width:970px;margin:0 auto 7px;text-align:center;font-size:21px;font-weight:bold;line-height:50px;}
+table.pmSend{width:100%;margin-bottom:6px;/*border-bottom:solid 5px #ff0000;*/}
+.pmSend .alert{background-color:#f1f1f1;color:#ff0000;padding:7px 10px;}
+.pmSend td{padding-bottom:7px;}
+.pmSend td:nth-child(1){width:70px;vertical-align:top;line-height:33px;font-weight:bold;}
+.pmSend td.ipt{line-height:50px!important;}
+.pmSend td:nth-child(2) input{height:45px;padding:0 10px;}
+.pmSend tr:nth-child(2) td:nth-child(2){line-height:;}
+.pmSend tr:nth-child(3) td:nth-child(2){font-size:14px;color:#aaaaaa;line-height:18px}
+.pmBox textarea{resize:none;height:200px;padding:15px;margin-bottom:5px;}
+.pmSend td:nth-child(2) input,textarea{width:100%;max-width:100%;border:solid 1px #bbbbbb;outline:none;font-size:17px;}
+.btnBox{overflow:hidden;}
+.btnBox a{float:right;text-align:center;color:#ffffff;font-size:15px;padding:0 10px;line-height:45px;margin-left:10px;border-radius:3px;}
+.btnBox a:hover{text-decoration:none;}
+.btnBox a:nth-child(1),.btnBox a:hover:nth-child(2){background-color:#3092ca;}
+.btnBox a:hover:nth-child(1){background-color:#2b6f99;}
+.btnBox a:nth-child(2){background-color:#6dbfef;}
+@media screen and (max-width:767px){.pmBox{margin-bottom:0;}}
+/* SEND END */
+a.nameCard{color:#005c6a;}

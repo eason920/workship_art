@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015/9/2, 上午 10:24:20
+    Author     : Fuyuki
+*/
+
+
+.article #fb-root{
+    display:none;
+}
+
+.article .mm-vimeo-video-container p{
+    display:none;
+}
+
+.article .mm-vimeo-video-container a{
+    display:none;
+}

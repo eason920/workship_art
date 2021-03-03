@@ -1,0 +1,53 @@
+/*
+====================
+version 1.3
+2015 / 11 / 30 fix MQ in 2016 / 5 / 13
+====================
+*/ /* this file only for forum_B admin login statue */
+@charset "utf-8";
+.label p{font-size:19px;padding-right:40px;}
+.label .admin{width:50px;}
+.label .admin div{display:none;}
+/**/
+.label.mmPopular .admin,.label.mmPopular .btb{display:none;}
+/**/
+.label.mmPopular .mdb{display:none;}
+.label.mmPopular .mdb_mobi{display:block;}
+/* BENED TO BOARD str */
+#mmBody .label .admin.BMlogin{right:43px;}
+.btb{width:50px;right:-7px;}
+.btb div:before{content:"禁言列";}
+.btb div{background-position:-238px -445px;}
+/* BENED TO BOARD end */
+@media screen and (max-width:479px){.label.mmPopular:after{display:none;}}
+@media screen and (max-width:479px){
+	#mmBody .wrapper{padding:0 3px;}
+	.label span{
+		background-image: none;background-color:#176ea0;
+		width:3px;height:54px;
+		top:3px;
+	}
+	.label .admin{right:0;}
+	.label .BK{left:0;}
+	.label span.left{left:-3px;}
+	.label span.right{right:-3px;}
+	/* BENED TO BOARD str */
+	#mmBody .label .admin.BMlogin{right:50px;}
+	.btb{right:0;}
+	.btb:after{
+		content:'';background-color:#C7C400;
+		display:block;width:3px;height:54px;
+		position:absolute;right:-3px;top:3px;
+	}
+	/* BENED TO BOARD end */
+	/* MM POPULAR str */
+	.label.mmPopular span{
+		background-color:#b91a2b;
+		width:3px;height:54px;
+		border:none;
+		top:3px;
+	}
+	.label.mmPopular span.left,.label.mmPopular span.right{border:none;}
+	/* MM POPULAR end */
+	.mmADsky{width: 100%;margin:0 0 8px;}
+}

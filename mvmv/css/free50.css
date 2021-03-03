@@ -1,0 +1,123 @@
+/* 2016 / 12 / 15 */
+#mmBody{padding-top: 43px;}
+#mmBody .wrapper{max-width: 970px;padding: 0;}
+.tt img{width: 100%;}
+.bb > h6{
+	background-color: #3c1f7c;
+	background-image: url(../img/event/free50/2016/gift.png);
+	background-size: 28px 30px;
+	background-repeat: no-repeat;
+	background-position: 8px 7px;
+	color: #fff000;line-height: 45px;font-weight: normal;
+	padding-left: 43px;
+}
+.bb > h6 span{color: #fff;}
+.book,.eventList{
+	border-style: solid;
+	border-color: #3c1f7c;
+	border-width: 0 4px 4px 4px;	
+}
+.book{
+	background-image: url(../img/event/free50/2016/book_bg.png);
+	background-size: 5px 174px;
+	font-size: 0;text-align: center;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+.book img{height: 174px;}
+.eventList{background-color: #6e3aa0;padding: 15px 15px 7px;margin-bottom: 15px;}
+.eventList p{
+	font-size: 15px;color: #fff;text-indent: -8px;
+	margin-bottom: 12px;
+}
+	.mmShopUI a{
+		border-radius: 6px;
+		border: solid 3px #9b79cc;
+		height: 220px;
+	}
+	.mmShopUnder{height: auto;}
+	.mmShopUI a:hover h6 span{color: #8f71d0;}
+.btn{text-align: center;}
+.btn a{
+	background-image: url(../img/event/free50/2016/btn.png);
+	background-size: 244px 162px;
+	text-align: center;font-size: 0;
+	display: inline-block;width: 244px;height: 81px;
+}
+.btn a:hover{background-position: 0 -81px}
+.btn a > *{display: inline-block;}
+.btn a div{
+	font-size: 34px;color: #f7163c;font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	padding: 14px 0 2px;
+}
+.btn img{width: 22px;}
+.btn a h5{
+	border-radius: 9px;
+	background-color: #f7163c;
+	color: #fff;font-size: 12px;
+	line-height: 18px;
+	padding: 0 10px;
+}
+.btn > div{margin: 8px;}
+.btn span{
+	border-radius: 50%;
+	background-color: #a00224;
+	color: #fff;font-size: 15px;font-weight: bold;text-align: center;
+	display: inline-block;line-height: 26px;width: 26px;
+}
+.free50Footer .wrapper{background-color: #cc0a34;max-width: 970px;}
+.free50Footer ul{
+	color: #fff;font-size: 13px;
+	list-style: disc;padding: 15px 15px 15px 25px;
+}
+.free50Footer li:first-child{margin-bottom: 8px;}
+@media screen and (max-width: 359px){
+	.bb > h6{font-size: 17px;}
+}
+@media screen and (min-width: 360px){
+	.bb > h6{font-size: 19px;}
+}
+@media screen and (max-width: 767px){
+	html,body{background-color: #f7163c;background-image: none;}
+	img.pc{display: none;}
+}
+@media screen and (min-width: 768px){
+	html,body{
+		background-image: url(../img/event/free50/2016/bg.png);
+		background-size: 29px 31px;
+		background-repeat: repeat;
+		background-position: 0px -17px;
+	}	
+	img.mobi{display: none;}
+	.btn{vertical-align: middle;}
+	.btn > div{display: inline-block;vertical-align: 17px;}
+}
+@media screen and (max-width: 1023px){
+	.bb,.free50Footer{padding: 0 3%;}
+}
+@media screen and (min-width: 1024px){
+	#mmBody{background: url(../img/event/free50/2016/vision_pc_bg.png) 0 43px repeat-x;}
+}
+@media screen and (max-width: 1424px){
+	.free50Footer{background-color: #cc0a34;}
+}
+@media screen and (min-width: 1425px){
+	.free50Footer{background-color: #cc0a34;}
+}
+/*===============================*/
+@media screen and (max-width: 767px){
+	.mmShopUI a{
+		width:calc(100% / 2 - 6px);
+		margin-right:10px;margin-bottom:10px;
+	}
+	.mmShopUI a:nth-child(even){margin-right:0;}
+}
+@media screen and (min-width: 768px){
+	.mmShopUI a{
+		width:calc(100% / 5 - 10px);
+		margin-right:12px;margin-bottom:12px;
+	}
+	.mmShopUI a:nth-child(5n){margin-right:0;}
+}

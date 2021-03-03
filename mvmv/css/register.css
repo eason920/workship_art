@@ -1,0 +1,76 @@
+/*all*/
+.wrapper{width:970px;}
+#mmRegisterMain,#mmRegisterSub{margin-bottom:20px;}
+.wrapper h1{color:#ffffff;width:100%;line-height:50px;text-align:center;font-size:21px;background-color:#3092ca;margin-bottom:7px;}
+#mmRegisterMain p,#mmRegisterSub p{display:block;height:20px;width:100%;}
+/* SUB */
+#mmRegisterSub{float:left;width:33%;background-color:#ffffff;border-bottom:solid 2px #d9d9d9;padding:24px 0;}
+#mmRegisterSub h4{font-weight:normal;margin-top:196px;clear:both;}
+#mmRegisterSub h4:last-child{padding:20px 20px 0;margin-top:0;font-size:15px;line-height:1.6;}
+#mmRegisterSub div{width:65%;margin:0 auto;margin-top:20px;}
+#mmRegisterSub #gSignInWrapper{margin-top:0;cursor:pointer;}
+#mmRegisterSub a,#mmRegisterSub #gSignInWrapper{float:left;display:block;width:95px;height:95px;background:url(../img/mmImgMain.png) -400px top no-repeat;background-size:900px 500px;}
+#mmRegisterSub a:hover,#mmRegisterSub #gSignInWrapper:hover{opacity:0.9;}
+#mmRegisterSub #gSignInWrapper{float:right;background-position:-495px 0px;}
+#mmRegisterSub #customBtn{padding:0;margin:0;display:block;width:95px;height:95px;}
+/* MAIN */
+#mmRegisterMain{float:right;width:65%;padding:24px 10%;background-color:#ffffff;border-bottom:solid 2px #d9d9d9;}
+#mmRegisterMain h2,#mmRegisterSub h4{font-size:17px;font-weight:bold;color:#3092ca;text-align:center;}
+#mmRegisterMain input[type="text"],#mmRegisterMain input[type="password"],#mmRegisterMain input[type="email"]{line-height:13px;height:30px;width:100%;text-indent:10px;height:30px;border:solid 1px #515151;}
+#mmRegisterMain div{width:100%;background-color:#f1f1f1;color:#ff0000;font-size:11px;line-height:25px;text-indent:10px;}
+#mmRegisterMain .memo{margin:0;padding:5px 10px;color:#acacac;text-indent:0;}
+/**/
+#mmRegisterMain #mmRegisterSex .checkbox{margin-bottom:20px;float:left;text-indent:0;background-color:#ffffff;border-right:10px solid #ffffff;width:40px;color:#717171;font-size:13px;line-height:25px;}
+#mmRegisterMain #mmRegisterSex .checkbox input{float:right;display:block;margin-top:7px;}
+/**/
+#mmRegisterMain #mmRegisterCheck{text-indent:0;height:32px;position:relative;}
+#mmRegisterMain #mmRegisterCheck input{float:left;width:98%;border-right:0;outline:none;}
+#mmRegisterMain #mmRegisterCheck div{position:absolute;right:30px;text-indent:0;text-align:center;float:left;width:120px;/*height:27px;border:solid 1px #717171;*/}
+#mmRegisterMain #mmRegisterCheck div img{width:120px;height:30px;border:solid 1px #515151;}
+#mmRegisterMain #mmRegisterCheck a{position:absolute;right:0;border-radius:0 3px 3px 0;text-align:center;float:left;display:block;width:30px;height:30px;background-color:#3092ca;}
+#mmRegisterMain #mmRegisterCheck a:hover{background-color:#2b6f99;}
+#mmRegisterMain #mmRegisterCheck a span{background:url(../img/mmImgMain.png) -594px -3px no-repeat;background-size:900px 500px;display:block;width:30px;height:32px;margin:0 auto;}
+/**/
+#mmRegisterMain #mmRegisterAgree{background:#ffffff;text-indent:0;color:#717171;}
+#mmRegisterMain #mmRegisterAgree input{display:block;margin:6px 5px 30px 0px;float:left;}
+#mmRegisterMain #mmRegisterAgree .none{font-size:15px;float:left;background-color:#ffffff;color:#717171;text-indent:0;}
+/**/
+#mmRegisterMain #mmRegisterSend{margin-top:9px;text-align:center;display:block;background-color:#ff9000;border-radius:2px;float:right;font-size:15px;color:#ffffff;padding:0px 15px;border:none;line-height:40px;}
+#mmRegisterMain #mmRegisterSend:hover{background-color:#ff7e00;text-decoration:none;}
+/*827add*/
+#mmRegisterMain #mmRegisterCheck input{float:none;position:absolute;left:0;}
+/*media queries*/
+@media screen and (max-width:1424px){/* 970 : 2 + 10 */
+	#mmRegisterSub div{width:70%;}
+}
+@media screen and (max-width:1000px){/* 100% : 2 col */
+	#mmBody .emailist{margin-top:50px!important;}
+	.wrapper{width:100%;}
+	#mmRegisterMain,#mmRegisterSub{width:100%;}
+	/*main*/
+	#mmRegisterMain{padding:18px 20%;}
+	/*sub*/
+	#mmRegisterSub h4{margin:0;}
+	#mmRegisterSub div{width:210px;}
+	/*827add*/
+	#mmRegisterMain input[type="text"],#mmRegisterMain input[type="password"],#mmRegisterMain input[type="email"]{line-height:17px;height:50px;font-size:17px;}
+	#mmRegisterMain #mmRegisterSend{line-height:35px;font-size:15px;text-indent:10px;}
+	#mmRegisterMain #mmRegisterCheck div{right:50px;}
+	#mmRegisterMain #mmRegisterCheck div,#mmRegisterMain #mmRegisterCheck div img{width:150px;height:50px;}
+	#mmRegisterMain #mmRegisterCheck a{width:50px;height:50px;}
+	#mmRegisterMain #mmRegisterCheck a span{margin-top:9px;}
+	#mmRegisterMain #captcha_alert,#mmRegisterMain .memo{line-height:35px;font-size:15px;}
+	#mmRegisterMain #captcha_alert{margin-top:18px;}
+	#mmRegisterMain a#mmRegisterSend{text-indent:0;font-size:19px;padding:0 20px;line-height:50px;}
+}
+@media screen and (max-width:480px){/* 100% : 1 col */
+	/*main*/
+	#mmRegisterMain{padding:18px;}
+	/**/
+	#mmRegisterMain #mmRegisterAgree .none{width:100%;}
+	/**/
+	#mmRegisterMain #mmRegisterSend{width:100%;margin-bottom:10px;}
+}
+@media screen and (max-width:400px){
+	#mmRegisterMain #mmRegisterCheck div,#mmRegisterMain #mmRegisterCheck div img{width:110px;height:50px;}
+}

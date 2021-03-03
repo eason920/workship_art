@@ -1,0 +1,68 @@
+/*
+===================
+version 1
+2015 / 4 / 21
+===================
+*/
+#mmBody{padding-bottom:15px;}
+#mmBody .wrapper{max-width:970px;min-width:650px;padding:0 2%;}
+/****/
+#mmMain h3{font-size:21px;box-shadow:0 3px 0 0 rgba(203,198,186,.7);}
+.mmmHeader{width:100%;}
+.lableBox{width:235px;}
+.lableBox div{line-height:53px;}
+#mmBody .lableBox .lableBtb{width:90px;margin-right:1px;}
+.lableBox .lableSent{width:125px;}
+/**/
+.btnReset,.btnWrite{font-size:19px;padding:0 3px;line-height:45px;text-align:left;}
+.btnReset{background-position:-30px -316px;width:110px;text-indent:20px;line-height:39px;}
+/****/
+.mmmMiddle{background-color:#ffffff;padding:8px;overflow:hidden;}
+.deleteBox{float:left;width:177px;}
+.btnDelete,.deleteBox p{float:left;}
+.btnDelete{position:static;background-color:#ff9000;text-indent:24px;width:64px;background-size:1000px 500px;background-position:-162px -436px;height:45px;}
+.btnDelete:hover{background-color:#ff4e00;}
+.deleteBox p{font-size:19px;line-height:45px;margin-left:8px;}
+/**/
+.pageBox{float:right;}
+.pageBox a,.pageBox p,.pageBox div{float:right;}
+.pageBox a{line-height:39px;width:45px;display:block;background-color:#f9ff00;border:solid 3px #efed61;color:#000000;border-radius:5px;text-align:center;margin-left:5px;}
+.pageBox a:hover{background-color:#ffb800;border-color:#ffe4a0;text-decoration:none;}
+.pageBox a.OFF{background-color:#eeeeee;cursor:default;color:#ffffff;border-color:#eaeaea;}
+.pageBox .num,.pageBox .num span{line-height:45px;font-size:19px;}
+.pageBox .pic{background:url(../img/fourm.png) -49px -225px no-repeat;background-size:1000px 500px;height:45px;width:1px;margin-right:10px;}
+.pageBoxBTM{padding:15px 0 8px;}
+/****/
+.mmmBody{background-color:#ffffff;padding:0 10px 10px;overflow:hidden;border-bottom:2px solid #bbbbbb;margin-bottom:30px;}
+.listHeader td,.listBodyPC td{}
+/**/
+.listHeader{background-color:#ffce59;}
+.listHeader table{height:30px;width:100%;}
+.listHeader td{font-size:13px;color:#ffffff;vertical-align:middle;}
+/**/
+@media screen and (max-width:660px){
+	body,html{overflow-x:scroll!important;}
+}
+@media screen and (max-width:400px){
+	#mmMain{border-width-left:0;border-width-right:0;}
+}
+
+/* LI */
+.listBodyPC li:nth-child(odd){background-color:#fff7e1;}
+.listBodyPC li:hover{background-color:#ffdabc;}
+.listBodyPC li:hover td{color:#ef3e00;}
+/* TABLE */
+.listHeader table{width:100%;}
+.listHeader td{padding:0 5px;}
+/**/
+.listBodyPC a{overflow:hidden;display:block;}
+.listBodyPC table{width:100%;float:left;}
+.listBodyPC td{padding:5px 5px;}
+/**/
+.tName{font-size:12px;width:85px;}
+.tName a{color:#515151;text-decoration:none;}
+.tName a:hover{color:#ef3e00;}
+.tTime{font-size:15px;width:320px;}
+.tCouse{font-size:15px;}
+.tFix{font-size:12px;width:115px;text-align:right;}
+.listBodyPC .tName,.listBodyPC .tTime,.listBodyPC .tCouse{border-right:solid 1px #ffffff;}

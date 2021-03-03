@@ -1,0 +1,23 @@
+@charset "utf-8";
+body {
+	padding:0px; margin:0px;
+	background:url(img/bg2.jpg) top left repeat;
+}
+#wasabii{
+	display:block; height:58px;
+	text-align:center;
+	background:url(img/bg_wasabii.jpg) top left repeat-x;
+	}
+#vision{
+	display:block; height:496px;
+	background:url(img/vision.jpg) top center no-repeat;
+	}
+#unit{
+	text-align:center;
+	display:block; height:221px;
+	}
+#cr{
+	display:block; height:74px;
+	text-align:center;
+	background:url(img/bg_cr.jpg) top left repeat-x;
+	}

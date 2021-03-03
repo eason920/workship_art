@@ -1,0 +1,23 @@
+/*
+===================
+version 2.5
+2015 / 11 / 20
+===================
+*/
+#mmwHeader .functionBox .wShereBox{display:none;}
+#mmwHeader .functionBox .wLine{display:none;}
+/**/
+#mmMain .functionBox .wLine{display:none;}
+@media screen and (max-width:660px){
+	.articleNew{display:none;}
+}
+@media screen and (max-width:400px){
+	#mmwHeader .functionBox .wTop{display:none;}
+}
+@media screen and (max-width:1424px){
+	#mmwHeader .moviemovieLogo{margin-right:0;}
+	#mmwHeader h2{display:none;}
+}
+@media screen and (max-width:1000px){
+	#mmwHeader .moviemovieLogo{width:36px;}
+}

@@ -1,0 +1,38 @@
+/*MAIL CSS*/
+
+.LBBody{
+	width:86%;max-width:660px;
+	height:auto;/*為了沒直向空白*/
+	max-height:65%;/*1.為了overthrow需要的高度屬性 2.美術編排*/
+	min-height:208px;/*iPhone的320(300)*/
+	position:absolute;
+	/*margin:0 auto;<<無用!!!因為position:absolute使margin:auto無從根基*/
+	background:#ffffff;padding:10px;font-size:15px;
+}
+
+.LBHeader,.LBFooter{
+	width:86%;max-width:660px;
+	position:absolute;
+}
+.LBHeader{line-height:35px;background-color:#01c3e0;border-radius:5px 5px 0 0;color:#ffffff;text-indent:10px;font-size:19px;font-weight:bold;}
+.LBHeader a{float:right;border-radius:0 5px 0 0;font-size:19px;color:#ffffff;text-align:center;background-color:rgba(0,0,0,.7);width:50px;margin-top:-1px;padding-top:1px;height:36px;text-indent:0;}
+.LBHeader a:hover{background-color:rgba(0,0,0,.9);text-decoration:none;}
+/**/
+.LBFooter{line-height:55px;background-color:#bbbbbb;border-radius:0 0 5px 5px;padding:5px;}
+.LBFooter a{display:block;width:100%;line-height:45px;background-color:#3092ca;color:#ffffff;border-radius:5px;text-align:center;}
+.LBFooter a:hover{text-decoration:none;background-color:#2b6f99;}
+.LBHeader,.LBBody,.LBFooter{z-index:999;}
+/***************************************/
+.LBBody table{width:100%;}
+.LBBody table td{font-size:17px;padding-bottom:5px;vertical-align:top;line-height:21px;}
+.LBBody table td:nth-child(1){width:73px;font-weight:bold;}
+.LBBody table tr:nth-child(3) td:nth-child(2){color:#aaaaaa;font-size:12px;line-height:15px;padding-top:5px;}
+/* v IE BUG v */
+.ieMsg{display:none;background-color:#dd0000;color:#fff000;padding:5px 5px 20px;font-size:13px;width:100%;z-index:1;position:absolute;text-align:center;bottom:0;line-height:30px;}
+.ieMsg a{background:#fff000;color:#ff0000;padding:5px 7px;border-radius:5px;margin-top:3px;font-weight:bold;}
+/* ^ IE BUG ^ */
+/*MOBILE*/
+.LBWrapper{width:90%;max-width:600px;max-height:93%;margin:20px auto 0;}
+.LBHeader2{line-height:35px;background:#01c3e0;}
+.LBFooter2,.LBHeader2{background:#bbbbbb;line-height:61px;}
+.LBBody2{background:#ffffff;}

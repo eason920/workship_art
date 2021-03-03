@@ -1,0 +1,1 @@
+/wamp/www/website/contents/galleria_all/sys/

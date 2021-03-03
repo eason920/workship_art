@@ -1,0 +1,158 @@
+/*
+====================
+version 2.5
+2016 / 2 / 4
+====================
+*/
+@charset "urf-8";
+#mmwHeader .functionBox{margin-right:354px;}
+#mmwHeader .functionBox a{margin-top:4px;}
+/**/
+#mmFourmHead .functionBox{margin:0 0 15px;}
+#mmFourmHead  h2 .functionBox{margin-top:10px;}
+#mmFourmHead .functionBox a{line-height:45px;margin-top:0;margin-bottom:5px;}
+.functionBox{float:right;}
+.BOX .functionBox{float:left;}
+/* ========== A TAG str ========== */
+.functionBox a,.functionBox .wShereBox{float:right;}
+.functionBox a{
+	font-size:15px;color:#ffffff;text-indent:0;
+	background-image:url(../img/fourm.png);background-repeat:no-repeat;background-size:1000px 500px;
+	border-radius:3px;
+	line-height:34px;
+	padding:0 3px 0 23px;margin:8px 1px 0 0;
+}
+.functionBox a:hover{text-decoration:none;}
+/* position str */
+a.wBack{background-position:-68px -2px;}
+a.wTop{background-position:-68px -41px;}
+a.wShere{background-position:-67px -80px;}
+a.wLine{background-position:-66px -120px;}
+a.wFB{background-position:-68px -160px;}
+a.articleFeedBack{background-position:-66px -201px;}
+a.articleNew{background-position:-65px -241px;}
+a.wLock{background-position:-163px -325px;}
+a.wUnLock{background-position:-163px -285px}
+a.wSearch{background-position:-162px -161px;}
+a.wReset{background-position:-161px -361px;}
+/**/
+#mmFourmHead .functionBox a.wBack{background-position:-68px 4px;}
+#mmFourmHead .functionBox a.wLine{background-position:-66px -115px;}
+#mmFourmHead .functionBox a.wFB{background-position:-68px -155px;}
+#mmFourmHead .functionBox a.articleFeedBack{background-position:-66px -196px;}
+#mmFourmHead .functionBox a.articleNew{background-position:-65px -235px;}
+	#mmFourmHead .functionBox a.wLock{background-position:-161px -320px;margin-right:-3px;}
+	#mmFourmHead .functionBox a.wUnLock{background-position:-161px -280px;margin-left:5px;}
+/**/
+#mmFourmHead .functionBox a.wBack{background-color:#3092ca;margin-left:5px;}
+#mmFourmHead .functionBox a.wBack:hover{background-color:#2b6f99;}
+/**/
+#mmFourmHead .functionBox a.wReset{
+	border:solid 1px #64add7;border-left:none;border-radius:0 3px 3px 0;
+	background:#6dbfef url(../img/mmHeaderWM.png) 3px -444px no-repeat;
+	background-size:150px 500px;
+	width:45px;height:45px;
+	padding:0;
+	position:relative;
+}
+a.wReset:after{
+	content:"";border-left:dotted 1px #fff;
+	display:block;width: 0;height: 15px;
+	position:absolute;top:15px;
+}
+.searchBox a:hover,#mmFourmHead .functionBox a.wReset:hover{background-color:#3092ca;}
+/* position end */
+/* color str*/
+a.wBack,a.wTop,a.wShere,a.wSearch,a.wUnLock,a.wLock,{background-color:#3092ca;}
+a.wBack:hover,a.wTop:hover,a.wShere:hover,a.wSearch:hover,
+a.wUnLock:hover,a.wLock:hover,{background-color:#2b6f99;}
+a.wLine{background-color:#14c014;}
+a.wLine:hover{background-color:#0c980c;}
+a.wFB{background-color:#314b98;}
+a.wFB:hover{background-color:#253974;}
+a.articleFeedBack{background-color:#ff9000;}
+a.wLock,a.wUnLock{background-color:#f9ff00;}
+a.wLock:hover,a.wUnLock:hover{background-color:#FFB800;border-color:#FFE4A0;}
+/*a.articleFeedBack:hover{background-color:#ff5400;}*/
+a.articleNew{background-color:#ff6600;}
+a.articleNew:hover{background-color:#ff3c00;}
+/* color end */
+/* wLock str */
+a.wLock,a.wUnLock{color:#000000;border:solid 3px #efed61;line-height:28px!important;}
+#mmFourmHead .functionBox a.wLock,#mmFourmHead .functionBox a.wUnLock{line-height:39px!important;}
+/* wLock end */
+/* margin & padding str*/
+a.wLine{padding-left:28px;}
+a.articleFeedBack{padding-left:26px;}
+a.articleNew{padding-left:28px;margin-right:0;}
+/* margin & padding end*/
+/* words str*/
+a.wLock:before{content:"鎖定本串";}
+a.wUnLock:before{content:"解除鎖定";}
+/* words end */
+/* ========== ^ A TAG ^v SHARE BOX v ========== */
+.functionBox .wShereBox{position:relative;width:51px;}
+.functionBox .wShereBox a{margin-top:1px;width:50px;height:39px;line-height:11px;font-size:11px;padding:25px 0 0;text-align:center;letter-spacing:-1px;}
+.functionBox .wShereBox .wBox{position:absolute;top:50px;left:-5px;width:60px;padding:2px 3px 5px 3px;overflow:hidden;background-color:#ffffff;border:solid 1px #cccccc;border-radius:5px;}
+.functionBox .wShereBox span{position:absolute;left:20px;top:44px;display:block;width:10px;height:7px;background:url(../img/fourm.png) 0 -273px no-repeat;background-size:1000px 500px;}
+.functionBox .wShereBox .wBox a.wLine{margin-bottom:;}
+a.wShere{display:block;}
+.wShereBox .wShere{background-position:-56px -85px;}
+.wShereBox .wLine{background-position:-56px -125px;}
+.wShereBox .wFB{background-position:-56px -165px;}
+/* ========== ^ SHARE BOX ^v clickPoint v ========== */
+.clickPoint{
+	background-color:#fff;
+	border-radius:3px;
+	color:#adadad;font-size:13px;text-align:right;text-indent:0;
+	height:45px;line-height:1;
+	padding:5px;
+	float:right;
+}
+.clickPoint span{
+	font-size:19px;
+	display:block;line-height:1;
+	padding-top:3px;
+}
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:1000px){
+	#mmwHeader .functionBox{margin-right:2%;}
+}
+@media screen and (max-width:660px){
+	#mmFourmHead .functionBox a{
+		font-size:11px;text-align:center;
+		min-width:50px;line-height:12px;
+		padding:30px 5px 3px;
+	}
+	#mmFourmHead .functionBox a.wBack{background-position:-57px -3px;}
+	#mmFourmHead .functionBox a.wLine{background-position:-56px -122px;}
+	#mmFourmHead .functionBox a.wFB{background-position:-56px -162px;}
+	#mmFourmHead .functionBox a.articleFeedBack{background-position:-52px -202px;}
+	#mmFourmHead .functionBox a.articleNew{background-position:-51px -240px;}
+	#mmFourmHead .functionBox a.wLock{background-position:-152px -324px;margin-right:-3px;}
+	#mmFourmHead .functionBox a.wUnLock{background-position:-153px -284px;margin-left:3px;}
+	#mmFourmHead .functionBox a.wReset{min-width:45px;}
+	/* words str*/
+	a.wLock:before{content:"鎖定";}
+	a.wUnLock:before{content:"解鎖定";}
+	/* words end */
+	/* wLock str */
+	a.wLock,a.wUnLock{padding-top:14px!important;line-height:24px!important;}
+	#mmFourmHead .functionBox a.wLock,#mmFourmHead .functionBox a.wUnLock{
+		padding-top:30px!important;
+		padding-bottom:5px;
+		line-height:7px!important;
+		position:relative;bottom:1px;
+	}
+	/* wLock end */
+}
+
+/* ========== FOR JS CLICK EVENT str ========== */
+a.wSearchOn{background-color:#cccccc;border-bottom:7px solid #cccccc;}
+a.wSearchOn:hover{background-color:#cccccc;}
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:660px){a.wSearchOn{border-bottom-width:20px}}
+/* ========== FOR JS CLICK EVENT end ========== */
+/* ========== IE CSS HACK str ========== */
+
+/* ========== IE CSS HACK end ========== */

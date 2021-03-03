@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW,AAUX,oCAAoC,CACnC,iBAAiB,CAChB,OAAO,CAAE,IAAI,EAGf,oCAAoC,CACnC,QAAQ,CACP,WAAW,CAAE,mDAAkD,EAGjE,qCAAqC,CACpC,wBAAwB,CACvB,UAAU,CAAE,iBAAiB",
+"sources": ["../../scss/model/chat_mobi_open_no_sky_ad.scss"],
+"names": [],
+"file": "chat_mobi_open_no_sky_ad.css"
+}

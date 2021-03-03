@@ -1,0 +1,154 @@
+.wrapper{width:970px;}
+h1{color:#ffffff;width:100%;line-height:50px;text-align:center;font-size:21px;background-color:#3092ca;margin-bottom:7px;}
+.mmMain{padding:20px 18px;overflow:hidden;background-color:#ffffff;line-height:2;border-bottom:2px solid #cccccc;}
+/* PIC */
+.mmMain .mmPic{float:left;width:165px;}
+.mmMain .mmPic img{width:165px;height:165px;border-bottom:2px solid #01c3e0;}
+.mmMain .mmPic a.orange{float:right;font-size:15px;line-height:28px;background-color:#3092ca;}
+.mmMain .mmPic a.orange:hover{background-color:#ff7e00;}
+/* FORM */
+.mmMain .mmForm{float:right;width:751px;}
+.mmMain .mmForm .viewBox{display:none;padding-bottom:10px;overflow:hidden;width:100%;}
+	/*left & right*/
+	.mmMain .mmForm li{}
+	.mmMain .mmForm li .left,.mmMain .mmForm li .right{margin-bottom:12px;}
+	/*left*/
+	.mmMain .mmForm li .left{float:left;clear:both;width:60px;line-height:45px;font-weight:bold;}
+	.mmMain .mmForm li .LengthyL{width:110px;}
+	/*right*/
+	.mmMain .mmForm li .right{padding:0 10px;width:690px;float:right;background-color:#f6f6f6;border-bottom:solid 1px #cccccc;}
+	.mmMain .mmForm li.mmAcount .right,.mmMain .mmForm li.mmName .right{padding-bottom:0;}
+	.mmMain .mmForm li .right p{line-height:45px;}
+	.mmMain .mmForm li .LengthyR{width:640px;}
+	/*above & under*/
+	.mmMain .mmForm li .above,.mmMain .mmForm li .under{width:100%;float:auto;clear:both;}
+	/*above*/
+	.mmMain .mmForm li .above{font-weight:bold;padding-top:10px;}
+	/*under*/
+	.mmMain .mmForm li .under{padding:10px 18px;background-color:#f6f6f6;border-bottom:solid 1px #cccccc;overflow:hidden;}
+/*input*/
+.mmMain .mmForm input[type="text"],.mmMain .mmForm input[type="password"]{border:solid 1px #555555;line-height:17px;height:30px;padding:0 10px;width:100%;}
+/*span*/
+.mmMain .mmForm .right span.BR{display:block;width:100%;height:10px;}
+/*msg alert*/
+.mmMain .msg,.alert{width:100%;background-color:#e5e5e5;color:#ff0000;font-size:11px;line-height:25px;text-indent:10px;}
+.msg{color:#555555;}
+/*a*/
+.mmMain .mmForm li a.fix,.mmMain .mmForm li a.send{font-size:15px;line-height:28px;float:right;}
+.mmMain .mmForm li a.fix{background-color:#3092ca;margin-top:8px;}
+.mmMain .mmForm li a.fix:hover{background-color:#ff7e00;}
+/* mmCipher */
+.mmMain .mmForm li.mmCipher .unCipher p span{color:#ff0000;}
+/* mmSex */
+.mmMain .mmForm li.mmSex .wm{margin-left:10px;}
+.mmMain .mmForm li.mmSex .wm input{float:left;margin:11px 5px 0 0;}
+.mmMain .mmForm li.mmSex .wm p{float:left;line-height:17px;margin-right:15px;margin-top:9px;}
+.mmMain .mmForm li.mmSex .wm a.fix{display:none;}
+.mmMain .mmForm li.mmSex a.send{margin-top:-10px;}
+/*mmPhone*/
+.mmMain .mmForm li.mmPhone{}
+/* mmMovie & mmTVShow */
+.mmMain .mmForm li a.Msend{font-size:15px;line-height:28px;float:right;}
+.mmMain .mmForm li a.Msend:hover{background-color:#ff7e00;}
+/*mmMovie*/
+.mmMain .mmForm li.mmMovie ul.edit{overflow:hidden;width:100%;}
+.mmMain .mmForm li.mmMovie ul.edit li{float:left;width:33%;}
+.mmMain .mmForm li.mmMovie ul.edit li input[type="checkbox"]{margin:10px 5px 0 0;float:left;}
+.mmMain .mmForm li.mmMovie a.Msend{margin-top:10px;}
+/*mmTVShow*/
+.mmMain .mmForm li.mmTVShow .edit{overflow:hidden;width:100%;}
+.mmMain .mmForm li.mmTVShow .edit li{float:left;width:12%;}
+.mmMain .mmForm li.mmTVShow .edit li input[type="checkbox"]{float:left;margin-top:10px;}
+.mmMain .mmForm li.mmTVShow a.Msend{margin-top:-30px;}
+/* LIGHT BOX STR */
+.mmMasker{position:fixed;left:0;top:0;width:100%;height:300%;background:url(../img/mmLBBg.png) left top repeat;z-index:1000;}
+#mmLB,#mmLB2{position:absolute;padding-bottom:20px;font-size:15px;width:500px;border-radius:5px 5px 0px 0px ;background-color:#ffffff;}
+#mmLB .mmLBWrapper,#mmLB2 .mmLBWrapper{padding:20px;font-size:17px;line-height:1.8;}
+#mmLB h4,#mmLB2 h5{border-radius:5px 5px 0px 0px ;line-height:35px;font-size:19px;font-weight:bold;color:#ffffff;text-indent:10px;background-color:#01c3e0;}
+#mmLB a.Wsend,#mmLB2 a.Wsend,#mmLB2 div.noImg{float:right;line-height:17px;font-size:15px;padding:5px 10px;margin-top:10px;}
+/*LB2*/
+/**/
+/* LB2 STR */
+#mmLB2{position:relative;width:615px;height:auto;border-radius:5px 5px 0 0;}
+#mmLB2 .mmLBWrapper{padding:20px 20px 0;}
+#mmLB2 .CLOSE{position:absolute;top:0;right:0;line-height:35px;width:35px;background-color:rgba(0,0,0,0.7);color:#ffffff;font-size:21px;text-align:center;border-radius:0 5px 0 0;}
+#mmLB2 .CLOSE:hover{background-color:rgba(0,0,0,0.9);text-decoration:none;}
+/**/
+#mmLB2 input[type="file"]{visibility:hidden;position:absolute;}
+#mmLB2 .CClick{position:absolute;visibility:hidden;}
+#mmLB2 a.getFile{position:absolute;left:20px;top:55px;width:80px;display:block;text-align:center;line-height:29px;color:#ffffff;background-color:#ff9000;border-radius:3px;}
+#mmLB2 a.getFile:hover{background-color:#ff7e00;text-decoration:none;}
+#mmLB2 .msg{background-color:#f6f6f6;color:#ff7e00;font-size:15px;line-height:30px;margin-left:90px;width:485px;}
+#mmLB2 b{line-height:20px;margin-top:10px;display:block;}
+#mmLB2 .smallImgBg{background-color:#f6f6f6;}
+#mmLB2 a.Wsend,#mmLB2 div.noImg{position:absolute;right:20px;bottom:20px;border-radius:3px;line-height:29px;padding:0 15px;float:none;font-size:17px;z-index:9999;text-align:center;}
+#mmLB2 div.noImg{background-color:#dddddd;color:#aaaaaa;}
+/*APP*/
+#mmBImgWrapper{position:relative;width:100%;height:300px;background-color:#f6f6f6;}
+#mmBImgWrapper #img_1{position:absolute;max-width:100%;max-height:100%;}
+#mmBImgWrapper #img_2{position:absolute;max-width:100%;max-height:100%;}
+#mmBImgWrapper .jcrop-holder{position:absolute;max-width:100%;max-height:100%;}
+#mmSImgWrapper{width:180px;height:180px;overflow:hidden;margin-left:190px;}
+#mmSImgWrapper img#preview{left:50px;}
+/* LB2 END */
+@media screen and (max-width:641px){
+	#mmLB{width:90%;}
+}
+/* LIGHT BOX END */
+@media screen and (max-width:1000px){
+	.wrapper{width:100%;}
+	/*a{line-height:50px;font-size:15px;}*/
+	/*PIC*/
+	.mmMain .mmPic{float:left;width:100%;height:166px;background-color:#f6f6f6;padding:0;}
+	.mmMain .mmPic img{float:left;}
+	.mmMain .mmPic a.orange{margin:55px 0 0 30px;float:left;line-height:50px;font-size:19px;}
+	/* FORM */
+	.mmMain .mmForm{float:right;width:100%;}
+	.mmMain .mmForm li .left,.mmMain .mmForm li .right{width:100%;}
+	.mmMain .mmForm li .left{line-height:29px;margin:10px 0 0;font-size:21px}
+	.mmMain .mmForm li .right{padding-bottom:10px;}
+	.mmMain .mmForm ul li div.right a,.mmMain .mmForm ul li div.under a{line-height:50px;font-size:19px;width:50%;text-align:center;}
+	.mmMain .mmForm li .right p{line-height:55px;font-size:17px;padding:0 10px;}
+	.mmMain .mmForm li .right input[type="text"],.mmMain .mmForm li .right input[type="password"]{height:50px;font-size:17px;}
+	.mmMain .mmForm li .right .msg,.mmMain .mmForm li .right .alert{line-height:35px;font-size:15px;}
+	/*span*/
+	.mmMain .mmForm .right span{height:20px;}
+	/*CIPHER*/
+	.mmMain .mmForm li.mmCipher p{line-height:25px;padding-top:15px;}
+	/*MOVIE*/
+	.mmMain .mmForm li.mmMovie ul.show li,.mmMain .mmForm li.mmMovie ul.edit li{font-size:17px;width:50%;line-height:35px;}
+	.mmMain .mmForm li.mmMovie ul.edit li input[type="checkbox"]{margin:12px 10px 0 0;}
+	/*TVSHOW*/
+	.mmMain .mmForm li.mmTVShow .edit li{width:50%;}
+	.mmMain .mmForm li.mmTVShow .edit li input[type="checkbox"]{margin-right:8px;}
+	.mmMain .mmForm li.mmTVShow .edit li p{margin-right:10px;}
+	.mmMain .mmForm li.mmTVShow a.send{margin-top:10px;}
+}
+@media screen and (max-width:660px){
+#mmLB a.Wsend{line-height:40px;padding:0 15px;}
+/* LB2 STR */
+#mmLB2{width:96%;border-radius:0;border:solid 1px #ffffff;border-bottom:solid 2px #01c3e0;}
+#mmLB2 .mmLBWrapper{padding:0;}
+#mmLB2 h5{display:none;}
+#mmLB2 .CLOSE{line-height:40px;width:40px;border-radius:0;z-index:999;}
+#mmLB2 a.getFile,#mmLB2 a.Wsend,#mmLB2 div.noImg{line-height:40px;width:50%;border-radius:0;}
+#mmLB2 a.getFile{top:30px;bottom:0;left:0;top:auto;font-size:17px;}
+#mmLB2 a.getFile:hover{}
+#mmLB2 .msg{margin:0;position:absolute;bottom:40px;border-bottom:1px solid #ffffff;width:100%;text-indent:0;padding:2px 9px;height:;line-height:18px;font-size:14px;}
+#mmLB2 b{display:none;}
+#mmLB2 a.Wsend,#mmLB2 div.noImg{bottom:0;right:0;border-width:0 0 0 1px;}
+/*APP*/
+	/*big*/
+	#mmBImgWrapper{height:100%;width:100%;}
+	#mmBImgWrapper img#img_1{max-width:100%;height:auto;}
+	/*small*/
+	#mmSImgWrapper{display:none;}
+/* LB2 END */
+}
+@media screen and (max-width:500px){
+	.mmMain .mmForm ul li div.right a,.mmMain .mmForm ul li div.under a{width:100%;}
+	/*SEX*/
+	.mmMain .mmForm li.mmSex a.send{margin-top:10px;}
+	/*MOVIE*/
+	.mmMain .mmForm li.mmMovie ul.show li,.mmMain .mmForm li.mmMovie ul.edit li{width:100%;}
+}

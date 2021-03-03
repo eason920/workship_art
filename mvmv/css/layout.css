@@ -1,0 +1,201 @@
+/*
+===================
+data : 2016 / 9 / 22
+version : 3.0
+add / fixed : footer width
+===================
+*/
+/* ========== FOR ALL str ==========*/
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {margin:0;padding:0;}table {border-collapse:collapse;border-spacing:0;}img {border:0;}ol, ul {list-style:none;}caption, th {text-align:left;}
+body{overflow-y:auto!important;}
+html,body {font-size:17px;font-family:arial,"微軟正黑體" !important;width:100%;height:100%;font-family:Arial, Helvetica, sans-serif;-webkit-text-size-adjust:none;background:url(../img/mm_bg.jpg) left top repeat;}
+*{margin: 0;padding: 0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+a{text-decoration:none;color:#3092ca;}
+a:hover{text-decoration:underline;}
+a.orange{padding:0 10px;color:#ffffff;display:block;background-color:#ff9000;border:solid 1px #ffffff;border-radius:3px;}
+a.orange:hover{text-decoration:none;background-color:#ff7200;}
+input[type=text]{-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;-o-appearance: none;appearance: none;}
+iframe[src^="https://apis.google.com"]{display: none;}
+@media screen and (max-width:767px){
+	html,body{background:url(../img/mm_bg_mobi.jpg) left top repeat;}
+}
+/* ========== FOR ALL end ========== */
+
+/* ========== SORT str ========== */
+.mmSort,.mmHot{
+	background:url(../img/mmImgMain.png) -200px -62px no-repeat;background-size:900px 500px;
+	text-indent:27px;font-size:12px;color:#ffffff;
+	width:56px;line-height:21px;
+	padding-right:5px;
+	position:absolute;
+}
+.TV{background-position:-200px -83px;}
+.mmHot{
+	background:url(../img/mmImgMain.png) -300px 0px no-repeat;background-size:900px 500px;
+	text-indent:0;
+	width:auto;
+	padding:0 5px;
+	left:56px;
+}
+.mmSortBig{
+	background:#01c3e0 url(../img/mmImgMain.png) -200px 0px no-repeat;
+	background-size:900px 500px;
+	color:#ffffff;text-indent:34px;font-size:16px;
+	line-height:25px;
+	padding-right:7px;margin-right:10px;
+	float:left;
+}
+.TVBig{background-position:-200px -31px;}
+@media screen and (max-width:767px){
+	.mmSort,.mmHot{
+		background-color:rgba(1,195,224,0.6);background-position:-200px 2px;
+		text-indent:34px;font-size:16px;
+		line-height:29px;width:75px;
+	}
+	.TV{background-position:-200px -29px;}
+	.mmHot{
+		background-image:none;background-color:rgba(255,0,0,0.6);
+		text-indent:0;text-align:center;
+		width:47px;
+		margin-left:19px;
+	}
+}
+/* ========== SORT end========== */
+
+/* ========== WRAPPER str ========== */
+.wrapper{margin:0px auto;min-width:320px;}
+@media screen and (min-width:1425px) {.wrapper{width:1325px;}}
+@media screen and (max-width:1424px){.wrapper{width:970px;}}
+@media screen and (max-width:1023px){.wrapper{width:100%;}}
+/* ========== WRAPPER end ========== */
+
+/* ========== MM BODY str ========== */
+#mmBody{padding:51px 0px 15px;}
+@media screen and (max-width:1023px){#mmBody .wrapper{padding:0 2%;}}
+@media screen and (max-width:479px){#mmBody .wrapper{padding:0;}}
+/* ========== MM BODY end ========== */
+
+/* ========== SWEET ALERT BADGE str ========== */
+.sweetAlertTitle{
+	text-align:center;color:#ff9000;font-size:20px;font-weight:bold;
+	width:100%;
+}
+.sweetAlertText{
+	text-align:center;font-size:16px;
+	width:100%;line-height:27px;
+}
+.sweetAlertText img{
+	vertical-align:-9px;
+	display:inline-block;width: 31px;height: 31px;
+	margin:0 3px 0 5px;
+}
+/* ========== SWEET ALERT BADGE end ========== */
+
+/* ========== NEWS BOX str ========== */
+.mmNewsBox{
+	border-bottom:solid 2px #d9d9d9;	
+	background-color:#ffffff;
+	display:block;
+	margin-bottom:7px;padding-bottom:15px;
+	position:relative;
+}
+.mmNewsBox:hover{text-decoration:none;}
+.mmNewsBox img{width:100%;}
+.mmNewsBox .mmNewsBoxCont{padding:0;width:100%;}
+.mmNewsBox h2{
+	text-decoration:none;color:#3092ca;font-size:19px;
+	line-height:29px;
+	margin-bottom:7px;
+	overflow:hidden;
+}
+.mmNewsBox span{
+	border:1px solid #ededed;border-radius:3px;
+	background-color:#f6f6f6;
+	font-size:11px;color:#3092ca;font-weight:normal;
+	display:block;line-height:20px;
+	margin-top:6px;padding:0 5px;
+	float:right;
+}
+.mmNewsBox p{font-size:14px;line-height:1.8;}
+.mmNewsBox:hover p{color:#3092ca;}
+/* ========== NEWS BOX end ========== */
+
+/* ========== MM AD SKY str =========== */
+.mmADsky{display:block;margin-bottom:7px;}
+.mmADsky > *{display:none;}
+@media screen and (max-width:1023px){
+	.mmADsky{margin-bottom:15px;}
+}
+@media screen and (max-width:479px){
+	.mmADsky{
+		font-size:0;
+		width:96%;
+		margin:0 2% 8px;
+	}
+	.mmADsky:hover{text-decoration:none;}
+	.mmADsky > *{display:block;}
+	.mmADsky img{width: 100%;}
+	.mmADsky.aboveHot{display:none;}
+}
+@media screen and (min-width:480px){
+	.mmADsky.aboveHot > *{display:block;width:100%;}
+}
+/* ========== MM AD SKY end =========== */
+/* ========== MM FOOTER str ========== */
+#mmFooter{
+	will-change: transform;
+	background-color:#ffffff;border-top:solid 2px #01c3e0;
+	text-align:center;
+	width:100%;
+	position:fixed;z-index:989;bottom:0px;
+}
+#mmFooter #mmFooterButton{
+	cursor:pointer;border-radius:2px;border:solid #ffffff 1px;
+	background-color:#01c3e0;
+	font-size:13px;color:#ffffff;
+	line-height:30px;
+	padding:0 8px;margin-top:-31px;
+	float:right;
+}
+#mmFooter span,#mmFooter a{}
+#mmFooter span{font-size:11px;color:#777777;}
+#mmFooter .info1 a{text-decoration:none;padding:2px 5px;color:#000000;margin-right:8px;}
+#mmFooter .info1 a:hover{background-color:#dddddd;}
+#mmFooter .info1 a.end{margin:0;}
+#mmFooter #mmFooterBox{
+	display:none;width:870px;line-height:40px;
+	margin:0 auto;width:100%;
+}
+#mmFooter #mmFooterBox .Fbox1 .info2{
+	text-align:center;display:block;
+	width:100%;line-height:20px;
+	padding-bottom:10px;
+}
+#mmFooter #mmFooterBox .Fbox1 .info2:after{content:"旺普娛樂股份有限公司© Oneup Entertainment Corporation All Rights Reserved.本網站已依台灣網站內容分級規定處理";}
+#mmFooter .info1{display:block;width:420px;margin:0 auto;height:30px;}
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:767px){
+	#mmFooter #mmFooterBox .Fbox1 .info2{padding:0;}
+	#mmFooter #mmFooterBox .Fbox1 .info2:after{content:"旺普娛樂股份有限公司© Oneup Entertainment Corporation All Rights Reserved.";}
+	#mmFooter #mmFooterBox .Fbox1 .info3{width:100%;text-align:center;display:block;line-height:20px;padding-bottom:10px;}
+	#mmFooter #mmFooterBox .Fbox1 .info3:after{content:"本網站已依台灣網站內容分級規定處理";}
+}
+@media screen and (max-width:1023px){#mmFooter{display:none!important;}}
+/* ========== MM FOOTER end ========== */
+
+/* ========== PULL INPUT IN PAGE OF LOGIN & REGISTER str ========== */
+.emailist{border:1px solid #bdbdbd; border-radius: 4px; background-color:#fff; color:#666; font-size:14px; list-style-type:0; padding:0; margin:0; overflow:hidden;}
+.emailist li{padding:2px 11px; cursor:pointer;}
+.emailist .on, .emailist li:hover{background-color:#eee;}
+/* ========== PULL INPUT IN PAGE OF LOGIN & REGISTER end ========== */
+/* ========== MM BREAD ========== */
+#mmBread{
+	font-size:13px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;
+	background-color:#fff;
+	padding:7px 8px;
+}
+#mmBread a{color:#515151;}
+@media screen and (min-width:768px){
+	#mmBread{padding:13px 18px;}
+}

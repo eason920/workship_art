@@ -1,0 +1,418 @@
+/*===== 2016 / 3 / 1 =========*/
+@charset "utf-8";
+#mmBody{padding-top:23px;}
+.wrapper{width: 970px;}
+body,html{background-image:none;background-color:#20477f;}
+body:before{
+	content: "";
+	background: url(../img/event/oscar/2016/oscarBg.png) 0 0 repeat;
+	width: 200%;height: 350%;
+	position: fixed;
+}
+body:after{
+	content:"";
+	background:url(../img/event/oscar/2016/gradient.png) 0 0 repeat-x;
+	display:block;width:100%;height:300px;
+	position:absolute;top:0;left: 0;
+}
+#header{
+	padding:0 30px;
+	position: relative;z-index:1;
+}
+#header > *{position:absolute;}
+#header img{
+	display:block;width:100%;height: auto;
+	margin:0 auto;
+	position:static;
+}
+#header img.mobi{display:none;}
+
+#header > a{
+	color:#fff;font-size:20px;
+	right:0;bottom:16px;z-index: 2;
+}
+#header > a:before{
+	content:"";
+	display:block;width: 0;height: 0;
+	border-style:solid;
+	border-width:15px 0 0 15px;
+	border-color:#fff transparent transparent transparent;
+	position:absolute;right:85px;bottom:4px;
+}
+#header div:first-child a:hover{
+	background-color:#EA3338;
+	text-decoration:none;
+}
+/*************************************/
+#share{
+	border-radius:9px;
+	padding:3px;
+	position:absolute;right:0;top:5px;z-index:6;
+}
+#share a{
+	color:#fff;border-radius: 4px;
+	background-image:url(../img/event/oscar/2016/sprite.png);background-size:145px 77px;
+	display:block;width: 34px;height: 34px;
+	border:solid 1px rgba(184,213,255,.8);
+	position:relative;float:left;
+}
+#share .line{background-position:-1px -44px;margin-right:5px;}
+#share .fb{background-position:-39px -44px;}
+#share .line:hover{background-position:-74px -44px;}
+#share .fb:hover{background-position:-112px -44px;}
+/****************************************/
+#menu{
+	font-size:0;text-align:center;
+	background:#262626;
+	padding-bottom:15px;
+	position: relative;
+}
+#menu p{
+	color:#fff;font-size:14px;text-align:left;
+	padding:10px 15px 16px;
+}
+#menu p b{color:#e8a62d;font-size:17px;}
+#menu a{
+	border-radius:3px;
+	background-color:#fff;
+	box-shadow:1px 1px 0 #ccc;
+	text-align:center;font-size:14px;color:#fff;font-weight:bold;vertical-align:middle;
+	display:inline-block;line-height:1.1;height:40px;width:15%;
+	padding-top:12px;margin-right:1%;
+	position:relative;z-index: 2;
+}
+#menu a:nth-child(2){background-color:#80b31f;}
+#menu a:nth-child(3){background-color:#25bcee;}
+#menu a:nth-child(4){background-color:#e07aad;}
+#menu a:nth-child(5){background-color:#e38800;}
+#menu a:nth-child(6){background-color:#b30d23;margin-right:0;}
+#menu a:hover{text-decoration: none;}
+#menu a:nth-child(2):hover{background-color:#486511;}
+#menu a:nth-child(3):hover{background-color:#146884;}
+#menu a:nth-child(4):hover{background-color:#E6648E;}
+#menu a:nth-child(5):hover{background-color:#E33F00;}
+#menu a:nth-child(6):hover{background-color:#860B1B;}
+/**/
+#menu > div{
+	content:"888";
+}
+/************************************/
+#mainBody{
+	border-bottom:#6999E0 solid 5px;
+	background-color:#fff;
+	overflow:hidden;
+	padding:15px 23px 10px;margin-bottom:30px;
+}
+#mainBody > div{float:left;width:100%;}
+#mainBody > h6{font-size:15px;color:#4464AF;}
+#fbApi{max-width:100%;overflow:hidden;}
+.voteBox h4{
+	background:#aaa url(../img/event/oscar/2016/logo.png) 7px 5px no-repeat;
+	background-size:22px 24px;
+	color:#fff;
+	line-height:35px;
+	padding-left:35px;margin: 5px 0;
+	position:relative;clear:both;
+}
+	.voteBox.sort1 h4,.voteBox.sort1 a{background-color:#80b31f;}
+	.voteBox.sort1 p{color:#80b31f;}
+	.voteBox.sort1 a:hover{background-color:#486511;}
+	.voteBox.sort2 h4,.voteBox.sort2 a{background-color:#25bcee;}
+	.voteBox.sort2 p{color:#25bcee;}
+	.voteBox.sort2 a:hover{background-color:#146884;}
+	.voteBox.sort3 h4,.voteBox.sort3 a{background-color:#e07aad;}
+	.voteBox.sort3 p{color:#e07aad;}
+	.voteBox.sort3 a:hover{background-color:#E6648E;}
+	.voteBox.sort4 h4,.voteBox.sort4 a{background-color:#e38800;}
+	.voteBox.sort4 p{color:#e38800;}
+	.voteBox.sort4 a:hover{background-color:#E33F00;}
+	.voteBox.sort5 h4,.voteBox.sort5 a{background-color:#b30d23;}
+	.voteBox.sort5 p{color:#b30d23;}
+	.voteBox.sort5 a:hover{background-color:#860B1B;}
+	/****/
+	.voteBox.voted a,.voteBox.voted a:hover{
+		background-color:#d3d3d3;color:#dfdfdf;
+		cursor:default;
+	}
+	.voteBox.voted li a.voted{
+		background:#fff url(../img/event/oscar/2016/voted.png) 6px 4px no-repeat;
+		background-size:18px 18px;
+		color:#fff;
+		padding-left:26px;
+	}
+	/****/
+	.voteBox.sort1 li a.voted{background-color:#80b31f;}
+	.voteBox.sort2 li a.voted{background-color:#25bcee;}
+	.voteBox.sort3 li a.voted{background-color:#e07aad;}
+	.voteBox.sort4 li a.voted{background-color:#e38800;}
+	.voteBox.sort5 li a.voted{background-color:#b30d23;}
+.voteBox h4:after{
+	content:"";background-color:rgba(0,0,0,.3);
+	display:block;width:100%;height: 2px;
+	position:absolute;bottom: 0;left: 0;
+}
+.voteBox ul{width: 100%;margin-bottom: 23px;}
+.voteBox li{
+	background-color:#e8e8e8;
+	width:18%;
+	margin-right:2.5%;margin-bottom:15px;
+	float:left;position:relative;
+}
+.voteBox li.victor div{padding:4px 11px;}
+.voteBox li.victor:before{
+	content:"";
+	border: solid 5px #FFDC64;
+	display:block;
+	margin:auto;
+	position:absolute;top: 0;left: 0;bottom: 0;right: 0;
+}
+.voteBox li.victor:after{
+	content:"得獎";box-sizing:border-box;
+	background-image:url(../img/event/oscar/2016/gold.png);background-size:60px 82px;
+	font-size:12px;color:#000;
+	display:block;width: 60px;height: 82px;
+	padding:58px 0 0 16px;
+	position:absolute;top: -11px;left: -6px;
+}
+.voteBox.sort9 ul,.voteBox.sort9 li{margin-bottom:0;}
+.voteBox li:nth-child(5n){margin-right:0;}
+.voteBox li > div{
+	overflow:hidden;height:40px;
+	padding:7px 5px;
+}
+	.voteBox li p{
+		font-size:19px;font-weight:bold;line-height:26px;
+		float:left;
+	}
+	.voteBox li a{
+		background:#aaa;border-radius:3px;
+		font-size:17px;color:#fff;
+		display:block;line-height:26px;height:26px;
+		padding:1px 10px 0;
+		float:right;
+	}
+	.voteBox li a:hover{text-decoration: none;}
+.voteBox li img{display: block;width: 100%;height: auto;}
+.voteBox li h5,.voteBox li h6{
+	overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+	color:#333;font-weight:;font-size:12px;text-align:center;
+	width:100%;
+	padding:5px 6px 0;
+}
+.voteBox li h6{
+	font-weight:normal;font-size:12px!important;color:#888;
+	padding-top:0;
+}
+/******************************/
+#msg,#strBox{
+	border-bottom:#6999E0 solid 5px;
+	background:#fff;
+	padding:23px 23px 10px;margin-bottom:15px;
+}
+#msg > h6,#strBox > h6{
+	background-color:#20477f;
+	color:#fff;font-size:15px;text-align:left;text-indent:13px;
+	line-height:47px;width: 100%;
+	margin-bottom: 5px;
+	position:relative;
+}
+#msg > h6:after,#strBox > h6:after{
+	content:"";background-color:rgba(0,0,0,.4);
+	display:block;width: 100%;height: 2px;
+	position: absolute;bottom:0;left:0;
+}
+/**/
+#strBox{overflow:hidden;}
+#strBox li{
+	background-color: #e8e8e8;
+	float: left;
+}
+@media screen and (max-width:771px){
+	#strBox li{
+		width: 32%;
+		margin-right: 2%;
+		margin-bottom: 15px;
+	}
+	#strBox li:nth-child(3n){margin-right:0;}
+}
+
+@media screen and (min-width:771px){
+	#strBox li{
+		width: 18%;
+		margin-right: 2.5%;
+		margin-bottom: 15px;
+	}
+	#strBox li:nth-child(5n){margin-right:0;}
+}
+#strBox a{
+	font-size:0;
+	background-color:#e8e8e8;
+	display:block;width:100%;
+	padding-bottom:3px;	
+	position: relative;
+}
+#strBox a:hover{
+	text-decoration:none;
+	background-color:#FFF4B6;
+
+}
+#strBox img{
+	width: 100%;height:auto;
+}
+#strBox h5,#strBox li h6{
+	overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+	color:#333;font-weight:;font-size:12px;text-align:center;
+	width:100%;height:22px;
+	padding:5px 6px;
+}
+#strBox li h6{
+	font-weight:normal;color:#888;
+	padding-top:0;
+}
+#strBox a:hover h5,#strBox a:hover h6{color:#000;}
+
+#strBox span{
+	text-indent:0;font-size:15px;text-align:center;color:#000;font-weight:bold;
+	background-image:url(../img/fourm.png);background-size:1000px 500px;
+	display:block;width:42px;height:40px;line-height:44px;
+	position:absolute;right: 3px;bottom:55px;z-index:3;
+}
+span.rate1{background-position:-508px -400px;}
+span.rate2{background-position:-549px -400px;}
+span.rate3{background-position:-590px -400px;}
+span.rate4{background-position:-631px -400px;}
+span.rate5{background-position:-674px -400px;}
+span.rate6{background-position:-715px -400px;}
+span.rate7{background-position:-756px -400px;}
+span.rate8{background-position:-798px -400px;}
+span.rate9{background-position:-839px -400px;}
+span.rate10{background-position:-881px -400px;}
+#strBox span.rate11{background-position:-922px -400px;font-size:0;}
+#strBox span.rate12{background-position:-922px -400px;font-size:0;}
+#strBox span.rate11:after,#strBox span.rate12:after{
+	content:"無投票";
+	font-size:12px;
+	text-shadow:0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE,0 0 3px #CDCFCE;
+	/*text-shadow: 2px 2px #ff0000;*/
+	display:block;
+	position:absolute;bottom: -6px;right: 3px;z-index:4;
+}
+#strBox span.rate11:after{content:"無評分";}
+#strBox span.rate12:after{content:"未上映";}
+#strBox a:after{
+	content:"";border-radius:50%;
+	background-color:rgba(0,0,0,.7);
+	display:block;width: 28px;height: 28px;
+	box-shadow:0 0 15px 0 #000;
+	position:absolute;right: 10px;bottom: 59px;z-index:1;
+}
+/****************/
+.fixTop{
+	border-radius: 5px;
+	background: rgba(0,0,0,.7) url(http://www.moviemovie.com.tw/img/fourm.png) -4px -151px no-repeat;background-size: 1000px 500px;
+	width: 40px;height: 40px;
+	position: fixed;right: 2%;bottom: 60px;z-index: 10;	
+}
+.fixTop:hover{background-color:rgba(0,0,0,1);}
+@media screen and (max-width:1000px){
+	.wrapper{width: 100%;}
+}
+@media screen and (max-width:770px) and (min-width:471px){
+	#menu a{width:17%;}
+	#menu a:nth-child(7){margin-right:0;}
+	/**/
+	#mainBody,#msg,#strBox{
+		padding:15px 15px 10px;margin-bottom:12px;
+	}
+	/**/
+	.voteBox li{width:32%;margin-right:2%;}
+	.voteBox li:nth-child(5){margin-right:2%;}
+	.voteBox li:nth-child(3n){margin-right:0;}
+}
+@media screen and (max-width:770px){.voteBox li h5, .voteBox li h6{font-size:15px;}}
+@media screen and (max-width:740px){
+	#header > a{font-size:16px;bottom:2px;}
+	#header > a:before{right:68px;bottom:2px;}
+	/**/
+
+}
+@media screen and (min-width:471px){
+	#header:after{
+		content:"即日起至 02/27 (六) 23：59 止";
+		font-size:12px;color:#fff;
+		display:block;margin-left:-75px;
+		position:absolute;left: 50%;bottom:2px;
+	}
+}
+@media screen and (max-width:471px){
+	#header{padding:0;}
+	#header img{display:none;}
+	#header img.mobi{display:block;}
+	#header > a{font-size:13px;bottom:7px;}
+	#header > a:before{
+		border-width:10px 0 0 10px;
+		right:55px;
+	}
+	#header:after{
+		content:"至 02/27 (六) 23：59 止";
+		font-size:12px;color:#fff;
+		display:block;margin-left:-60px;
+		position:absolute;left: 50%;bottom:2px;
+	}
+	/**/
+	#header:before, #header:after, #menu:before, #menu:after {background-size:7px 23px;}
+	#header:before, #menu:before {left: 7px;}
+	#header:after, #menu:after {right:2px;}
+	/**/
+	#share{right:-2px;top:9px;}
+	/**/
+	#menu{padding:8px;}
+	#menu:before,#menu:after{display:none;}
+	#menu p {font-size:12px;padding:3px 8px 8px;}
+	#menu p b{font-size:15px;}
+	/**/
+	#menu a{
+		font-size:12px;
+		width:29%;height:34px;
+		margin-bottom:5px;margin-right:2%;
+	}
+	#menu a:nth-child(4),#menu a:nth-child(7),#menu a:last-child{margin-right:0;}
+	/****/
+	#mainBody,#msg,#strBox{padding: 10px;margin-bottom:12px;}
+	/**/
+	.voteBox h4{
+		background-position:5px 4px;background-size:24px 25px;
+		line-height:35px;
+		padding-left: 35px;margin-bottom:10px;
+	}
+	/**/
+	.voteBox li{width:48.5%;margin-right:3%;margin-bottom:12px;}
+	.voteBox li:nth-child(5){margin-right:3%;}
+	.voteBox li:nth-child(2n){margin-right:0;}
+	.voteBox li:last-child{margin-bottom:20px;}
+	/**/
+	#msg > h6,#strBox > h6{font-size:18px;line-height:45px;}
+}
+@media screen and (max-width: 400px){#mmBody .wrapper {padding:0 3%;}}
+#logo{
+	background:url(../img/event/oscar/2016/sprite.png) 44px 14px no-repeat;
+	background-size:145px 77px;
+	width: 195px;height: 50px;
+	margin:0 auto 10px;
+	clear:both;
+	position:relative;
+}
+#logo span{
+	font-size:12px;color:#fff;
+	position:absolute;top: 24px;left: 0;
+}
+
+@media screen and (min-width:770px){
+	#header{margin-bottom:-15px;}
+	#header:after{bottom:17px;}
+}
+@media screen and (min-width:1000px){
+	#header{margin-bottom:-28px;}
+	#header:after{bottom:29px;}
+	#header > a {bottom:29px;}
+}

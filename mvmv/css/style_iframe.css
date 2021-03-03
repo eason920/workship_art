@@ -1,0 +1,500 @@
+/*========== 2016 / 3 / 29 ==========*/
+/*@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);*/
+html,body{
+    margin: 0;
+    /*font-size: 20px;*/
+    font-size: 12px;
+    font-family: '微軟正黑體','Arial';
+    overflow:hidden;
+}
+#mmBody{
+    padding: 51px 15px 15px;
+    position:relative;
+}
+#mmBody .wrapper{margin:0 auto;overflow:hidden;}
+@media screen and (max-width:1000px){#mmBody .wrapper{padding:0 2%;}}
+@media screen and (max-width:400px){#mmBody .wrapper{padding:0;}#mmBody{padding-bottom:0;}} 
+#header{
+    width:100%;max-width:970px;min-width:320px;
+    background-color: #0FB4CE;
+    position: fixed;
+    top:0px;left: 0;right: 0;margin:auto;
+    height:30px;
+    line-height: 30px;
+    /*text-align: center;*/
+    z-index: 506;
+    border-bottom: 2px #fff solid;
+}
+
+#header span{
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    color:#fff;
+    display:block;width: 100%;
+    margin-left:10px;padding-right:80px;
+    position:relative;
+}
+#header span a{
+    border-radius:3px;
+    background:#ff9000 url(../img/fourm.png) -851px 1px;background-size:1500px 750px;
+    font-size:0;
+    display:block;width: 40px;height: 25px;
+    position:absolute;right: 12px;top: 1px;
+}
+#header span a:hover{background-color:#ff4e00;}
+#header button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right:10px;
+    box-shadow:none;
+    float:right;
+    height:20px;
+    line-height: 20px;
+    position:fixed;top:43px;
+}
+
+#footer{
+    width:100%;max-width:970px;min-width:320px;
+    /*background-color: appworkspace;*/
+    position: fixed;
+    bottom: 0;left: 0;right: 0;margin:auto;
+    height: 42px;
+    z-index: 505;
+}
+
+#main{
+    -webkit-overflow-scrolling:touch;
+    will-change: transform;   
+    background-color:#fff;
+    width:100%;min-width:320px;max-width:970px;
+    margin: auto;padding:10px; 
+    overflow-y: scroll;
+    position:fixed;z-index: 1;top: 30px;right: 0;bottom: 42px;left: 0;
+}
+
+#loginDiv{
+    width:100%;
+    background-color: aliceblue;
+    left: -9999px;
+    z-index: 800;
+    /*border: 1px deepskyblue solid;*/
+    /*height:500px;*/
+    height:100%;
+    overflow-y: auto;
+    position: fixed;
+    /*margin: 30px 0 80px 0;    */
+    font-size: 15px;
+    /*
+    background-image:url('./img/loginbg2.png');
+    background-size: 100% 100%;
+    */
+    /*overflow-y: scroll;*/
+    -webkit-overflow-scrolling:touch; 
+}
+
+#main ul li:nth-child(even){
+    background-color: #fbfbfb;
+}
+
+.chatMsg{
+    border-bottom: 0px solid;
+}
+
+.chatMsg table{
+    width:100%;height:40px;
+
+}
+.chatMsg .avatar{
+    width:32px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;      
+}
+
+.chatMsg .target{
+    /*font-size:14px;*/
+    font-size: 13px;padding:5px;
+
+}
+.chatMsg .target span{display:inline;}
+.chatMsg .chatTime{
+    float:right;
+    font-size: 12px;
+    color: #AAAAAA;
+}
+.chatMsg .msg{
+    /*font-size: 15px;*/
+    font-size: 13px;
+    word-break: break-all;
+    overflow: hidden;
+}
+.chatMsg .msg .smileyIcon{
+    max-width: 26px;
+    height:auto;
+}
+
+.msgSetTarget{
+    /*cursor: pointer; */
+}
+
+.privateMessage{
+    background-color: #e1e9ff;
+}
+
+.MasterMsg td{
+   color:red; 
+}
+
+.unlockUser,.lockUser{
+    min-width: 16px !important;
+    width: 16px !important;
+    margin-top:10px !important;
+    padding-right: 24px !important;
+    /*padding-left: 0 !important;*/
+}
+
+#chatList{
+    box-shadow:-5px 0 5px rgba(0,0,0,.5);
+    background-color: #fff;
+    z-index: 504;
+    overflow-y: auto;
+    overflow-x:hidden;
+    width:0;
+    position: fixed;top:30px;bottom:42px;right: 2%;
+    margin: auto;    
+    font-size: 17px;
+    will-change: transform;
+    /*overflow-y: scroll;*/
+    -webkit-overflow-scrolling:touch;     
+
+}
+#chatList ul{height:100%;position:relative;background-color:#f7f7f7; margin-right:4px;}
+#chatList ul :after{
+    content:"";
+    display:block;
+}
+ul{
+    padding:0px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+li{
+    list-style-type:none;
+
+}
+
+#chatList li{
+    height:48px;padding-left:5px;
+}
+
+#chatList li:nth-child(odd){
+    background-color: #EAEAEA;
+
+}
+#chatList li:nth-child(even){
+    background-color: #D4D4D4;
+}
+
+
+
+#chatList .user{
+    padding-top: 2px;
+    padding-bottom: 2px;    
+    /*isplay:none;*/
+    cursor: pointer;
+    position: relative;
+}
+#chatList .user .userItem{
+    /*float:left;*/
+}
+
+#chatList .user .username{
+    display:inline-block;
+    /*margin-top: 10px;
+    padding-left: 5px;*/
+    width:60%;
+    overflow: hidden;    
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    /*font-family: arial;*/
+    font-size:14px;
+    left:36px;
+    position: absolute;
+    line-height: 48px;
+    height:48px;
+}
+
+#chatList .user .functionBox{
+    position: relative;
+    float:right;
+}
+
+#chatList .user .setPrivate{
+    float:right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#chatList .avatar{
+    position: absolute;
+    /*vertical-align: middle;*/
+    width:32px;
+    height:auto;
+    top:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;    
+}
+
+#smileyDiv{
+    box-shadow:0 -3px 2px rgba(0,0,0,.3);
+    text-align: left;
+    z-index:502;
+    display: none;
+    width:100%;max-width:970px;min-width:320px;
+    background-color: #efefef;
+    max-height:35%;
+    min-height: 25%;
+    border-bottom: 0;
+    bottom: 42px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;    
+    will-change: transform;
+    padding:15px;
+    position: fixed;left: 0;right: 0;margin:auto;
+
+}
+
+#smileyDiv img{margin:5px;}
+
+#newMsgNotice{
+    text-align: center;
+    color:white;
+    z-index:100;
+    display: none;
+    width:98%;max-width:970px;min-width:320px;
+    background-color: black;
+    height:50px;
+    line-height: 50px;
+    border-bottom: 0;
+    float:left;
+    position: fixed;
+    bottom: 42px;left:0;
+    filter:alpha(opacity=70); /*IE,透明度50%*/
+    -moz-opacity:0.7; /*Firefox,透明度50%*/
+    opacity:0.7;/*其他浏览器,透明度50%*/   
+    cursor: pointer;
+}
+
+#Notice2User{
+    text-align: center;
+    color:white;
+    z-index:100;
+    display: none;
+    width:100%;
+    background-color: black;
+    height:50px;
+    line-height: 50px;
+    border: 1px deepskyblue solid;
+    border-bottom: 0;
+    float:left;
+    position: fixed;
+    bottom: 50%;   
+    filter:alpha(opacity=70); /*IE,透明度50%*/
+    -moz-opacity:0.7; /*Firefox,透明度50%*/
+    opacity:0.7;/*其他浏览器,透明度50%*/   
+
+}
+
+
+#functionBox{
+    display:none;
+    border-top: 2px #fff solid;
+    /*text-align: center;*/
+    width:100%;
+    height: 38px;
+    background-color: #d9e8ff;
+}
+
+#functionBox .targetInfo{
+
+    margin-top:8px;
+    float:left;
+    /*position: relative;*/
+    font-size: 13px;
+}
+#functionBox .targetInfo #target{
+    /*float:left;*/
+    /*position: relative;*/
+    font-size: 13px;
+}
+#functionBox .btnDiv{
+    float: right;
+    /*position: relative;*/
+    right:0;
+
+}
+
+.func_button{
+    margin-top: 6px;
+    margin-right: 2px;
+    font-size: 12px;
+    line-height: 24px;
+    height:24px;
+    min-width: 56px;
+    background: #ff9000;
+    color:#fff;
+    cursor: pointer;
+}
+.func_button:hover{
+    background: #ff4e00;
+}
+
+#inputBox{
+    font-size: 14px;
+    height: 42px;
+    padding-top:5px;
+    background-color: white;
+    border-top: 3px solid #888;
+    /*background-color: #E5EDF2;*/
+}
+.admin_del_chatMsg{
+    color:red;
+    font-weight: bold;
+    text-decoration: none;
+}
+#inputAvatar{
+    margin-top:-38px;
+    margin-left:12px;
+    width:32px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;         
+}
+
+.emoji_1{
+    padding:6px;
+    width: 18px;
+    height: 18px;
+}
+.emoji_1 span:hover{
+    
+    border: 1px;
+    border-color: black;
+    border-style: outset;
+}
+
+#inputBox #userInput{
+    margin-left: 2px;
+    /*width:78%;*/
+    width:99%;
+}
+#inputBox #btnShowSmiley{
+    float:right;
+    border-radius:6px;
+    margin-right:2px;
+    line-height: 24px;
+    height:24px;
+}
+
+#inputBox #btnSend{
+    float:right;
+    margin-right:10px;
+    width:64px;
+    line-height: 24px;
+    height:24px;
+    background-color: #ff9000;
+    color:#fff;
+    box-shadow:none;
+}
+#inputBox #btnSend:hover{background-color:#ff4e00;}
+
+
+#masker{
+    display:none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;bottom: 0;
+    left:0;right: 0;
+    margin:auto;
+    background-color: transparent;
+    z-index: 501;
+
+    filter:alpha(opacity=70); /*IE,透明度50%*/
+    -moz-opacity:0.7; /*Firefox,透明度50%*/
+    opacity:0.7;/*其他浏览器,透明度50%*/    
+
+}
+
+.ug_0{
+    color:black;
+    color:rgba(0,0,0,0.54);
+}
+
+.ug_1{
+    color:#008020;
+    color:rgba(0,0,0,0.54);
+}
+
+.ug_2{
+    color:#ff8080;
+    color:rgba(0,0,0,0.54);
+}
+
+/**************************************/
+.div-mdl-card.mdl-card {
+    width: 300px;
+    height: 240px;
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-100px;
+    margin-left:-150px;
+    text-align: center;
+}
+.div-mdl-card > .mdl-card__title {
+    color: #fff;
+    background-color: #FFA500;
+}
+
+.login_header{
+    width: 300px;
+    position: absolute;
+    left:50%;
+    top:45%;
+    font-size:28px;
+    margin-top:-125px;
+    margin-left:-150px;    
+    text-align: center;
+}
+.login_footer{
+    /*width: 300px;*/
+    color: royalblue;
+    position: absolute;
+    right:15px;
+    top:94%;
+    font-size:13px;
+
+}
+
+#loading{
+
+    position: fixed;
+    width:100%;
+    z-index:888;
+    bottom:80px;
+
+}
+@media screen and (min-width:768px){
+    /*#footer{bottom:100px;}*/
+    /*#main,#smileyDiv,#chatList,#newMsgNotice{bottom: 142px;}*/
+}
+@media screen and (min-width:1425px){
+    /*#header,#main,#footer,#smileyDiv,#newMsgNotice{max-width:1325px;}*/
+}
+
+.fbemoji{
+    display: inline-block !important; 
+}

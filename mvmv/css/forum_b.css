@@ -1,0 +1,280 @@
+/*
+====================
+version 3.5
+2016 / 5 / 9 fix MQ in 2016 / 5 / 9 15:33
+====================
+*/
+@charset "utf-8";
+#mmHeader .forum{background-color: #0ca3b9;}
+#mmHeader .forum:hover{background-color: #08899C;}
+/**** mmHeaderW banner display STR ****/
+#mmHeaderW .shareBox,#mmHeaderW .report{display:none;}
+#mmHeaderW .search{display:block!important;}
+/**** mmHeaderW banner display END ****/
+/* ========== ALL str ========== */
+#mmBody .wrapper{position:relative;}
+#mmBody h3{
+	border-radius:3px 3px 0px 0px;
+	font-size:15px;background-color:#01c3e0;font-weight:bold;color:#ffffff;
+	line-height:30px;
+	padding:0 4px 0 10px;margin-bottom:2px;
+}
+/**/
+/* FIXED BTN str */
+.fixTop{
+	border-radius:5px;
+	background:rgba(0,0,0,0.4) url(../img/fourm.png) -4px -151px no-repeat;
+	background-size:1000px 500px;
+	width:40px;height:40px;
+	position:fixed;right:2%;bottom:60px;
+}
+/*for JS*/
+.fixHV{background-color:rgba(0,0,0,0.7)}
+/* FIXED BTN end */
+/* ========== ALL end ========== */
+
+/* ========== MM SEARCH BOX str ========== */
+.searchBox{float:left;}
+.searchBox input{
+	border:solid 1px #64add7;border-right:none;border-radius:0;outline:none;
+	-webkit-appearance:none;
+	font-size:17px;
+	width:100%;height:45px;
+	padding:0 10px;
+}
+.searchBox td:last-child{width:45px;}
+.searchBox a{
+	border-radius:0 5px 5px 0;border:solid 1px #64add7;
+	background:#6dbfef url(../img/fourm.png) -153px -156px no-repeat;
+	background-size:1000px 500px;
+	display:block;width:45px;height:45px;
+}
+/**/
+#mmwSearch{display:none;position:fixed;top:43px;z-index:5;padding:5px 10px;border-bottom:2px solid #a2a2a2;width:970px;background-color:#cccccc;}
+#mmwSearch .searchBox{width:100%;}
+/* WHITE ONLY end */
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:1424px){
+	#mmwSearch{width:614px;}
+}
+@media screen and (max-width:1023px){
+	#mmwSearch{width:96%;}
+}
+@media screen and (max-width:767px){
+	#mmwSearch{width:100%;left:0;}
+}
+/* ========== MM SEARCH BOX end ========== */
+
+/* ========== MM MAIN str ========== */
+#mmMain{width:100%;padding-bottom:4px;margin-bottom:15px;border-bottom:solid 2px #d6d6d6;background-color:#ffffff;}
+.bread{font-size:13px;padding:13px 18px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.bread a{color:#515151;}
+/* LABEL str */
+.label{position:relative;}
+.label .BK,.label .admin{position:absolute;top:0;}
+.label .BK{left:-7px;}
+.label .admin{right:-7px;}
+/**/
+.label{background-color:#3092ca;height:50px;padding:0 10px;color:#ffffff;box-shadow:0 3px 0 rgba(0,0,0,0.5);font-weight:bold;}
+.label p{
+	text-overflow:ellipsis;white-space:nowrap;
+	text-indent:50px;color:#ffffff;font-size:21px;
+	display:block;line-height:50px;overflow:hidden;
+	padding-right:98px;
+}
+	/* span */
+	.label span{
+		background:url(../img/fourm.png) 0 0 no-repeat;
+		display:block;width:7px;height:60px;
+		background-size:1000px 500px;
+		position:absolute;top:0;
+	}
+	.label span.left{left:-7px;}
+	.label span.right{right:-7px;background-position:-46px -151px;}
+	/* BK */
+	.label .BK{
+		background:#2588C0 url(../img/fourm.png) -58px 2px no-repeat;background-size:1000px 500px;
+		color:#fff;font-size:12px;text-align:center;font-weight: normal;
+		display:block;width:50px;height:50px;
+		padding-top:28px;
+		left:-7px;
+	}
+	.label .BK:hover,.label .admin:hover{background-color:#2b6f99;text-decoration: none;}
+	/* ADMIN */
+	.label .admin{background-color:#2485bc;max-width:135px;padding:5px;height:50px;display:block;}
+	.label .admin img{float:left;width:40px;height:40px;}
+	.label .admin div{
+		font-size:13px;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;
+		max-width:80px;overflow:hidden;
+		margin:3px 0 0 5px;
+		float:left;
+	}
+	/* ADMIN LOGIN str */
+	#mmBody .label .admin.BMlogin{background-color:#f9ff00;right:65px;}
+	#mmBody .label .admin.BMlogin:hover{background-color:#ffb800;}
+	.label .admin.BMlogin div{color:#515151;}
+	.label .admin.BMlogin:hover div{color:#ffffff;}
+	.label .mdb{display:none;}
+	/* ADMIN LOGIN end */
+	/* MM POPULAR str */
+	.label.mmPopular{background-color:#fc6a79;}
+	.label.mmPopular:after{
+		content:'';
+		background-color:#fc6a79;
+		display:block;width:7px;height:50px;
+		position:absolute;right:-7px;top:0;
+	}
+	.label.mmPopular .admin{display:none;}
+	.label.mmPopular .BK{background-color: #f0384b;}
+	.label.mmPopular .mdb,.label.mmPopular .mdb_mobi{
+		border-radius:5px;
+		background-color:#ffb800;
+		color:#000;font-size: 15px;text-align:center;
+		display:block;
+		
+		position:absolute;z-index:1;
+	}
+	.label.mmPopular .mdb{
+		line-height:35px;height:35px;
+		padding:0 8px;
+		right:1px;top:8px;
+	}
+	.label.mmPopular .mdb_mobi{
+		line-height:1;height:40px;
+		padding:5px;
+		right:5px;top:5px;
+	}
+	.label.mmPopular .BK:hover,.label .mdb:hover,.label .mdb_mobi:hover{
+		text-decoration: none;color:#fff;
+		background-color: #d62336;
+	}
+	.label.mmPopular .mdb_mobi{display:none;}
+	/**/
+	.label.mmPopular span{
+		background-image:none;
+		width:0;height:0;width:0;
+		padding:0;border-top:solid #400007 6px;
+		top:50px;
+	}
+	.label.mmPopular span.left{border-left:solid transparent 7px;border-right:none;}
+	.label.mmPopular span.right{border-right:7px transparent solid;border-left:0;}
+	/* MM POPULAR end */
+	/* BANED TO BOARD str */
+	.btb{
+		background-color:#f9ff00;
+		display:block;width:72px;height:50px;
+		padding:3px;
+		position:absolute;top:0;right:-7px;
+	}
+	.btb:hover{text-decoration:none;}
+	.btb div:before{content:"禁言列表";}
+	.btb div{
+		border-radius:5px;
+		font-size:12px;text-align:center;color:#ffffff;
+		background:#c7c400 url(../img/fourm.png) -227px -445px no-repeat;background-size:1000px 500px;
+		width:100%;height:44px;
+		padding-top:26px;	
+	}
+	.btb:hover div{background-color:#ffb800;}
+	 /*BANED TO BOARD end */
+/* LABLE end */
+/* MM FOURM HEAD str */
+#mmFourmHead{clear:both;background-color:#f1f7f8;margin:0 2px;overflow:hidden;}/*<--for page bottom line ART design*/
+.BOX{overflow:hidden;padding:13px 10px 10px;}
+/* MM FOURM HEAD end */
+.formBox{padding:10px;}
+/* TABLE FORM NARROW str */
+.formNarrow{width:100%;}
+.formNarrow tr{overflow:hidden;}
+.formNarrow td{padding:7px;}
+.dLike,.dClick,.dFeedback,.dTime{color:#71B3BC;}
+.formNarrow td.mmAdm{width:40px;padding-right:0;}
+.formNarrow td.mmAdm a{
+	border-radius:3px;
+	background-color:#f9ff00;
+	font-size:15px;text-align:center;color:#000000;
+	display:block;width:48px;line-height:14px;
+	border:solid 3px #efed61;padding:5px;
+}
+.titleBox a{text-indent:-8px;display:block;}
+	.formNarrow .titleBox a p,td.tTitle a p{
+		font-size:12px;color:#ff9000;vertical-align:2px;text-indent:-8px;
+		display:inline-block;line-height:1;
+		padding-left:38px;margin:0 2px 0 -9px;
+		position:relative;
+	}
+	td.tTitle a p{vertical-align:1px;}
+	.titleBox a p span,.tTitle a p span{
+		text-indent:0;font-size:12px;text-align:center;color:#000;
+		background:url(../img/fourm.png) -247px -400px no-repeat;background-size:1000px 500px;
+		display:inline-block;width: 26px;height: 26px;line-height:30px;
+		position:absolute;top:-10px;left:0;
+	}
+	a p span.rate{background-position: -247px -400px;}
+	a p span.rate2{background-position: -273px -400px;}
+	a p span.rate3{background-position: -299px -400px;}
+	a p span.rate4{background-position: -325px -400px;}
+	a p span.rate5{background-position: -351px -400px;}
+	a p span.rate6{background-position: -377px -400px;}
+	a p span.rate7{background-position: -403px -400px;}
+	a p span.rate8{background-position: -429px -400px;}
+	a p span.rate9{background-position: -455px -400px;}
+	a p span.rate10{background-position: -481px -400px;}
+.formNarrow td.mmAdm a:last-child{margin-top:1px;}
+.formNarrow td.mmAdm a:hover{background-color:#FFB800;border-color:#FFE4A0;}
+/**/
+.msgBox{clear:both;overflow:hidden;}
+.msgBox .dLike,.msgBox .dClick,.msgBox .dFeedback{
+	background:url(../img/fourm.png) 0 0 no-repeat;background-size:1000px 500px;
+	width:70px;
+	padding-left:15px;
+	float:left;
+}
+.msgBox .dLike,.msgBox .dClick,.msgBox span,.msgBox .dFeedback,.msgBox .dTime{font-size:13px;line-height:20px;}
+.msgBox .dLike{background-position:-169px -209px;}
+.msgBox .dClick{background-position:-292px -369px;}
+.msgBox .dFeedback{background-position:-169px -248px;}
+.msgBox .dTime{float:right;}
+/**/
+/* TABLE FORM NARROW end */
+img.guide{margin-left:5px;vertical-align:text-top;margin-top:2px;}
+/* ********** MEDIA QUERIES ********** */
+@media screen and (max-width:767px){
+	body{overflow-x:auto!important;}	
+	.bread{padding:10px;}
+	.formBox{padding:5px;}
+}
+@media screen and (max-width:479px){
+	#mmBody .wrapper{padding:0 10px;}
+	/*#mmMain{border-style:solid;border-color:#e3e3e3;border-width:0 5px;}*/
+}
+/* delete color */
+#mmMain .tDelete{color:#9fc3c9;}
+/* odd & hover */
+.formBox tr:nth-child(even){background-color:#e0f6f9;}
+.formBox tr:hover,.formBox tr.TOP:hover,.formBox tr.TOP:nth-child(even):hover{background-color:#fff2bc;}
+/**/
+.formBox div p,/*mobile*/
+.formBox td,.formBox td p,/*PC*/
+.formBox td a{color:#005c6a;}
+/* v TOP TOP TOP v */
+.formBox tr.TOP{background-color:#FFF7D7;border-bottom:solid 1px #fff;}
+.formBox tr.TOP:nth-child(odd){background-color:#FFFCF1;}
+/**/
+.TOP.new .titleBox a,.TOP.new .titleBox p,
+.TOP.new td.tTitle,.TOP.new td.tTitle a,
+.TOP.new td.tTitle p{color:#f00;}
+
+.TOP.new .titleBox a:visited,.TOP.new .titleBox a:visited p,
+.TOP.new td.tTitle a:visited,
+.TOP.new td.tTitle a:visited p{color:#afb0b0;}
+
+.TOP.new .titleBox a:hover,.TOP.new .titleBox a:hover p,
+.TOP.new td.tTitle a:hover,
+.TOP.new td.tTitle a:hover p{color:#ff4e00;}
+/* ^ TOP TOP TOP ^ */
+.formBox td a:visited{color:#afb0b0;}
+.formBox td a.nameCard:visited{color:#005c6a;}
+.formBox td a:hover,.titleBox a:hover p,.tTitle a:hover p,.TOP .tTime a:hover{color:#ff4e00;text-decoration:none;}
+/**/
+.formBox td.mmAdm a,.formBox td.mmAdm a:hover{color:#000;}
