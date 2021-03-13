@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Canvas Video</title>
+		<link href="./css/reset.css" rel="stylesheet">
+		<link href="css/canvas_video_eason.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="hero">
+			<h1>Eason Shyu 試做<br>滑鼠捲動控制 canvas video 撥放</h1>
+			<h2>請滾動滑鼠中鍵</h2>
+			<h3>Video is Ready To Play</h3>
+		</div>
+		<div style="display: none">
+			<button id="cod6"></button><button id="cod24"></button><input type=text id="m"><input type=text id="d"><input type=text id="l">
+			<video id="v"></video>
+		</div>
+		<div id="box">
+			<canvas id="c"></canvas>
+		</div>
+		<div id="track"></div>
+		<div id="other"><span>VIDEO PAUSE</span></div>
+		<script src="./js/canvas_video_eason.js"></script>
+	</body>
+</html>
+<!-- MEMO ##################################
+**影片播放流暢問題**
+	影片檔案格式非常重要, 不能是線上轉檔的, 轉出來的撥放不會順暢
+	應用原生 .webm 檔案
+	原生也會有撥放 lag 情形
+		ex http://dl5.webmfiles.org/elephants-dream.webm
+		ex 用 premiere pro 轉的 .webm 檔案
+**影片播放流暢問題 end**
+#########################################-->
+
+
+<!-- MEMO ##################################
+
+#########################################-->
