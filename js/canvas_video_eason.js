@@ -245,5 +245,8 @@ const fnCount = function(target, start, end){
 };
 
 $(window).on('load scroll', function(){
-	fnCount($('#hero h3'),0, 200);
+	fnCount($('#hero h3'), heroHeight /10  , heroHeight /10 * 5);
 });
+
+
+//==============================================================

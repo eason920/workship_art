@@ -8,7 +8,9 @@ h1, h2, h3{
 }
 
 #hero{
-	height: 100vh;
+	background-color: #111;
+	color: #fff;
+	height: 150vh;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: column;
@@ -20,21 +22,29 @@ h1, h2, h3{
 	text-align: center;
 }
 
+h1{
+	line-height: 1.5;
+}
+
 #box{
-	display: flex;
+	/* display: flex; */
 	justify-content: center;
 	width: 100%;
-	background-color: #eee;
+	background-color: #ccc;
+	font-size: 20px;
+	font-family: arial;
+	text-align: center;
 }
 
 #c{
 	/* width: 100vw; */
 	height: 400px;
+	margin: 0 auto 35px;
 }
 
 #track{
 	height: 3000px;
-	background-color: #eee;
+	background-color: #ccc;
 }
 
 #other{
@@ -54,6 +64,8 @@ h1, h2, h3{
 
 /* ============================== */
 h3{
+	position: sticky;
+	top: 300px;
 	margin-top: 300px;
 	font-size: 56px;
 	line-height: 1.07143;
@@ -61,8 +73,8 @@ h3{
 	background-image: linear-gradient(var(--eason-angle), rgba(var(--eason-color), var(--eason-color), var(--eason-color), var(--eason-opacity)) var(--eason-progress), rgba(var(--eason-color-2), var(--eason-color-2), var(--eason-color-2), var(--eason-opacity-2)) var(--eason-progress-2));
 	-webkit-background-clip: text;
 	background-clip: text;
-	--eason-color: 0;/* << 2 or 255 */
-	--eason-color-2: 15;/* << 3 or 240 */
+	--eason-color: 255;/* << 2 or 255 */
+	--eason-color-2: 240;/* << 3 or 240 */
 	--eason-opacity: 1;
 	--eason-opacity-2: 0;
 	-webkit-text-fill-color: transparent;
@@ -70,3 +82,14 @@ h3{
 	--eason-progress-2: 0%;
 	--eason-angle: 135deg;
 	}
+
+
+/**/
+#mycanvas{
+	width: 180px;
+	background-color: white;
+  box-shadow: 0px 0px 20px rgba(black,0.1);
+  max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 15px
+}
