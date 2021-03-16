@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>asus</title>
+  <style>
+    body, html{
+      background-color: #aaa;
+    }
+    canvas{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    figcaption{
+      margin-top: 380px;
+      margin-left: 0;
+    }
+  </style>
+</head>
+<body>
+	<figure id="bridgeContainer">
+		<canvas id="canvas" width="699" height="368"></canvas>
+    <canvas id="canvas2" width="699" height="368"></canvas>
+		<figcaption>case by Eason Shyu</figcaption>
+	</figure>
+	<script>
+		var canvas = document.getElementById("canvas");
+		ctx = canvas.getContext('2d');
+
+    var canvas2 = document.getElementById("canvas2");
+		ctx2 = canvas2.getContext('2d');
+
+		img = new Image();
+		img.src= "./images/0.jpg";
+
+    img2 = new Image();
+		img2.src= "./images/1.jpg";
+
+    let time = 0;
+    const animate = function(){
+      time ++;
+      const stime = parseInt(time/3);
+      const x = stime%10 * 9 ;
+      const y = stime%30 * 10 * -1;
+      ctx.beginPath();
+			ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      ctx2.drawImage(img2, 0, 0, canvas.width, canvas.height);
+      ctx.closePath();
+
+      ctx2.save();
+      ctx2.translate(699/2, 368/2);
+      ctx2.globalCompositeOperation = "destination-in";
+      ctx2.beginPath();
+      ctx2.beginPath();
+      ctx2.ellipse( 0, y, 699/2, 368/2, 0, 0, Math.PI*2);
+
+      ctx2.fillStyle='white'
+      ctx2.fill();
+      ctx2.restore();
+
+      requestAnimationFrame(animate);
+    }
+
+		img.onload = function(){
+      requestAnimationFrame(animate);
+		};
+	</script>
+</body>
+</html>
