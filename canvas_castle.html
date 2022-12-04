@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5-1a</title>
+    <style>
+      canvas {
+        border: solid 5px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="mycanvas"></canvas>
+    <script>
+      const canvas = document.getElementById("mycanvas");
+      const ctx = canvas.getContext("2d");
+      // ctx.width = 400;  xx
+      // ctx.height = 400; xx
+      canvas.width = 400;
+      canvas.height = 400;
+
+      //16:43 fillReact
+      // ctx.fillStyle = 'pink';
+      // ctx.fillRect(100, 100, 200,  200);// x,  y, w(->), h(v)
+      // ctx.fill(); xx 不與 fillRect 掛鉤
+
+      // 15:29 畫線
+      // ctx.strokeStyle = "green";
+      // ctx.beginPath(); // 可以不寫
+      // ctx.moveTo(50,50);
+      // ctx.lineTo(100,50)
+      // ctx.lineTo(100,100)
+      // ctx.lineTo(50, 100)
+      // ctx.closePath();
+      // ctx.strokeRect(200, 200, 70,  70)
+      // ctx.stroke();
+
+      // ctx.beginPath();
+      // ctx.moveTo(50,50);
+      // ctx.lineTo(50,300);
+      // ctx.lineTo(100, 50)
+      // ctx.lineTo(100, 300)
+      // ctx.moveTo(150, 50);
+      // ctx.lineTo(150,300)
+      // ctx.strokeStyle =  'red';
+      // ctx.stroke();
+
+      // --------------------------------
+      // == 25:47 fillRect & strokeRect
+      // -- moveTo + lineTo, 可配合「fill() & stroke()」來給色
+      // -- fillRect() &  strokeRect 則是分別給色，但不用點位(moveTo, lineTo)
+      // -- 不用 beginPath();
+      // --------------------------------
+      // ctx.fillStyle = "red"
+      // ctx.fillRect(50, 50, 100, 200); // <->  fill()
+
+      // ctx.strokeStyle = 'green';
+      // ctx.lineWidth = 3;
+      // ctx.strokeRect(50, 50, 100, 200); // <-> stroke()
+
+      // --------------------------------
+      // == 26: 17 rect(x, x, w, h)
+      // -- 不用 moveTo, lineTo 就可搭配 fill() & stroke()  給色
+      // -- 但要 beginPath();
+      // -- 「不」用 closePath();
+      // --------------------------------
+      // ctx.beginPath();
+      // ctx.rect(100, 100,  125, 125);
+      // ctx.fillStyle = 'red'
+      // ctx.fill();
+      // ctx.strokeStyle = 'green';
+      // ctx.lineWidth = 10;
+      // ctx.stroke();
+
+      // 19:43  畫弧
+      // ctx.beginPath();
+      // ctx.arc(100, 100, 50, 0, 1.5 * Math.PI)
+      // ctx.strokeStyle = 'black';
+      // ctx.stroke();
+
+      // 21:00 開始畫城堡
+      ctx.beginPath();
+      ctx.fillStyle = "black";
+      ctx.fillText("0", 5, 10); // 'text', x,  y <<預設 10px
+
+      const mouse  = {x: 0, y: 0};
+      let time = 0;
+      const fnDrow = () => {
+        time ++;
+
+        // 清除殘影 1
+        ctx.clearRect(0,0,400,400); // * 消除動畫貸出的殘影, 400 為 canvas 的長寬
+
+        // 清除殘影 2 => 會出現類似「速度線」的殘影、清的不徹底
+        // ctx.fillStyle = 'rgba(255,255, 255, .2)';
+        // ctx.fillRect(0,0,400,400)
+
+        // 清除殘影 end
+
+        for (i = 1; i <= 7; i++) {
+          const pos = 50 * i;
+          ctx.moveTo(pos, 0);
+          ctx.lineTo(pos, 400);
+          ctx.fillText(pos, pos + 5, 10);
+          ctx.moveTo(0, pos);
+          ctx.lineTo(400, pos);
+          ctx.fillText(pos, 5, pos + 15);
+        }
+
+        ctx.strokeStyle = "#aaa"; // 只要在 stroke, fill  之前寫都來的及運作
+        ctx.lineWidth = 1; // 只要在 stroke, fill  之前寫都來的及運作
+        ctx.stroke();
+
+        // 底座
+        ctx.beginPath();
+        ctx.moveTo(25, 350);
+        ctx.lineTo(375, 350);
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // 柱(紅)
+        ctx.fillStyle = "red";
+        ctx.fillRect(300, 300, 50, 50);
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(300, 300, 50, 50);
+
+        // 柱(黃)
+        ctx.beginPath();
+        ctx.rect(50, 300, 50, 50);
+        ctx.rect(250, 250, 50, 100);
+        ctx.fillStyle = "#ffe14f";
+        ctx.fill();
+        ctx.stroke();
+
+        // 柱(orange)
+        ctx.beginPath();
+        ctx.rect(100, 250, 50, 100);
+        ctx.rect(200, 250, 50, 100);
+        ctx.fillStyle = "#ff9f51";
+        ctx.fill();
+        ctx.stroke();
+
+        // 拱門
+        ctx.beginPath();
+        ctx.moveTo(100, 200);
+        ctx.lineTo(250, 200);
+        ctx.lineTo(250, 250);
+        ctx.lineTo(200, 250);
+        ctx.arc(175, 250, 25, 2 * Math.PI, 1 * Math.PI, true); // 中心點x, 中心點y, 半徑長, 弧起點, 弧終點, 是否逆時鐘
+        ctx.lineTo(100, 250);
+        ctx.closePath();
+        ctx.fillStyle = '#ccc';
+        ctx.fill();
+        ctx.stroke();
+
+        // 屋頂
+        ctx.beginPath();
+        ctx.moveTo(175, 150);
+        ctx.lineTo(250, 200);
+        ctx.lineTo(100, 200);
+        ctx.closePath();
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.stroke();
+
+        // FLAG (FLAG ANIMATE 41:23)
+        let move = 0;
+        if( mouse.y >= 50 - 10 && mouse.y < 150 - 10 ) {
+          move = mouse.y -10
+        } else if( mouse.y < 50 - 10) {
+          move = 30
+        } else {
+          move = 130
+        }
+
+        // move = mouse.y/5; < teacher
+
+        ctx.beginPath();
+        ctx.moveTo(175, 150);
+        ctx.lineTo(175, move);
+        ctx.lineTo(200, move + 10  + time%5);
+        ctx.lineTo(175, move + 20);
+        ctx.closePath();
+        ctx.fillStyle = 'hsl(' + mouse.x + ',50%,50%)'
+        ctx.fill();
+        ctx.stroke();
+
+        // CAR + ANIMATE 36:12
+        const carWidth = 40;
+        let carX = time % (400 + carWidth ) - carWidth; 
+        // 為使 CAR 不斷由左到右動畫, 使超出圖框就歸零
+        // => 用「餘數」(%)來置入 X 向變化的
+        // => 減去車體是用來左側出現時, 是「慢慢進入而非座標0值接蹦出來」
+        // console.log('carX is ', carX);
+        ctx.fillStyle = "#eaeaea"
+        ctx.fillRect(carX,325,carWidth,25);
+        ctx.strokeRect(carX,325,carWidth,25);
+        ctx.beginPath();
+        ctx.arc(carX + 10, 350, 5, 0, 2 * Math.PI);
+        ctx.arc(carX + 30, 350, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(mouse.x, mouse.y, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+      };
+      fnDrow();
+      setInterval(fnDrow, 30);
+
+      // 滑鼠互動 39:05
+      canvas.addEventListener("mousemove", (env)=> {
+        mouse.x = env.offsetX;
+        mouse.y = env.offsetY;
+        console.log(mouse);
+      })
+
+    </script>
+  </body>
+</html>
