@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Video</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="css/canvas_video_eason.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="box" style="padding-top: 40px; height: 100vh">
+      canvas animate icon<br />
+      <canvas id="mycanvas"></canvas>
+    </div>
+    <script>
+      const canvas2 = document.getElementById("mycanvas");
+      const ctx = canvas2.getContext("2d");
+      const blockWidth = 90;
+      const PI = Math.PI; //半個圈
+      const PI2 = Math.PI * 2; //一個圈
+
+      canvas2.width = blockWidth * 2;
+      canvas2.height = blockWidth * 1;
+
+      const color = {
+        red: "#F74456",
+        white: "#fff",
+        yellow: "#F1DA56",
+        blue: "#036FAF",
+        funday: {
+          red: "#f74769",
+          blue: "#003366",
+          green: "#14d1bf",
+        },
+      };
+
+      let time = 0;
+
+      const drawBlock = function (pos, bgColor, draw, time) {
+        ctx.save();
+        ctx.translate(pos.x * blockWidth, pos.y * blockWidth);
+        ctx.fillStyle = bgColor;
+        ctx.fillRect(0, 0, blockWidth, blockWidth);
+        ctx.fill();
+        //
+        ctx.translate(blockWidth / 2, blockWidth / 2);
+        draw();
+        ctx.restore();
+      };
+
+      // 每小格局
+      const draw = function () {
+        time++;
+        let stime = parseInt(time / 20);
+        drawBlock(
+          { x: 0, y: 0 },
+          color.white,
+          function () {
+            ctx.beginPath();
+            ctx.fillStyle = color.funday.red;
+            ctx.fillRect(-30, -20, 29, 40);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.fillStyle = "white";
+            ctx.fillRect(-25, -15, 19, 5);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.fillStyle = "white";
+            ctx.fillRect(-25, -5, 11, 5);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.fillStyle = color.funday.blue;
+            ctx.fillRect(1, -20, 29, 40);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.beginPath();
+            ctx.fillStyle = "white";
+            ctx.fillRect(6, -15, 19, 5);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.beginPath();
+            ctx.fillStyle = "#ccc";
+            ctx.fillRect(6, 0, (stime % 6) + 5, 5);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.translate((stime % 6) + 15, 4);
+            ctx.rotate(((stime % 2) * PI) / -18);
+            ctx.rotate((-35 * PI) / 180);
+            ctx.fillStyle = color.funday.green;
+            ctx.fillRect(0, -3, 25, 6);
+            ctx.fill();
+            ctx.fillStyle = color.funday.green;
+            ctx.rotate((-45 * PI) / 180);
+            ctx.fillRect(-2, -2, 4, 4);
+            ctx.fill();
+          },
+          time
+        );
+
+        drawBlock(
+          { x: 1, y: 0 },
+          "gray",
+          function () {
+            ctx.beginPath();
+            ctx.fillStyle = color.funday.green;
+            ctx.fillRect(-28, -25, 30, 22);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.arc(-21, -15, 2, 0, PI2);
+            ctx.fillStyle = stime % 6 == 0 ? color.funday.blue : "white";
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.arc(-13, -15, 2, 0, PI2);
+            ctx.fillStyle = stime % 6 == 1 ? color.funday.blue : "white";
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.arc(-5, -15, 2, 0, PI2);
+            ctx.fillStyle = stime % 6 == 2 ? color.funday.blue : "white";
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.fillStyle = color.funday.red;
+            ctx.fillRect(-8, 3, 30, 22);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.arc(-1, 14, 2, 0, PI2);
+            ctx.fillStyle = stime % 6 == 3 ? "white" : color.funday.blue;
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.arc(7, 14, 2, 0, PI2);
+            ctx.fillStyle = stime % 6 == 4 ? "white" : color.funday.blue;
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.arc(15, 14, 2, 0, PI2);
+            ctx.fillStyle = stime % 6 == 5 ? "white" : color.funday.blue;
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.translate(-22, -3);
+            ctx.rotate((-45 * PI) / 180);
+            ctx.fillStyle = color.funday.green;
+            ctx.fillRect(0, 0, 5, 5);
+            ctx.fill();
+            //
+            ctx.beginPath();
+            ctx.translate(3, 43);
+            ctx.fillStyle = color.funday.red;
+            ctx.fillRect(0, 0, 5, 5);
+            ctx.fill();
+          },
+          time
+        );
+
+        requestAnimationFrame(draw);
+      };
+
+      requestAnimationFrame(draw);
+    </script>
+  </body>
+</html>
+<!-- MEMO ##################################
+**影片播放流暢問題**
+	影片檔案格式非常重要, 不能是線上轉檔的, 轉出來的撥放不會順暢
+	應用原生 .webm 檔案
+	原生也會有撥放 lag 情形
+		ex http://dl5.webmfiles.org/elephants-dream.webm
+		ex 用 premiere pro 轉的 .webm 檔案
+**影片播放流暢問題 end**
+#########################################-->
+
+<!-- MEMO ##################################
+
+#########################################-->
